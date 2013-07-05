@@ -5,28 +5,52 @@
 //  Created by Ray Swartz on 7/5/13.
 //  Copyright (c) 2013 Boston University. All rights reserved.
 //
+//  These tests are for the highest-level features of view controller.
 
 #import "BUBusPredictor3Tests.h"
+#import "BUBusPredictorMasterViewController.h"
+#import "BusPredictorData.h"
+#import "JSONModel.h"
 
 @implementation BUBusPredictor3Tests
 
-- (void)setUp
+- (void)testModuleName
 {
-    [super setUp];
-    
-    // Set-up code here.
+    NSString *expected = @"Bus Predictor";
+    BusPredictorData *moduleData = [[BusPredictorData alloc] init];
+    NSString *result = [moduleData moduleName];
+    STAssertEqualObjects(result, expected, @"module name should be correct");
 }
 
-- (void)tearDown
+- (void)testViewControllerHasModuleData
 {
-    // Tear-down code here.
-    
-    [super tearDown];
+    BUBusPredictorMasterViewController *vc = [[BUBusPredictorMasterViewController alloc] init];
+    STAssertNotNil([vc moduleData], @"module must have moduleData");
 }
 
-- (void)testExample
+- (void)testViewControllerHasRightKindOfModuleData
 {
-    STFail(@"Unit tests are not implemented yet in BUBusPredictor3Tests");
+    BUBusPredictorMasterViewController *vc = [[BUBusPredictorMasterViewController alloc] init];
+    STAssertTrue([[[vc moduleData] class] isSubclassOfClass:[BUModuleData class]], @"module data must be subclass of BUModuleData");
 }
+
+- (void)testModuleDataHasModel
+{
+    BusPredictorData *moduleData = [[BusPredictorData alloc] init];
+    STAssertNotNil([moduleData model], @"module data must have data model");
+}
+
+- (void)testModelIsRightClass
+{
+    BusPredictorData *moduleData = [[BusPredictorData alloc] init];
+    STAssertTrue([[[moduleData model] class] isSubclassOfClass:[JSONModel class]], @"model must be subclass of JSONModel");
+}
+
+- (void)testViewControllerCanAccessModel
+{
+    BUBusPredictorMasterViewController *vc = [[BUBusPredictorMasterViewController alloc] init];
+    STAssertNotNil([[vc moduleData] model], @"vc must have access to model");
+}
+
 
 @end

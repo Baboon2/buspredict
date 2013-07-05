@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class BUDetailViewController;
+@class BusPredictorData;
 
-@interface BUMasterViewController : UITableViewController
+@interface BUBusPredictorMasterViewController : UITableViewController
 
 @property (strong, nonatomic) BUDetailViewController *detailViewController;
+@property (nonatomic, strong) BusPredictorData *moduleData;
 
 @end

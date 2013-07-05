@@ -18,13 +18,21 @@
 		7AD6ACC11787300500375DB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC01787300500375DB3 /* Default-568h@2x.png */; };
 		7AD6ACC41787300500375DB3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */; };
 		7AD6ACC71787300500375DB3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC51787300500375DB3 /* MainStoryboard_iPad.storyboard */; };
-		7AD6ACCA1787300500375DB3 /* BUMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC91787300500375DB3 /* BUMasterViewController.m */; };
+		7AD6ACCA1787300500375DB3 /* BUBusPredictorMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */; };
 		7AD6ACCD1787300500375DB3 /* BUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */; };
 		7AD6ACD51787300500375DB3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACD41787300500375DB3 /* SenTestingKit.framework */; };
 		7AD6ACD61787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
 		7AD6ACD71787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
 		7AD6ACDF1787300500375DB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACDD1787300500375DB3 /* InfoPlist.strings */; };
 		7AD6ACE21787300500375DB3 /* BUBusPredictor3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */; };
+		7AD6ACEC1787304600375DB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACEB1787304600375DB3 /* MapKit.framework */; };
+		7AD6ACEF1787351600375DB3 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACEE1787351600375DB3 /* JSONModel.m */; };
+		7AD6ACF3178757A500375DB3 /* BusPredictorData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACF2178757A500375DB3 /* BusPredictorData.m */; };
+		7AD6ACF6178757D700375DB3 /* BUModuleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACF5178757D700375DB3 /* BUModuleData.m */; };
+		7AD6ACF91787671900375DB3 /* BUBusPredictorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACF81787671900375DB3 /* BUBusPredictorModel.m */; };
+		7AD6ACFC17876B6600375DB3 /* BUBusPredictorDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */; };
+		7AD6ACFF17876D5500375DB3 /* BULiveBusDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */; };
+		7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6AD01178771D500375DB3 /* BUDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +61,8 @@
 		7AD6ACC01787300500375DB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7AD6ACC31787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7AD6ACC61787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7AD6ACC81787300500375DB3 /* BUMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUMasterViewController.h; sourceTree = "<group>"; };
-		7AD6ACC91787300500375DB3 /* BUMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUMasterViewController.m; sourceTree = "<group>"; };
+		7AD6ACC81787300500375DB3 /* BUBusPredictorMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUBusPredictorMasterViewController.h; sourceTree = "<group>"; };
+		7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictorMasterViewController.m; sourceTree = "<group>"; };
 		7AD6ACCB1787300500375DB3 /* BUDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUDetailViewController.h; sourceTree = "<group>"; };
 		7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUDetailViewController.m; sourceTree = "<group>"; };
 		7AD6ACD31787300500375DB3 /* BUBusPredictor3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUBusPredictor3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +71,21 @@
 		7AD6ACDE1787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AD6ACE01787300500375DB3 /* BUBusPredictor3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUBusPredictor3Tests.h; sourceTree = "<group>"; };
 		7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictor3Tests.m; sourceTree = "<group>"; };
+		7AD6ACEB1787304600375DB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7AD6ACED1787351600375DB3 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = BUBusPredictor3/JSON/JSONModel.h; sourceTree = "<group>"; };
+		7AD6ACEE1787351600375DB3 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = BUBusPredictor3/JSON/JSONModel.m; sourceTree = "<group>"; };
+		7AD6ACF1178757A500375DB3 /* BusPredictorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusPredictorData.h; path = Data/BusPredictorData.h; sourceTree = "<group>"; };
+		7AD6ACF2178757A500375DB3 /* BusPredictorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusPredictorData.m; path = Data/BusPredictorData.m; sourceTree = "<group>"; };
+		7AD6ACF4178757D700375DB3 /* BUModuleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUModuleData.h; path = Data/BUModuleData.h; sourceTree = "<group>"; };
+		7AD6ACF5178757D700375DB3 /* BUModuleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUModuleData.m; path = Data/BUModuleData.m; sourceTree = "<group>"; };
+		7AD6ACF71787671900375DB3 /* BUBusPredictorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusPredictorModel.h; path = BUBusPredictor3/Data/BUBusPredictorModel.h; sourceTree = "<group>"; };
+		7AD6ACF81787671900375DB3 /* BUBusPredictorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusPredictorModel.m; path = BUBusPredictor3/Data/BUBusPredictorModel.m; sourceTree = "<group>"; };
+		7AD6ACFA17876B6600375DB3 /* BUBusPredictorDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusPredictorDataTests.h; sourceTree = "<group>"; };
+		7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictorDataTests.m; sourceTree = "<group>"; };
+		7AD6ACFD17876D5500375DB3 /* BULiveBusDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BULiveBusDataSource.h; path = Data/BULiveBusDataSource.h; sourceTree = "<group>"; };
+		7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BULiveBusDataSource.m; path = Data/BULiveBusDataSource.m; sourceTree = "<group>"; };
+		7AD6AD00178771D500375DB3 /* BUDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDataSource.h; path = Data/BUDataSource.h; sourceTree = "<group>"; };
+		7AD6AD01178771D500375DB3 /* BUDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDataSource.m; path = Data/BUDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD6ACEC1787304600375DB3 /* MapKit.framework in Frameworks */,
 				7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */,
 				7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */,
 				7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */,
@@ -92,6 +116,9 @@
 		7AD6AC9E1787300500375DB3 = {
 			isa = PBXGroup;
 			children = (
+				7AD6ACF71787671900375DB3 /* BUBusPredictorModel.h */,
+				7AD6ACF81787671900375DB3 /* BUBusPredictorModel.m */,
+				7AD6ACF0178735B300375DB3 /* JSON */,
 				7AD6ACB01787300500375DB3 /* BUBusPredictor3 */,
 				7AD6ACDA1787300500375DB3 /* BUBusPredictor3Tests */,
 				7AD6ACA91787300500375DB3 /* Frameworks */,
@@ -114,6 +141,7 @@
 				7AD6ACAA1787300500375DB3 /* UIKit.framework */,
 				7AD6ACAC1787300500375DB3 /* Foundation.framework */,
 				7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */,
+				7AD6ACEB1787304600375DB3 /* MapKit.framework */,
 				7AD6ACD41787300500375DB3 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -122,12 +150,20 @@
 		7AD6ACB01787300500375DB3 /* BUBusPredictor3 */ = {
 			isa = PBXGroup;
 			children = (
+				7AD6ACFD17876D5500375DB3 /* BULiveBusDataSource.h */,
+				7AD6AD00178771D500375DB3 /* BUDataSource.h */,
+				7AD6AD01178771D500375DB3 /* BUDataSource.m */,
+				7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */,
+				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
+				7AD6ACF2178757A500375DB3 /* BusPredictorData.m */,
+				7AD6ACF4178757D700375DB3 /* BUModuleData.h */,
+				7AD6ACF5178757D700375DB3 /* BUModuleData.m */,
 				7AD6ACB91787300500375DB3 /* BUAppDelegate.h */,
 				7AD6ACBA1787300500375DB3 /* BUAppDelegate.m */,
 				7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */,
 				7AD6ACC51787300500375DB3 /* MainStoryboard_iPad.storyboard */,
-				7AD6ACC81787300500375DB3 /* BUMasterViewController.h */,
-				7AD6ACC91787300500375DB3 /* BUMasterViewController.m */,
+				7AD6ACC81787300500375DB3 /* BUBusPredictorMasterViewController.h */,
+				7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */,
 				7AD6ACCB1787300500375DB3 /* BUDetailViewController.h */,
 				7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */,
 				7AD6ACB11787300500375DB3 /* Supporting Files */,
@@ -154,6 +190,8 @@
 			children = (
 				7AD6ACE01787300500375DB3 /* BUBusPredictor3Tests.h */,
 				7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */,
+				7AD6ACFA17876B6600375DB3 /* BUBusPredictorDataTests.h */,
+				7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */,
 				7AD6ACDB1787300500375DB3 /* Supporting Files */,
 			);
 			path = BUBusPredictor3Tests;
@@ -166,6 +204,15 @@
 				7AD6ACDD1787300500375DB3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AD6ACF0178735B300375DB3 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7AD6ACED1787351600375DB3 /* JSONModel.h */,
+				7AD6ACEE1787351600375DB3 /* JSONModel.m */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +329,14 @@
 			files = (
 				7AD6ACB71787300500375DB3 /* main.m in Sources */,
 				7AD6ACBB1787300500375DB3 /* BUAppDelegate.m in Sources */,
-				7AD6ACCA1787300500375DB3 /* BUMasterViewController.m in Sources */,
+				7AD6ACCA1787300500375DB3 /* BUBusPredictorMasterViewController.m in Sources */,
 				7AD6ACCD1787300500375DB3 /* BUDetailViewController.m in Sources */,
+				7AD6ACEF1787351600375DB3 /* JSONModel.m in Sources */,
+				7AD6ACF3178757A500375DB3 /* BusPredictorData.m in Sources */,
+				7AD6ACF6178757D700375DB3 /* BUModuleData.m in Sources */,
+				7AD6ACF91787671900375DB3 /* BUBusPredictorModel.m in Sources */,
+				7AD6ACFF17876D5500375DB3 /* BULiveBusDataSource.m in Sources */,
+				7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AD6ACE21787300500375DB3 /* BUBusPredictor3Tests.m in Sources */,
+				7AD6ACFC17876B6600375DB3 /* BUBusPredictorDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,16 +6,19 @@
 //  Copyright (c) 2013 Boston University. All rights reserved.
 //
 
-#import "BUMasterViewController.h"
+#import "BUBusPredictorMasterViewController.h"
 
 #import "BUDetailViewController.h"
+#import "BusPredictorData.h"
 
-@interface BUMasterViewController () {
+@interface BUBusPredictorMasterViewController () {
     NSMutableArray *_objects;
 }
 @end
 
-@implementation BUMasterViewController
+@implementation BUBusPredictorMasterViewController
+
+@synthesize moduleData = _moduleData;
 
 - (void)awakeFromNib
 {
@@ -23,8 +26,23 @@
         self.clearsSelectionOnViewWillAppear = NO;
         self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
     }
+    _moduleData = [[BusPredictorData alloc] init];
     [super awakeFromNib];
 }
+
+
+//===========================================================
+// - (id)init
+//
+//===========================================================
+- (id)init
+{
+    if ((self = [super init])) {
+        _moduleData = [[BusPredictorData alloc] init];
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad
 {
