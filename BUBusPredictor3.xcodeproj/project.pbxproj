@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A43090E178B553500FCC8F1 /* BUBusStopDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A43090D178B553500FCC8F1 /* BUBusStopDataSource.m */; };
 		7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
 		7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
 		7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A43090C178B553500FCC8F1 /* BUBusStopDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopDataSource.h; sourceTree = "<group>"; };
+		7A43090D178B553500FCC8F1 /* BUBusStopDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopDataSource.m; sourceTree = "<group>"; };
 		7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUBusPredictor3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD6ACAA1787300500375DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AD6ACAC1787300500375DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,7 +72,6 @@
 		7AD6ACD41787300500375DB3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7AD6ACDC1787300500375DB3 /* BUBusPredictor3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BUBusPredictor3Tests-Info.plist"; sourceTree = "<group>"; };
 		7AD6ACDE1787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7AD6ACE01787300500375DB3 /* BUBusPredictor3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUBusPredictor3Tests.h; sourceTree = "<group>"; };
 		7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictor3Tests.m; sourceTree = "<group>"; };
 		7AD6ACEB1787304600375DB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7AD6ACED1787351600375DB3 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = BUBusPredictor3/JSON/JSONModel.h; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		7AD6ACF5178757D700375DB3 /* BUModuleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUModuleData.m; path = Data/BUModuleData.m; sourceTree = "<group>"; };
 		7AD6ACF71787671900375DB3 /* BUBusPredictorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusPredictorModel.h; path = BUBusPredictor3/Data/BUBusPredictorModel.h; sourceTree = "<group>"; };
 		7AD6ACF81787671900375DB3 /* BUBusPredictorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusPredictorModel.m; path = BUBusPredictor3/Data/BUBusPredictorModel.m; sourceTree = "<group>"; };
-		7AD6ACFA17876B6600375DB3 /* BUBusPredictorDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusPredictorDataTests.h; sourceTree = "<group>"; };
 		7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictorDataTests.m; sourceTree = "<group>"; };
 		7AD6ACFD17876D5500375DB3 /* BULiveBusDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BULiveBusDataSource.h; path = Data/BULiveBusDataSource.h; sourceTree = "<group>"; };
 		7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BULiveBusDataSource.m; path = Data/BULiveBusDataSource.m; sourceTree = "<group>"; };
@@ -150,10 +151,12 @@
 		7AD6ACB01787300500375DB3 /* BUBusPredictor3 */ = {
 			isa = PBXGroup;
 			children = (
+				7A43090C178B553500FCC8F1 /* BUBusStopDataSource.h */,
+				7A43090D178B553500FCC8F1 /* BUBusStopDataSource.m */,
 				7AD6ACFD17876D5500375DB3 /* BULiveBusDataSource.h */,
+				7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */,
 				7AD6AD00178771D500375DB3 /* BUDataSource.h */,
 				7AD6AD01178771D500375DB3 /* BUDataSource.m */,
-				7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */,
 				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
 				7AD6ACF2178757A500375DB3 /* BusPredictorData.m */,
 				7AD6ACF4178757D700375DB3 /* BUModuleData.h */,
@@ -188,9 +191,7 @@
 		7AD6ACDA1787300500375DB3 /* BUBusPredictor3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7AD6ACE01787300500375DB3 /* BUBusPredictor3Tests.h */,
 				7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */,
-				7AD6ACFA17876B6600375DB3 /* BUBusPredictorDataTests.h */,
 				7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */,
 				7AD6ACDB1787300500375DB3 /* Supporting Files */,
 			);
@@ -337,6 +338,7 @@
 				7AD6ACF91787671900375DB3 /* BUBusPredictorModel.m in Sources */,
 				7AD6ACFF17876D5500375DB3 /* BULiveBusDataSource.m in Sources */,
 				7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */,
+				7A43090E178B553500FCC8F1 /* BUBusStopDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +530,7 @@
 				7AD6ACE71787300500375DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AD6ACE81787300500375DB3 /* Build configuration list for PBXNativeTarget "BUBusPredictor3Tests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +539,7 @@
 				7AD6ACEA1787300500375DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

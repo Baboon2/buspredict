@@ -6,17 +6,25 @@
 //  Copyright (c) 2013 Boston University. All rights reserved.
 //
 
-#import "BUBusPredictorDataTests.h"
+#import <SenTestingKit/SenTestingKit.h>
+
+// #import "BUBusPredictorDataTests.h"
 #import "BusPredictorData.h"
 #import "BULiveBusDataSource.h"
+#import "BUBusStopDataSource.h"
 #import "JSONModel.h"
+
+@interface BUBusPredictorDataTests : SenTestCase 
+    @property (strong, nonatomic)    BusPredictorData *moduleData;
+
+@end
 
 @implementation BUBusPredictorDataTests
 - (void)setUp
 {
     [super setUp];
     
-    // Set-up code here.
+    self.moduleData = [[BusPredictorData alloc] init];
 }
 
 - (NSString *)liveBusURL
@@ -31,10 +39,19 @@
 
 - (void)testAddOneDataSource
 {
-    BusPredictorData *moduleData = [[BusPredictorData alloc] init];
     BULiveBusDataSource *ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL]];
-    STAssertNoThrow([moduleData addSource:ds], @"should be able to add one data source to module data");
-    STAssertTrue([[[[moduleData dataSources] objectAtIndex:0] class] isSubclassOfClass:[BULiveBusDataSource class]], @"data source should be identifiable");
+    STAssertNoThrow([self.moduleData addSource:ds], @"should be able to add one data source to module data");
+    STAssertTrue([[[[self.moduleData dataSources] objectAtIndex:0] class] isSubclassOfClass:[BULiveBusDataSource class]], @"data source should be identifiable");
+}
+
+- (void)testAddSecondDataSource
+{
+    BULiveBusDataSource *ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL]];
+    [self.moduleData addSource:ds];
+    BUBusStopDataSource *bsds = [[BUBusStopDataSource alloc] init];
+    STAssertNoThrow([self.moduleData addSource:bsds], @"should be able to add two data sources to module data");
+    STAssertTrue([[[[self.moduleData dataSources] objectAtIndex:1] class] isSubclassOfClass:[BUBusStopDataSource class]], @"data source should be identifiable");
+
 }
 
 - (void)tearDown

@@ -7,10 +7,15 @@
 //
 //  These tests are for the highest-level features of view controller.
 
+#import <SenTestingKit/SenTestingKit.h>
 #import "BUBusPredictor3Tests.h"
 #import "BUBusPredictorMasterViewController.h"
 #import "BusPredictorData.h"
-#import "JSONModel.h"
+//#import "JSONModel.h"
+
+@interface BUBusPredictor3Tests : SenTestCase
+
+@end
 
 @implementation BUBusPredictor3Tests
 
