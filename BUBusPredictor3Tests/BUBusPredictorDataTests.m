@@ -51,12 +51,12 @@
     BUBusStopDataSource *bsds = [[BUBusStopDataSource alloc] init];
     STAssertNoThrow([self.moduleData addSource:bsds], @"should be able to add two data sources to module data");
     STAssertTrue([[[[self.moduleData dataSources] objectAtIndex:1] class] isSubclassOfClass:[BUBusStopDataSource class]], @"data source should be identifiable");
-
+    STAssertTrue([self.moduleData countOfDataSources] == 2, @"the count of data sources should be correct");
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
+    self.moduleData = nil;
     
     [super tearDown];
 }

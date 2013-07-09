@@ -11,6 +11,7 @@
 @interface BUDataSource : NSObject
 
 @property (nonatomic, copy) NSString *urlString;
+@property (nonatomic, copy) NSURL *url;
 
 - (id)initWithUrlString:(NSString*)theUrlString;
 

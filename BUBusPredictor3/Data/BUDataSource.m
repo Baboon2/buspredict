@@ -10,11 +10,15 @@
 
 @implementation BUDataSource
 @synthesize urlString = _urlString;
+@synthesize url = _url;
 
 - (id)initWithUrlString:(NSString*)theUrlString
 {
     if ((self = [super init])) {
         _urlString = [theUrlString copy];
+        _url = [NSURL URLWithString:_urlString];
+        
+        
     }
     return self;
 }
