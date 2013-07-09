@@ -12,7 +12,7 @@
 
 @interface BUModuleData : NSObject
 
-@property (nonatomic, weak) NSMutableArray *dataSources;
+@property (nonatomic, strong) NSMutableArray *dataSources;
 
 - (void)addSource:(BUDataSource *)dataSource;
 - (NSUInteger)countOfDataSources;
