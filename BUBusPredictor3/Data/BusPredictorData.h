@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "BUModuleData.h"
-#import "BUBusPredictorModel.h"
+#import "BUBusModel.h"
 
 @class BULiveBusDataSource;
 
 @interface BusPredictorData : BUModuleData
 
 @property (nonatomic, copy) NSString *moduleName;
-@property (nonatomic, strong) BUBusPredictorModel *model;
+@property (nonatomic, strong) BUBusModel *model;
 
 @end

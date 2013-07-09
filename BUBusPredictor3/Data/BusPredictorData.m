@@ -22,7 +22,7 @@
 {
     if ((self = [super init])) {
         _moduleName = @"Bus Predictor";
-        _model = [[BUBusPredictorModel alloc] init];
+        _model = [[BUBusModel alloc] init];
     }
     return self;
 }

@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Boston University. All rights reserved.
 //
 
-#import "BUBusPredictorModel.h"
+#import "BUBusModel.h"
 
-@implementation BUBusPredictorModel
+@implementation BUBusModel
 
 @end
