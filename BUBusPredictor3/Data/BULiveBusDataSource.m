@@ -10,6 +10,12 @@
 
 @implementation BULiveBusDataSource
 
-
+- (id)initWithUrlString:(NSString *)theUrlString
+{
+    if (self = [super initWithUrlString:theUrlString]) {
+        _connection = [[BULiveBusConnectionManager alloc] initWithURL:[self url]];
+    }
+    return self;
+}
 
 @end

@@ -17,8 +17,6 @@
     if ((self = [super init])) {
         _urlString = [theUrlString copy];
         _url = [NSURL URLWithString:_urlString];
-        
-        
     }
     return self;
 }

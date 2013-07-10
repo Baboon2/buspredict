@@ -37,7 +37,7 @@
 		7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6AD01178771D500375DB3 /* BUDataSource.m */; };
 		DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */; };
 		DDBB6845178DE135008336EF /* BUBusStopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6844178DE135008336EF /* BUBusStopModel.m */; };
-		DDBB6848178E0161008336EF /* BULiveBusConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6847178E0161008336EF /* BULiveBusConnection.m */; };
+		DDBB6848178E0161008336EF /* BULiveBusConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6847178E0161008336EF /* BULiveBusConnectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +95,8 @@
 		DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopDataSourceTests.m; sourceTree = "<group>"; };
 		DDBB6843178DE135008336EF /* BUBusStopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopModel.h; sourceTree = "<group>"; };
 		DDBB6844178DE135008336EF /* BUBusStopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopModel.m; sourceTree = "<group>"; };
-		DDBB6846178E0161008336EF /* BULiveBusConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BULiveBusConnection.h; sourceTree = "<group>"; };
-		DDBB6847178E0161008336EF /* BULiveBusConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusConnection.m; sourceTree = "<group>"; };
+		DDBB6846178E0161008336EF /* BULiveBusConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BULiveBusConnectionManager.h; sourceTree = "<group>"; };
+		DDBB6847178E0161008336EF /* BULiveBusConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,8 +237,8 @@
 		DDBB684A178E01E5008336EF /* Live Bus */ = {
 			isa = PBXGroup;
 			children = (
-				DDBB6846178E0161008336EF /* BULiveBusConnection.h */,
-				DDBB6847178E0161008336EF /* BULiveBusConnection.m */,
+				DDBB6846178E0161008336EF /* BULiveBusConnectionManager.h */,
+				DDBB6847178E0161008336EF /* BULiveBusConnectionManager.m */,
 				7AD6ACFD17876D5500375DB3 /* BULiveBusDataSource.h */,
 				7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */,
 			);
@@ -380,7 +380,7 @@
 				7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */,
 				7A43090E178B553500FCC8F1 /* BUBusStopDataSource.m in Sources */,
 				DDBB6845178DE135008336EF /* BUBusStopModel.m in Sources */,
-				DDBB6848178E0161008336EF /* BULiveBusConnection.m in Sources */,
+				DDBB6848178E0161008336EF /* BULiveBusConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

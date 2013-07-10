@@ -9,7 +9,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "BULiveBusDataSource.h"
 #import "BUBusModel.h"
-#import "BULiveBusConnection.h"
+#import "BULiveBusConnectionManager.h"
 
 @interface BULiveBusDataSourceTests : SenTestCase
 
@@ -66,9 +66,9 @@
     STAssertNotNil(bus, @"need to instantiate");
 }
 
-- (void)testDataSourceHasConnectionObject
+- (void)testDataSourceHasConnectionManager
 {
-    STAssertNotNil([ds liveBusConnection], @"data source needs a connection object");
+    STAssertNotNil([ds liveBusConnectionManager], @"data source needs a connection object");
 }
 
 @end

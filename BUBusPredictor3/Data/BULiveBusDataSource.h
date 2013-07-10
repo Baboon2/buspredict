@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "BUDataSource.h"
-#import "BULiveBusConnection.h"
+#import "BULiveBusConnectionManager.h"
 
 @interface BULiveBusDataSource : BUDataSource
 
-@property (nonatomic, readonly, weak) BULiveBusConnection *connection;
+@property (nonatomic, readonly, getter = liveBusConnectionManager) BULiveBusConnectionManager *connection;
 
 @end
