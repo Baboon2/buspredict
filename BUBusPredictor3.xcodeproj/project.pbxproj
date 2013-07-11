@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7A43090E178B553500FCC8F1 /* BUBusStopDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A43090D178B553500FCC8F1 /* BUBusStopDataSource.m */; };
 		7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */; };
+		7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */; };
+		7A70B234178F061800DD8886 /* BUBusStopConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B233178F061800DD8886 /* BUBusStopConnectionManager.m */; };
 		7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
 		7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
 		7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */; };
@@ -54,6 +56,9 @@
 		7A43090C178B553500FCC8F1 /* BUBusStopDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopDataSource.h; sourceTree = "<group>"; };
 		7A43090D178B553500FCC8F1 /* BUBusStopDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopDataSource.m; sourceTree = "<group>"; };
 		7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusDataSourceTests.m; sourceTree = "<group>"; };
+		7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopCreationTests.m; sourceTree = "<group>"; };
+		7A70B232178F061800DD8886 /* BUBusStopConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopConnectionManager.h; sourceTree = "<group>"; };
+		7A70B233178F061800DD8886 /* BUBusStopConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopConnectionManager.m; sourceTree = "<group>"; };
 		7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUBusPredictor3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD6ACAA1787300500375DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AD6ACAC1787300500375DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,8 +170,6 @@
 				7AD6ACF5178757D700375DB3 /* BUModuleData.m */,
 				DDBB684A178E01E5008336EF /* Live Bus */,
 				DDBB684B178E01F4008336EF /* Bus Stop */,
-				7AD6ACF71787671900375DB3 /* BUBusModel.h */,
-				7AD6ACF81787671900375DB3 /* BUBusModel.m */,
 				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
 				7AD6ACF2178757A500375DB3 /* BusPredictorData.m */,
 				7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */,
@@ -199,6 +202,7 @@
 				7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */,
 				7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */,
 				7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */,
+				7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */,
 				DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */,
 				7AD6ACDB1787300500375DB3 /* Supporting Files */,
 			);
@@ -237,6 +241,8 @@
 		DDBB684A178E01E5008336EF /* Live Bus */ = {
 			isa = PBXGroup;
 			children = (
+				7AD6ACF71787671900375DB3 /* BUBusModel.h */,
+				7AD6ACF81787671900375DB3 /* BUBusModel.m */,
 				DDBB6846178E0161008336EF /* BULiveBusConnectionManager.h */,
 				DDBB6847178E0161008336EF /* BULiveBusConnectionManager.m */,
 				7AD6ACFD17876D5500375DB3 /* BULiveBusDataSource.h */,
@@ -250,6 +256,8 @@
 			children = (
 				DDBB6843178DE135008336EF /* BUBusStopModel.h */,
 				DDBB6844178DE135008336EF /* BUBusStopModel.m */,
+				7A70B232178F061800DD8886 /* BUBusStopConnectionManager.h */,
+				7A70B233178F061800DD8886 /* BUBusStopConnectionManager.m */,
 				7A43090C178B553500FCC8F1 /* BUBusStopDataSource.h */,
 				7A43090D178B553500FCC8F1 /* BUBusStopDataSource.m */,
 			);
@@ -381,6 +389,7 @@
 				7A43090E178B553500FCC8F1 /* BUBusStopDataSource.m in Sources */,
 				DDBB6845178DE135008336EF /* BUBusStopModel.m in Sources */,
 				DDBB6848178E0161008336EF /* BULiveBusConnectionManager.m in Sources */,
+				7A70B234178F061800DD8886 /* BUBusStopConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +401,7 @@
 				7AD6ACFC17876B6600375DB3 /* BUBusPredictorDataTests.m in Sources */,
 				7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */,
 				DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */,
+				7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
