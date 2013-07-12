@@ -37,6 +37,9 @@
 		7AD6ACFC17876B6600375DB3 /* BUBusPredictorDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */; };
 		7AD6ACFF17876D5500375DB3 /* BULiveBusDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */; };
 		7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6AD01178771D500375DB3 /* BUDataSource.m */; };
+		7AF6B2F517908D0900050A80 /* BUConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6B2F417908D0900050A80 /* BUConnectionManager.m */; };
+		7AF6B2F8179097A900050A80 /* MockConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6B2F7179097A900050A80 /* MockConnectionManager.m */; };
+		7AF6B2FC1790A03F00050A80 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF6B2FB1790A03F00050A80 /* libOCMock.a */; };
 		DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */; };
 		DDBB6845178DE135008336EF /* BUBusStopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6844178DE135008336EF /* BUBusStopModel.m */; };
 		DDBB6848178E0161008336EF /* BULiveBusConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6847178E0161008336EF /* BULiveBusConnectionManager.m */; };
@@ -97,6 +100,12 @@
 		7AD6ACFE17876D5500375DB3 /* BULiveBusDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BULiveBusDataSource.m; path = Data/BULiveBusDataSource.m; sourceTree = "<group>"; };
 		7AD6AD00178771D500375DB3 /* BUDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDataSource.h; path = Data/BUDataSource.h; sourceTree = "<group>"; };
 		7AD6AD01178771D500375DB3 /* BUDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDataSource.m; path = Data/BUDataSource.m; sourceTree = "<group>"; };
+		7AF6B2F21790754300050A80 /* BUConnectionManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUConnectionManagerDelegate.h; path = ../BUConnectionManagerDelegate.h; sourceTree = "<group>"; };
+		7AF6B2F317908D0900050A80 /* BUConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUConnectionManager.h; sourceTree = "<group>"; };
+		7AF6B2F417908D0900050A80 /* BUConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUConnectionManager.m; sourceTree = "<group>"; };
+		7AF6B2F6179097A900050A80 /* MockConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockConnectionManager.h; path = BUBusPredictor3Tests/MockConnectionManager.h; sourceTree = SOURCE_ROOT; };
+		7AF6B2F7179097A900050A80 /* MockConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockConnectionManager.m; path = BUBusPredictor3Tests/MockConnectionManager.m; sourceTree = SOURCE_ROOT; };
+		7AF6B2FB1790A03F00050A80 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "../../../test/OCMock 2.2/iOS/libOCMock.a"; sourceTree = "<group>"; };
 		DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopDataSourceTests.m; sourceTree = "<group>"; };
 		DDBB6843178DE135008336EF /* BUBusStopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopModel.h; sourceTree = "<group>"; };
 		DDBB6844178DE135008336EF /* BUBusStopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopModel.m; sourceTree = "<group>"; };
@@ -112,6 +121,7 @@
 				7AD6ACEC1787304600375DB3 /* MapKit.framework in Frameworks */,
 				7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */,
 				7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */,
+				7AF6B2FC1790A03F00050A80 /* libOCMock.a in Frameworks */,
 				7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +142,7 @@
 		7AD6AC9E1787300500375DB3 = {
 			isa = PBXGroup;
 			children = (
+				7AF6B2FB1790A03F00050A80 /* libOCMock.a */,
 				7AD6ACF0178735B300375DB3 /* JSON */,
 				7AD6ACB01787300500375DB3 /* BUBusPredictor3 */,
 				7AD6ACDA1787300500375DB3 /* BUBusPredictor3Tests */,
@@ -164,13 +175,18 @@
 		7AD6ACB01787300500375DB3 /* BUBusPredictor3 */ = {
 			isa = PBXGroup;
 			children = (
+				7AF6B2F21790754300050A80 /* BUConnectionManagerDelegate.h */,
 				7AD6AD00178771D500375DB3 /* BUDataSource.h */,
 				7AD6AD01178771D500375DB3 /* BUDataSource.m */,
 				7AD6ACF4178757D700375DB3 /* BUModuleData.h */,
 				7AD6ACF5178757D700375DB3 /* BUModuleData.m */,
+				7AF6B2F317908D0900050A80 /* BUConnectionManager.h */,
+				7AF6B2F417908D0900050A80 /* BUConnectionManager.m */,
 				DDBB684A178E01E5008336EF /* Live Bus */,
 				DDBB684B178E01F4008336EF /* Bus Stop */,
 				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
+				7AF6B2F6179097A900050A80 /* MockConnectionManager.h */,
+				7AF6B2F7179097A900050A80 /* MockConnectionManager.m */,
 				7AD6ACF2178757A500375DB3 /* BusPredictorData.m */,
 				7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */,
 				7AD6ACC51787300500375DB3 /* MainStoryboard_iPad.storyboard */,
@@ -390,6 +406,7 @@
 				DDBB6845178DE135008336EF /* BUBusStopModel.m in Sources */,
 				DDBB6848178E0161008336EF /* BULiveBusConnectionManager.m in Sources */,
 				7A70B234178F061800DD8886 /* BUBusStopConnectionManager.m in Sources */,
+				7AF6B2F517908D0900050A80 /* BUConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +419,7 @@
 				7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */,
 				DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */,
 				7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */,
+				7AF6B2F8179097A900050A80 /* MockConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +532,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OCMock/";
 				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -525,7 +545,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OCMock/";
 				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -538,6 +560,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
@@ -555,6 +578,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";

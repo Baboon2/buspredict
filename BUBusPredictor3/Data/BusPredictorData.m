@@ -7,12 +7,14 @@
 //
 
 #import "BusPredictorData.h"
+#import "BUBusModel.h"
+#import "BUBusStopModel.h"
 
 @implementation BusPredictorData
 
 @synthesize moduleName = _moduleName;
-@synthesize model = _model;
-
+@synthesize busModel = _busModel;
+@synthesize stopModel = _stopModel;
 
 //===========================================================
 // - (id)init
@@ -22,7 +24,8 @@
 {
     if ((self = [super init])) {
         _moduleName = @"Bus Predictor";
-        _model = [[BUBusModel alloc] init];
+        _busModel = [[BUBusModel alloc] init];
+        _stopModel = [[BUBusStopModel alloc] init];
     }
     return self;
 }

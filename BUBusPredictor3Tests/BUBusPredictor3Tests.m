@@ -42,19 +42,19 @@
 - (void)testModuleDataHasModel
 {
     BusPredictorData *moduleData = [[BusPredictorData alloc] init];
-    STAssertNotNil([moduleData model], @"module data must have data model");
+    STAssertNotNil([moduleData busModel], @"module data must have data model");
 }
 
 - (void)testModelIsRightClass
 {
     BusPredictorData *moduleData = [[BusPredictorData alloc] init];
-    STAssertTrue([[[moduleData model] class] isSubclassOfClass:[JSONModel class]], @"model must be subclass of JSONModel");
+    STAssertTrue([[[moduleData busModel] class] isSubclassOfClass:[JSONModel class]], @"model must be subclass of JSONModel");
 }
 
 - (void)testViewControllerCanAccessModel
 {
     BUBusPredictorMasterViewController *vc = [[BUBusPredictorMasterViewController alloc] init];
-    STAssertNotNil([[vc moduleData] model], @"vc must have access to model");
+    STAssertNotNil([[vc moduleData] busModel], @"vc must have access to model");
 }
 
 

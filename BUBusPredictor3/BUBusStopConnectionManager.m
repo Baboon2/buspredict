@@ -10,4 +10,14 @@
 
 @implementation BUBusStopConnectionManager
 
+@synthesize delegate;
+
+- (void)setDelegate:(id<BUConnectionManagerDelegate>)newDelegate
+{
+    if (newDelegate &&
+        ![newDelegate conformsToProtocol:@protocol(BUConnectionManagerDelegate)]) {
+        [[NSException exceptionWithName:NSInvalidArgumentException reason:@"Delegate object does not conform to protocol" userInfo:nil] raise];
+    }
+    delegate = newDelegate;
+}
 @end

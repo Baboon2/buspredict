@@ -7,14 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BUConnectionManager.h"
 
-@interface BULiveBusConnectionManager : NSObject
+@interface BULiveBusConnectionManager : BUConnectionManager
 
-@property (nonatomic, readonly, weak) NSURL *url;
 
-@property (nonatomic, strong) NSURLConnection *connection;
-@property (nonatomic, strong) NSURLRequest *request;
-
-- (id)initWithURL:(NSURL *)url;
 
 @end

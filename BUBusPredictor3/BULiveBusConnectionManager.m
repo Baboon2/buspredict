@@ -8,16 +8,7 @@
 
 #import "BULiveBusConnectionManager.h"
 
-@implementation BULiveBusConnectionManager {
-    NSURLRequest *request;
-}
+@implementation BULiveBusConnectionManager
 
-- (id)initWithURL:(NSURL *)url
-{
-    if (self = [super init]) {
-        request = [[NSURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5];
-    }
-    return self;
-}
 
 @end

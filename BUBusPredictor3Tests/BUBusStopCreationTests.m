@@ -9,6 +9,8 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "BUBusStopModel.h"
 #import "BUBusStopConnectionManager.h"
+#import "BUConnectionManagerDelegate.h"
+
 
 @interface BUBusStopCreationTests : SenTestCase {
     NSMutableDictionary *dictForBusStop1;
@@ -35,16 +37,29 @@
 
 - (void)testNonConformingObjectCannotBeDelegate
 {
-    STAssertThrows(mgr.delegate = (id <BUBusStopConnectionManagerDelegate>) [NSNull null],
+    STAssertThrows(mgr.delegate = (id <BUConnectionManagerDelegate>) [NSNull null],
                    @"NSNull should not be used as the delegate");
 }
 
 - (void)testConformingObjectCannotBeDelegate
 {
-    id <BUBusStopConnectionManagerDelegate> delegate =
+    id <BUConnectionManagerDelegate> delegate =
     [[MockBusStopConnectionManagerDelegate alloc] init];
     STAssertNoThrow(mgr.delegate = delegate,
                     @"object conforming to protocol should be used");
+}
+
+- (void)testManagerAcceptsNilAsDelegate
+{
+    STAssertNoThrow(mgr.delegate = nil,
+                    @"It should be acceptable to use nil as an object's delegate");
+}
+
+- (void)testAskingForBusStopMeansRequestingData
+{
+    MockBUBusStopConnectionManager *connectionMgr =
+    [[MockBUBusStopConnectionManager alloc] init];
+
 }
 
 -(void)tearDown
