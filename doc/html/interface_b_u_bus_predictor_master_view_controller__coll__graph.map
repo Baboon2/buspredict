@@ -1,0 +1,8 @@
+<map id="BUBusPredictorMasterViewController" name="BUBusPredictorMasterViewController">
+<area shape="rect" href="$interface_b_u_detail_view_controller.html" title="{BUDetailViewController\n|+ detailItem\l+ detailDescriptionLabel\l+ masterPopoverController\l|+ setDetailItem:\l+ configureView\l+ viewDidLoad\l+ didReceiveMemoryWarning\l+ splitViewController\l:willHideViewController\l:withBarButtonItem:forPopoverController:\l+ splitViewController\l:willShowViewController\l:invalidatingBarButtonItem:\l}" alt="" coords="216,803,544,1096"/>
+<area shape="rect" href="$interface_bus_predictor_data.html" title="{BusPredictorData\n|+ moduleName\l|+ init\l}" alt="" coords="571,905,720,993"/>
+<area shape="rect" href="$interface_b_u_module_data.html" title="{BUModuleData\n|+ dataSources\l|+ addSource:\l+ dataSourceForKey:\l+ countOfDataSources\l+ init\l}" alt="" coords="457,387,652,531"/>
+<area shape="rect" href="$interface_j_s_o_n_model.html" title="{JSONModel\n||+ initWithDictionary:\l+ allowsKeyedCoding\l+ initWithCoder:\l+ encodeWithCoder:\l+ mutableCopyWithZone:\l+ copyWithZone:\l+ valueForUndefinedKey:\l+ setValue:forUndefinedKey:\l}" alt="" coords="640,144,883,363"/>
+<area shape="rect" href="$interface_b_u_bus_model.html" title="{BUBusModel\n|+ identifier\l+ timestamp\l+ heading\l+ lat\l+ lng\l+ speed\l|}" alt="" coords="592,555,712,736"/>
+<area shape="rect" href="$interface_b_u_bus_stop_model.html" title="{BUBusStopModel\n|+ stop_id\l+ stop_name\l+ stop_desc\l+ stop_lat\l+ stop_lon\l+ direction_id\l|}" alt="" coords="736,555,885,736"/>
+</map>

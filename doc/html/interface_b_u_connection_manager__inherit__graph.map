@@ -1,0 +1,4 @@
+<map id="BUConnectionManager" name="BUConnectionManager">
+<area shape="rect" href="$interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ setDelegate:\l}" alt="" coords="5,333,261,421"/>
+<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||}" alt="" coords="285,333,539,421"/>
+</map>

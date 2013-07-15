@@ -1,0 +1,6 @@
+<map id="BusPredictorData" name="BusPredictorData">
+<area shape="rect" href="$interface_b_u_module_data.html" title="{BUModuleData\n|+ dataSources\l|+ addSource:\l+ dataSourceForKey:\l+ countOfDataSources\l+ init\l}" alt="" coords="5,387,200,531"/>
+<area shape="rect" href="$interface_j_s_o_n_model.html" title="{JSONModel\n||+ initWithDictionary:\l+ allowsKeyedCoding\l+ initWithCoder:\l+ encodeWithCoder:\l+ mutableCopyWithZone:\l+ copyWithZone:\l+ valueForUndefinedKey:\l+ setValue:forUndefinedKey:\l}" alt="" coords="188,144,431,363"/>
+<area shape="rect" href="$interface_b_u_bus_model.html" title="{BUBusModel\n|+ identifier\l+ timestamp\l+ heading\l+ lat\l+ lng\l+ speed\l|}" alt="" coords="140,555,260,736"/>
+<area shape="rect" href="$interface_b_u_bus_stop_model.html" title="{BUBusStopModel\n|+ stop_id\l+ stop_name\l+ stop_desc\l+ stop_lat\l+ stop_lon\l+ direction_id\l|}" alt="" coords="284,555,433,736"/>
+</map>

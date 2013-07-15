@@ -1,0 +1,4 @@
+<map id="JSONModel" name="JSONModel">
+<area shape="rect" href="$interface_b_u_bus_model.html" title="{BUBusModel\n|+ identifier\l+ timestamp\l+ heading\l+ lat\l+ lng\l+ speed\l|}" alt="" coords="113,408,233,589"/>
+<area shape="rect" href="$interface_b_u_bus_stop_model.html" title="{BUBusStopModel\n|+ stop_id\l+ stop_name\l+ stop_desc\l+ stop_lat\l+ stop_lon\l+ direction_id\l|}" alt="" coords="257,408,407,589"/>
+</map>
