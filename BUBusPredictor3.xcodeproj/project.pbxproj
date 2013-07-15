@@ -11,6 +11,7 @@
 		7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */; };
 		7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */; };
 		7A70B234178F061800DD8886 /* BUBusStopConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B233178F061800DD8886 /* BUBusStopConnectionManager.m */; };
+		7AA628BB17947CA100E74CA2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA628BA17947CA100E74CA2 /* libOCMock.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
 		7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
 		7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */; };
@@ -39,7 +40,6 @@
 		7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6AD01178771D500375DB3 /* BUDataSource.m */; };
 		7AF6B2F517908D0900050A80 /* BUConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6B2F417908D0900050A80 /* BUConnectionManager.m */; };
 		7AF6B2F8179097A900050A80 /* MockConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6B2F7179097A900050A80 /* MockConnectionManager.m */; };
-		7AF6B2FC1790A03F00050A80 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF6B2FB1790A03F00050A80 /* libOCMock.a */; };
 		DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */; };
 		DDBB6845178DE135008336EF /* BUBusStopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6844178DE135008336EF /* BUBusStopModel.m */; };
 		DDBB6848178E0161008336EF /* BULiveBusConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6847178E0161008336EF /* BULiveBusConnectionManager.m */; };
@@ -62,6 +62,13 @@
 		7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopCreationTests.m; sourceTree = "<group>"; };
 		7A70B232178F061800DD8886 /* BUBusStopConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopConnectionManager.h; sourceTree = "<group>"; };
 		7A70B233178F061800DD8886 /* BUBusStopConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopConnectionManager.m; sourceTree = "<group>"; };
+		7AA628B417946ECA00E74CA2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		7AA628B517946ECA00E74CA2 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		7AA628B617946ECA00E74CA2 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		7AA628B717946ECA00E74CA2 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		7AA628B817946ECA00E74CA2 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		7AA628B917946ECA00E74CA2 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		7AA628BA17947CA100E74CA2 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUBusPredictor3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD6ACAA1787300500375DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AD6ACAC1787300500375DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,7 +112,6 @@
 		7AF6B2F417908D0900050A80 /* BUConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUConnectionManager.m; sourceTree = "<group>"; };
 		7AF6B2F6179097A900050A80 /* MockConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockConnectionManager.h; path = BUBusPredictor3Tests/MockConnectionManager.h; sourceTree = SOURCE_ROOT; };
 		7AF6B2F7179097A900050A80 /* MockConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockConnectionManager.m; path = BUBusPredictor3Tests/MockConnectionManager.m; sourceTree = SOURCE_ROOT; };
-		7AF6B2FB1790A03F00050A80 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "../../../test/OCMock 2.2/iOS/libOCMock.a"; sourceTree = "<group>"; };
 		DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopDataSourceTests.m; sourceTree = "<group>"; };
 		DDBB6843178DE135008336EF /* BUBusStopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopModel.h; sourceTree = "<group>"; };
 		DDBB6844178DE135008336EF /* BUBusStopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopModel.m; sourceTree = "<group>"; };
@@ -121,7 +127,6 @@
 				7AD6ACEC1787304600375DB3 /* MapKit.framework in Frameworks */,
 				7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */,
 				7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */,
-				7AF6B2FC1790A03F00050A80 /* libOCMock.a in Frameworks */,
 				7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA628BB17947CA100E74CA2 /* libOCMock.a in Frameworks */,
 				7AD6ACD51787300500375DB3 /* SenTestingKit.framework in Frameworks */,
 				7AD6ACD61787300500375DB3 /* UIKit.framework in Frameworks */,
 				7AD6ACD71787300500375DB3 /* Foundation.framework in Frameworks */,
@@ -139,13 +145,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AA628B317946ECA00E74CA2 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				7AA628B417946ECA00E74CA2 /* NSNotificationCenter+OCMAdditions.h */,
+				7AA628B517946ECA00E74CA2 /* OCMArg.h */,
+				7AA628B617946ECA00E74CA2 /* OCMConstraint.h */,
+				7AA628B717946ECA00E74CA2 /* OCMock.h */,
+				7AA628B817946ECA00E74CA2 /* OCMockObject.h */,
+				7AA628B917946ECA00E74CA2 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 		7AD6AC9E1787300500375DB3 = {
 			isa = PBXGroup;
 			children = (
-				7AF6B2FB1790A03F00050A80 /* libOCMock.a */,
+				7AA628BA17947CA100E74CA2 /* libOCMock.a */,
 				7AD6ACF0178735B300375DB3 /* JSON */,
 				7AD6ACB01787300500375DB3 /* BUBusPredictor3 */,
 				7AD6ACDA1787300500375DB3 /* BUBusPredictor3Tests */,
+				7AA628B317946ECA00E74CA2 /* OCMock */,
 				7AD6ACA91787300500375DB3 /* Frameworks */,
 				7AD6ACA81787300500375DB3 /* Products */,
 			);
@@ -532,7 +552,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/OCMock/";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -545,7 +565,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/OCMock/";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,13 +580,23 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = "BUBusPredictor3Tests/BUBusPredictor3Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -578,13 +608,23 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = "BUBusPredictor3Tests/BUBusPredictor3Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
