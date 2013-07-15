@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class BUDataSource;
+#import "BUDataSource.h"
 
 @interface BUModuleData : NSObject
 
-@property (nonatomic, strong) NSMutableArray *dataSources;
+@property (nonatomic, strong) NSMutableDictionary *dataSources;
 
 - (void)addSource:(BUDataSource *)dataSource;
+- (BUDataSource *)dataSourceForKey:(NSString *)theKey;
 - (NSUInteger)countOfDataSources;
 
 @end

@@ -19,6 +19,7 @@
 @implementation BUBusPredictorMasterViewController
 
 @synthesize moduleData = _moduleData;
+@synthesize detailViewController;
 
 - (void)awakeFromNib
 {

@@ -10,6 +10,7 @@
 #import "BULiveBusDataSource.h"
 #import "BUBusModel.h"
 #import "BULiveBusConnectionManager.h"
+#import "BUConnectionManagerDelegate.h"
 
 @interface BULiveBusDataSourceTests : SenTestCase
 
@@ -28,7 +29,7 @@
 
 -(void)setUp
 {
-    ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL]];
+    ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL] key:@"livebus"];
 
     dictForBus1 = [NSMutableDictionary dictionary];
     [dictForBus1 setObject:@"1234567" forKey:@"identifier"];
@@ -44,6 +45,11 @@
 {
     ds = nil;
     dictForBus1 = nil;
+}
+
+- (void)testDataSourceConformsToDelegateProtocol
+{
+    STAssertTrue([ds conformsToProtocol:@protocol(BUConnectionManagerDelegate) ], @"data source must conform to connection mgr delegate protocol");
 }
 
 - (void)testGetURLString

@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BUConnectionManagerDelegate.h"
 
-@interface BUDataSource : NSObject
+
+@interface BUDataSource : NSObject <BUConnectionManagerDelegate>
 
 @property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, copy) NSURL *url;
+@property (nonatomic, copy) NSString *key;
 
-- (id)initWithUrlString:(NSString*)theUrlString;
+- (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey;
 
 
 @end

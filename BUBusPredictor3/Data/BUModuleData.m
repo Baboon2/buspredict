@@ -21,20 +21,27 @@
 - (id)init
 {
     if ((self = [super init])) {
-        _dataSources = [NSMutableArray arrayWithCapacity:8];
+        _dataSources = [NSMutableDictionary dictionaryWithCapacity:8];
     }
     return self;
 }
 
 - (void)addSource:(BUDataSource *)dataSource
 {
-    [self.dataSources addObject:dataSource];
+    [self.dataSources setObject:dataSource forKey:[dataSource key]];
 }
 
+- (BUDataSource *)dataSourceForKey:(NSString *)theKey
+{
+    BUDataSource *ds = nil;
+    ds = [self.dataSources objectForKey:theKey];
+    return ds;
+}
 
 - (NSUInteger)countOfDataSources
 {
     return [self.dataSources count];
 }
+
 
 @end

@@ -11,12 +11,14 @@
 @implementation BUDataSource
 @synthesize urlString = _urlString;
 @synthesize url = _url;
+@synthesize key = _key;
 
-- (id)initWithUrlString:(NSString*)theUrlString
+- (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey
 {
     if ((self = [super init])) {
         _urlString = [theUrlString copy];
         _url = [NSURL URLWithString:_urlString];
+        _key = theKey;
     }
     return self;
 }

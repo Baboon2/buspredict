@@ -10,10 +10,12 @@
 
 @implementation BUConnectionManager
 
-- (id)initWithURL:(NSURL *)url
+@synthesize url;
+
+- (id)initWithURL:(NSURL *)theUrl
 {
     if (self = [super init]) {
-        _request = [[NSURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5];
+        _request = [[NSURLRequest alloc] initWithURL:theUrl cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5];
     }
     return self;
 }

@@ -39,18 +39,18 @@
 
 - (void)testAddOneDataSource
 {
-    BULiveBusDataSource *ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL]];
+    BULiveBusDataSource *ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL] key:@"livebus"];
     STAssertNoThrow([self.moduleData addSource:ds], @"should be able to add one data source to module data");
-    STAssertTrue([[[[self.moduleData dataSources] objectAtIndex:0] class] isSubclassOfClass:[BULiveBusDataSource class]], @"data source should be identifiable");
+    STAssertTrue([[[[self.moduleData dataSources] objectForKey:@"livebus"] class] isSubclassOfClass:[BULiveBusDataSource class]], @"data source should be identifiable");
 }
 
 - (void)testAddSecondDataSource
 {
-    BULiveBusDataSource *ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL]];
+    BULiveBusDataSource *ds = [[BULiveBusDataSource alloc] initWithUrlString:[self liveBusURL] key:@"livebus"];
     [self.moduleData addSource:ds];
-    BUBusStopDataSource *bsds = [[BUBusStopDataSource alloc] init];
+    BUBusStopDataSource *bsds = [[BUBusStopDataSource alloc] initWithUrlString:[self busStopURL] key:@"busstop"];
     STAssertNoThrow([self.moduleData addSource:bsds], @"should be able to add two data sources to module data");
-    STAssertTrue([[[[self.moduleData dataSources] objectAtIndex:1] class] isSubclassOfClass:[BUBusStopDataSource class]], @"data source should be identifiable");
+    STAssertTrue([[[[self.moduleData dataSources] objectForKey:@"busstop"] class] isSubclassOfClass:[BUBusStopDataSource class]], @"data source should be identifiable");
     STAssertTrue([self.moduleData countOfDataSources] == 2, @"the count of data sources should be correct");
 }
 
