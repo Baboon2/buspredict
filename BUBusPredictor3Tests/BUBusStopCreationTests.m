@@ -58,9 +58,11 @@
 
 - (void)testAskingForBusStopMeansRequestingData
 {
-    id mock = [OCMockObject mockForClass:[BUBusStopConnectionManager class]];
-    
-
+    id mockConnectionMgr = [OCMockObject mockForClass:[BUBusStopConnectionManager class]];
+    [[mockConnectionMgr stub] fetchBusStops];
+    [[mockConnectionMgr expect] fetchBusStops];
+    NSArray *results = [mockConnectionMgr fetchBusStops];
+    [mockConnectionMgr verify];
 }
 
 -(void)tearDown
