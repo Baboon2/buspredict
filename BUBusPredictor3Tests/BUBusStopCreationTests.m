@@ -44,12 +44,10 @@
 
 - (void)testConformingObjectCannotBeDelegate
 {
-/*
- id <BUConnectionManagerDelegate> delegate =
-    [[MockBusStopConnectionManagerDelegate alloc] init];
+
+    id <BUConnectionManagerDelegate> delegate = [OCMockObject mockForProtocol:@protocol(BUConnectionManagerDelegate)];
     STAssertNoThrow(mgr.delegate = delegate,
                     @"object conforming to protocol should be used");
- */
 }
 
 - (void)testManagerAcceptsNilAsDelegate
@@ -60,8 +58,6 @@
 
 - (void)testAskingForBusStopMeansRequestingData
 {
-//    MockBUBusStopConnectionManager *connectionMgr =
-//    [[MockBUBusStopConnectionManager alloc] init];
     id mock = [OCMockObject mockForClass:[BUBusStopConnectionManager class]];
     
 
