@@ -12,6 +12,6 @@
 
 @interface BULiveBusDataSource : BUDataSource
 
-@property (nonatomic, readonly, getter = liveBusConnectionManager) BULiveBusConnectionManager *connection;
+@property (nonatomic, readonly, getter = liveBusConnectionManager) BULiveBusConnectionManager *connectionManager;
 
 @end

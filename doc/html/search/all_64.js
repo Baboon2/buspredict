@@ -6,6 +6,5 @@ var searchData=
   ['detaildescriptionlabel',['detailDescriptionLabel',['../interface_b_u_detail_view_controller.html#a5b8b72d9b2bf79699cb3fcd4323301b5',1,'BUDetailViewController']]],
   ['detailitem',['detailItem',['../interface_b_u_detail_view_controller.html#a9a163244f60d7245b3d4250c9aac40b5',1,'BUDetailViewController']]],
   ['detailviewcontroller',['detailViewController',['../interface_b_u_bus_predictor_master_view_controller.html#a5fe37a3cf6e2b10dad1b536af8e47443',1,'BUBusPredictorMasterViewController']]],
-  ['didreceivememorywarning',['didReceiveMemoryWarning',['../interface_b_u_bus_predictor_master_view_controller.html#a4472b50394bae2f8d78e4795f585b35d',1,'BUBusPredictorMasterViewController::didReceiveMemoryWarning()'],['../interface_b_u_detail_view_controller.html#abd758061fd91996c604e55477d040c18',1,'BUDetailViewController::didReceiveMemoryWarning()']]],
   ['direction_5fid',['direction_id',['../interface_b_u_bus_stop_model.html#a77d6e324ab84bdbe2761385d9183dc94',1,'BUBusStopModel']]]
 ];

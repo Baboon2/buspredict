@@ -1,11 +1,13 @@
 var hierarchy =
 [
+    [ "BUBusPredictorMasterViewController()", "category_b_u_bus_predictor_master_view_controller_07_08.html", null ],
     [ "<BUConnectionManagerDelegate>", null, [
       [ "BUDataSource", "interface_b_u_data_source.html", [
         [ "BUBusStopDataSource", "interface_b_u_bus_stop_data_source.html", null ],
         [ "BULiveBusDataSource", "interface_b_u_live_bus_data_source.html", null ]
       ] ]
     ] ],
+    [ "BUDetailViewController()", "category_b_u_detail_view_controller_07_08.html", null ],
     [ "<NSCoding>", null, [
       [ "JSONModel", "interface_j_s_o_n_model.html", [
         [ "BUBusModel", "interface_b_u_bus_model.html", null ],

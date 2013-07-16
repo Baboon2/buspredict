@@ -10,5 +10,9 @@
 
 @implementation BULiveBusConnectionManager
 
+- (NSArray *)fetchBuses
+{
+    return [NSArray array];
+}
 
 @end

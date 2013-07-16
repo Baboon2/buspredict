@@ -1,5 +1,5 @@
 <map id="BULiveBusDataSource" name="BULiveBusDataSource">
-<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ urlString\l+ url\l+ key\l|+ initWithUrlString:key:\l}" alt="" coords="221,153,416,279"/>
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l|+ initWithURL:\l}" alt="" coords="5,144,197,288"/>
-<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||}" alt="" coords="15,339,268,427"/>
+<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ urlString\l+ url\l+ key\l|+ initWithUrlString:key:\l}" alt="" coords="219,151,405,268"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l|+ initWithURL:\l}" alt="" coords="5,141,195,277"/>
+<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="11,329,253,412"/>
 </map>

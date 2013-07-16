@@ -11,6 +11,6 @@
 
 @interface BULiveBusConnectionManager : BUConnectionManager
 
-
+- (NSArray *)fetchBuses;
 
 @end

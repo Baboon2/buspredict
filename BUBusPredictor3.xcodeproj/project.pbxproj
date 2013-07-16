@@ -16,6 +16,7 @@
 		7AA628C71794995700E74CA2 /* BUBusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C51794995700E74CA2 /* BUBusModel.m */; };
 		7AA628CC1794998100E74CA2 /* BUBusStopDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */; };
 		7AA628CD1794998100E74CA2 /* BUBusStopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628CB1794998100E74CA2 /* BUBusStopModel.m */; };
+		7AC99F4C1795D847003AA552 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */; };
 		7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
 		7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
 		7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */; };
@@ -26,7 +27,6 @@
 		7AD6ACBF1787300500375DB3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACBE1787300500375DB3 /* Default@2x.png */; };
 		7AD6ACC11787300500375DB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC01787300500375DB3 /* Default-568h@2x.png */; };
 		7AD6ACC41787300500375DB3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */; };
-		7AD6ACC71787300500375DB3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC51787300500375DB3 /* MainStoryboard_iPad.storyboard */; };
 		7AD6ACCA1787300500375DB3 /* BUBusPredictorMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */; };
 		7AD6ACCD1787300500375DB3 /* BUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */; };
 		7AD6ACD51787300500375DB3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACD41787300500375DB3 /* SenTestingKit.framework */; };
@@ -76,6 +76,7 @@
 		7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopDataSource.m; path = Data/Stops/BUBusStopDataSource.m; sourceTree = "<group>"; };
 		7AA628CA1794998100E74CA2 /* BUBusStopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusStopModel.h; path = Data/Stops/BUBusStopModel.h; sourceTree = "<group>"; };
 		7AA628CB1794998100E74CA2 /* BUBusStopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopModel.m; path = Data/Stops/BUBusStopModel.m; sourceTree = "<group>"; };
+		7AC99F4B1795D847003AA552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUBusPredictor3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD6ACAA1787300500375DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AD6ACAC1787300500375DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,7 +91,6 @@
 		7AD6ACBE1787300500375DB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7AD6ACC01787300500375DB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7AD6ACC31787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		7AD6ACC61787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		7AD6ACC81787300500375DB3 /* BUBusPredictorMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUBusPredictorMasterViewController.h; sourceTree = "<group>"; };
 		7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictorMasterViewController.m; sourceTree = "<group>"; };
 		7AD6ACCB1787300500375DB3 /* BUDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUDetailViewController.h; sourceTree = "<group>"; };
@@ -203,8 +203,8 @@
 				DDBB684B178E01F4008336EF /* Bus Stop */,
 				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
 				7AD6ACF2178757A500375DB3 /* BusPredictorData.m */,
+				7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */,
 				7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */,
-				7AD6ACC51787300500375DB3 /* MainStoryboard_iPad.storyboard */,
 				7AD6ACB91787300500375DB3 /* BUAppDelegate.h */,
 				7AD6ACBA1787300500375DB3 /* BUAppDelegate.m */,
 				DDBB6849178E01C6008336EF /* Views */,
@@ -372,7 +372,7 @@
 				7AD6ACBF1787300500375DB3 /* Default@2x.png in Resources */,
 				7AD6ACC11787300500375DB3 /* Default-568h@2x.png in Resources */,
 				7AD6ACC41787300500375DB3 /* MainStoryboard_iPhone.storyboard in Resources */,
-				7AD6ACC71787300500375DB3 /* MainStoryboard_iPad.storyboard in Resources */,
+				7AC99F4C1795D847003AA552 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +448,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AC99F4B1795D847003AA552 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		7AD6ACB31787300500375DB3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -462,14 +470,6 @@
 				7AD6ACC31787300500375DB3 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		7AD6ACC51787300500375DB3 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AD6ACC61787300500375DB3 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		7AD6ACDD1787300500375DB3 /* InfoPlist.strings */ = {
@@ -548,7 +548,14 @@
 				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

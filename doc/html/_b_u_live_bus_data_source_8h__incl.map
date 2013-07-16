@@ -1,3 +1,5 @@
-<map id="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/Data/BULiveBusDataSource.h" name="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/Data/BULiveBusDataSource.h">
-<area shape="rect" href="$_b_u_data_source_8h.html" title="BUDataSource.h" alt="" coords="137,135,276,161"/>
+<map id="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/Data/Bus/BULiveBusDataSource.h" name="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/Data/Bus/BULiveBusDataSource.h">
+<area shape="rect" href="$_b_u_data_source_8h.html" title="BUDataSource.h" alt="" coords="352,212,491,239"/>
+<area shape="rect" href="$_b_u_live_bus_connection_manager_8h.html" title="BULiveBusConnectionManager.h" alt="" coords="87,135,343,161"/>
+<area shape="rect" href="$_b_u_connection_manager_8h.html" title="BUConnectionManager.h" alt="" coords="125,212,328,239"/>
 </map>
