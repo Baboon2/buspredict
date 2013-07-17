@@ -21,6 +21,6 @@
 @property (strong) NSError *fetchError;
 
 - (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey;
-
+- (void)fetchingFailedWithError:(NSError *)error;
 
 @end

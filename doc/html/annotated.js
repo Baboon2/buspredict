@@ -5,7 +5,7 @@ var annotated =
     [ "BUBusPredictorMasterViewController", "interface_b_u_bus_predictor_master_view_controller.html", "interface_b_u_bus_predictor_master_view_controller" ],
     [ "BUBusPredictorMasterViewController()", "category_b_u_bus_predictor_master_view_controller_07_08.html", "category_b_u_bus_predictor_master_view_controller_07_08" ],
     [ "BUBusStopConnectionManager", "interface_b_u_bus_stop_connection_manager.html", "interface_b_u_bus_stop_connection_manager" ],
-    [ "BUBusStopDataSource", "interface_b_u_bus_stop_data_source.html", "interface_b_u_bus_stop_data_source" ],
+    [ "BUBusStopDataSource", "interface_b_u_bus_stop_data_source.html", null ],
     [ "BUBusStopModel", "interface_b_u_bus_stop_model.html", "interface_b_u_bus_stop_model" ],
     [ "BUConnectionManager", "interface_b_u_connection_manager.html", "interface_b_u_connection_manager" ],
     [ "BUDataSource", "interface_b_u_data_source.html", "interface_b_u_data_source" ],

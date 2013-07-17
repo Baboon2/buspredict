@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_k"><span>k</span></a></li>
@@ -117,7 +118,7 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -141,8 +142,7 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 : <a class="el" href="interface_b_u_connection_manager.html#a3c7223cbf1520c1061d6f1453c606aa7">BUConnectionManager</a>
 </li>
 <li>connectionManager
-: <a class="el" href="interface_b_u_bus_stop_data_source.html#a6d0ee91ba6f265ddbc6181aca55af87f">BUBusStopDataSource</a>
-, <a class="el" href="interface_b_u_data_source.html#a124dbd3fe3fb1c0e1edbd5380eae6339">BUDataSource</a>
+: <a class="el" href="interface_b_u_data_source.html#a124dbd3fe3fb1c0e1edbd5380eae6339">BUDataSource</a>
 </li>
 </ul>
 
@@ -165,6 +165,14 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 </li>
 <li>direction_id
 : <a class="el" href="interface_b_u_bus_stop_model.html#a77d6e324ab84bdbe2761385d9183dc94">BUBusStopModel</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>fetchError
+: <a class="el" href="interface_b_u_connection_manager.html#ae66cb49103adad2efc397f5cc97c7a30">BUConnectionManager</a>
+, <a class="el" href="interface_b_u_data_source.html#a11699fd9e75ca435543d1eb26c398840">BUDataSource</a>
 </li>
 </ul>
 
@@ -273,7 +281,7 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 17 2013 10:11:25 for BusPredictor by
+    <li class="footer">Generated on Wed Jul 17 2013 15:03:14 for BusPredictor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

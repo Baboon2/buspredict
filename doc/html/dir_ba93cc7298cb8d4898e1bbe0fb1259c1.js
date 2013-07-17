@@ -13,10 +13,8 @@ var dir_ba93cc7298cb8d4898e1bbe0fb1259c1 =
     [ "BUBusPredictorMasterViewController.m", "_b_u_bus_predictor_master_view_controller_8m.html", [
       [ "BUBusPredictorMasterViewController()", "category_b_u_bus_predictor_master_view_controller_07_08.html", "category_b_u_bus_predictor_master_view_controller_07_08" ]
     ] ],
-    [ "BUConnectionManager.h", "_b_u_connection_manager_8h.html", [
-      [ "BUConnectionManager", "interface_b_u_connection_manager.html", "interface_b_u_connection_manager" ]
-    ] ],
-    [ "BUConnectionManager.m", "_b_u_connection_manager_8m.html", null ],
+    [ "BUConnectionManager.h", "_b_u_connection_manager_8h.html", "_b_u_connection_manager_8h" ],
+    [ "BUConnectionManager.m", "_b_u_connection_manager_8m.html", "_b_u_connection_manager_8m" ],
     [ "BUDetailViewController.h", "_b_u_detail_view_controller_8h.html", [
       [ "BUDetailViewController", "interface_b_u_detail_view_controller.html", "interface_b_u_detail_view_controller" ]
     ] ],

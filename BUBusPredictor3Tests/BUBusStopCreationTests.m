@@ -11,6 +11,7 @@
 #import "BUBusStopModel.h"
 #import "BUBusStopConnectionManager.h"
 #import "BUConnectionManagerDelegate.h"
+#import "BUBusStopDataSource.h"
 
 
 @interface BUBusStopCreationTests : SenTestCase {
@@ -72,13 +73,16 @@
 
 - (void)testErrorReturnedToDelegateIsNotErrorNotifiedByConnectionManager
 {
-    id mockDelegate = [OCMockObject mockForProtocol:@protocol(BUConnectionManagerDelegate)];
-    [[mockDelegate stub] fetchError];
-    mgr.delegate = mockDelegate;
+//    id mockDelegate = [OCMockObject mockForProtocol:@protocol(BUConnectionManagerDelegate)];
+//    [[mockDelegate stub] fetchError];
+//    mgr.delegate = mockDelegate;
+    BUBusStopDataSource *ds = [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"busstop"];
+    mgr.delegate = ds;
     NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
     [mgr fetchFailedWithError: underlyingError];
-    STAssertFalse(underlyingError == [mockDelegate fetchError], @"Error should be at the correct level of abstraction");
+    STAssertFalse(underlyingError == [mgr.delegate fetchError], @"Error should be at the correct level of abstraction");
 }
+
 - (void)testInstantiateBusStop
 {
     BUBusStopModel *busstop = [[BUBusStopModel alloc] initWithDictionary:dictForBusStop1];
