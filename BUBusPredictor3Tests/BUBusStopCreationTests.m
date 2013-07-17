@@ -36,6 +36,11 @@
     [dictForBusStop1 setObject:@"1" forKey:@"direction_id"];
 }
 
+-(void)tearDown
+{
+    mgr = nil;
+}
+
 - (void)testNonConformingObjectCannotBeDelegate
 {
     STAssertThrows(mgr.delegate = (id <BUConnectionManagerDelegate>) [NSNull null],
@@ -56,20 +61,24 @@
                     @"It should be acceptable to use nil as an object's delegate");
 }
 
+// FIXME
 - (void)testAskingForBusStopMeansRequestingData
 {
     id mockConnectionMgr = [OCMockObject mockForClass:[BUBusStopConnectionManager class]];
     [[mockConnectionMgr stub] fetchBusStops];
-    [[mockConnectionMgr expect] fetchBusStops];
-    NSArray *results = [mockConnectionMgr fetchBusStops];
+    NSArray __unused *results = [mockConnectionMgr fetchBusStops];
     [mockConnectionMgr verify];
 }
 
--(void)tearDown
+- (void)testErrorReturnedToDelegateIsNotErrorNotifiedByConnectionManager
 {
-    mgr = nil;
+    id mockDelegate = [OCMockObject mockForProtocol:@protocol(BUConnectionManagerDelegate)];
+    [[mockDelegate stub] fetchError];
+    mgr.delegate = mockDelegate;
+    NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
+    [mgr fetchFailedWithError: underlyingError];
+    STAssertFalse(underlyingError == [mockDelegate fetchError], @"Error should be at the correct level of abstraction");
 }
-
 - (void)testInstantiateBusStop
 {
     BUBusStopModel *busstop = [[BUBusStopModel alloc] initWithDictionary:dictForBusStop1];

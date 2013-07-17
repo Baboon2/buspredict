@@ -8,9 +8,14 @@
 
 #import "BUConnectionManager.h"
 
+NSString *ConnectionManagerError = @"ConnectionManagerError";
+
+
 @implementation BUConnectionManager
 
 @synthesize url;
+@synthesize fetchError;
+@synthesize connection;
 
 - (id)initWithURL:(NSURL *)theUrl
 {
@@ -20,4 +25,10 @@
     return self;
 }
 
+- (void)fetchFailedWithError:(NSError *)error
+{
+        NSDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey: NSUnderlyingErrorKey];
+        NSError *reportableError = [NSError errorWithDomain:ConnectionManagerError  code:ConnectionManagerErrorFetch userInfo:errorInfo];
+        [self.delegate fetchingFailedWithError: reportableError];
+}
 @end

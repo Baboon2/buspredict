@@ -11,6 +11,4 @@
 
 @interface BUBusStopDataSource : BUDataSource
 
-@property (nonatomic, strong) BUBusStopConnectionManager *connectionManager;
-
 @end

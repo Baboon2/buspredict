@@ -74,7 +74,7 @@
 
 - (void)testDataSourceHasConnectionManager
 {
-    STAssertNotNil([ds liveBusConnectionManager], @"data source needs a connection object");
+    STAssertNotNil([ds connectionManager], @"data source needs a connection object");
 }
 
 @end

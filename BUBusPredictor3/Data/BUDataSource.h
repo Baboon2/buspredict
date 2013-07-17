@@ -10,11 +10,15 @@
 #import "BUConnectionManagerDelegate.h"
 
 
+@class BUConnectionManager;
+
 @interface BUDataSource : NSObject <BUConnectionManagerDelegate>
 
 @property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, copy) NSURL *url;
 @property (nonatomic, copy) NSString *key;
+@property (nonatomic, strong) BUConnectionManager *connectionManager;
+@property (strong) NSError *fetchError;
 
 - (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey;
 

@@ -7,14 +7,15 @@
 //
 
 #import "BULiveBusDataSource.h"
+#import "BULiveBusConnectionManager.h"
 
 @implementation BULiveBusDataSource
 
 - (id)initWithUrlString:(NSString *)theUrlString key:(NSString *)theKey
 {
     if (self = [super initWithUrlString:theUrlString key:theKey]) {
-        _connectionManager = [[BULiveBusConnectionManager alloc] initWithURL:[self url]];
-        [_connectionManager setDelegate:self];
+        self.connectionManager = [[BULiveBusConnectionManager alloc] initWithURL:[self url]];
+        [self.connectionManager setDelegate:self];
     }
     return self;
 }

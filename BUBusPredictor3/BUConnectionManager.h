@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "BUConnectionManagerDelegate.h"
 
+extern NSString *ConnectionManagerError;
+
+enum {
+    ConnectionManagerErrorFetch
+};
+
+
 @interface BUConnectionManager : NSObject
 
 @property (nonatomic, readonly, weak) NSURL *url;
@@ -17,7 +24,9 @@
 @property (nonatomic, strong) NSURLRequest *request;
 
 @property (weak, nonatomic) id<BUConnectionManagerDelegate> delegate;
+@property (strong) NSError *fetchError;
 
 - (id)initWithURL:(NSURL *)url;
+- (void)fetchFailedWithError:(NSError *)error;
 
 @end

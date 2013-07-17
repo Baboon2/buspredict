@@ -10,4 +10,8 @@
 
 @protocol BUConnectionManagerDelegate <NSObject>
 
+@required
+- (void)fetchingFailedWithError:(NSError *)error;
+- (NSError *)fetchError;
+
 @end

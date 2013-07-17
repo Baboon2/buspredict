@@ -8,10 +8,13 @@
 
 #import "BUDataSource.h"
 
+
 @implementation BUDataSource
 @synthesize urlString = _urlString;
 @synthesize url = _url;
 @synthesize key = _key;
+@synthesize connectionManager = _connectionManager;
+@synthesize fetchError;
 
 - (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey
 {
@@ -23,5 +26,9 @@
     return self;
 }
 
+- (void)fetchingFailedWithError:(NSError *)error
+{
+    
+}
 
 @end
