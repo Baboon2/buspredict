@@ -11,6 +11,8 @@
 @interface BUModelBuilder : NSObject
 
 @property (copy) NSString *JSON;
+@property (nonatomic, strong) NSArray *arrayToReturn;
+@property (copy) NSError *errorToSet;
 
 - (NSArray *)createItemsFromJSON:(NSString *)stringJSON error:(NSError **)error;
 

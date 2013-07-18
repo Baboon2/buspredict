@@ -10,6 +10,15 @@
 
 @implementation BUModelBuilder
 
+- (id)init
+{
+    if ((self = [super init])) {
+        self.JSON = @"";
+        self.arrayToReturn = [NSArray array];
+    }
+    return self;
+}
+
 // override in subclass
 - (NSArray *)createItemsFromJSON:(NSString *)stringJSON error:(NSError **)error
 {

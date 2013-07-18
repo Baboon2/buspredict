@@ -13,7 +13,8 @@
 - (NSArray *)createItemsFromJSON:(NSString *)stringJSON error:(NSError **)error
 {
     self.JSON = stringJSON;
-    return nil;
+    *error = [NSError errorWithDomain:@"" code:714 userInfo:nil];
+    return self.arrayToReturn;
 }
 
 @end

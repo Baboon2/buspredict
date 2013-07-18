@@ -9,6 +9,8 @@
 #import "BUBusStopConnectionManager.h"
 #import "BUBusStopBuilder.h"
 
+NSString *BusStopConnectionManagerError = @"BusStopConnectionManagerError";
+
 @implementation BUBusStopConnectionManager
 
 @synthesize delegate;
@@ -42,6 +44,16 @@
 - (void)receivedJSON:(NSString *)objectNotation
 {
     [super receivedJSON:objectNotation];
-    
+    NSError *error = nil;
+    NSArray *items = [self.builder createItemsFromJSON:objectNotation error: &error];
+    if ([items count] == 0) {
+        NSDictionary *errorInfo = nil;
+        if (error) {
+            errorInfo = [NSDictionary dictionaryWithObject: error forKey:NSUnderlyingErrorKey];
+        }
+        NSError *reportableError = [NSError errorWithDomain: BusStopConnectionManagerError code: BusStopConnectionManagerErrorFetchCode userInfo: errorInfo];
+        [delegate fetchingFailedWithError: reportableError];
+    }
+
 }
 @end

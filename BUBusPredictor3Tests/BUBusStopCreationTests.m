@@ -5,6 +5,8 @@
 //  Created by Ray Swartz on 7/11/13.
 //  Copyright (c) 2013 Boston University. All rights reserved.
 //
+//  Tests of connection manager and builder.
+
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "OCMock.h"
@@ -23,12 +25,21 @@
 @implementation BUBusStopCreationTests
 {
     @private
+    BUBusStopDataSource *ds;
     BUBusStopConnectionManager *mgr;
+    BUBusStopBuilder *builder;
+
+    NSError *underlyingError;
 }
 
 -(void)setUp
 {
+    ds= [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"bussstop"];
     mgr = [[BUBusStopConnectionManager alloc] init];
+     builder = [[BUBusStopBuilder alloc] init];
+
+    underlyingError = nil;
+    
     dictForBusStop1 = [NSMutableDictionary dictionary];
     [dictForBusStop1 setObject:@"M1" forKey:@"stop_id"];
     [dictForBusStop1 setObject:@"Student Village 2" forKey:@"stop_name"];
@@ -41,6 +52,8 @@
 -(void)tearDown
 {
     mgr = nil;
+    ds = nil;
+    builder = nil;
 }
 
 - (void)testNonConformingObjectCannotBeDelegate
@@ -73,18 +86,16 @@
 
 - (void)testErrorReturnedToDelegateIsNotErrorNotifiedByConnectionManager
 {
-    BUBusStopDataSource *ds = [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"busstop"];
     mgr.delegate = ds;
-    NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
+    underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
     [mgr fetchFailedWithError: underlyingError];
     STAssertFalse(underlyingError == [mgr.delegate fetchError], @"Error should be at the correct level of abstraction");
 }
 
 - (void)testErrorReturnedToDelegateDocumentsUnderlayingError
 {
-    BUBusStopDataSource *ds = [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"busstop"];
     mgr.delegate = ds;
-    NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
+    underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
     [mgr fetchFailedWithError:underlyingError];
     STAssertEqualObjects([[[mgr.delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey], underlyingError, @"The underlying error should be available to client code");
 }
@@ -92,13 +103,21 @@
 - (void)testBusStopJSONIsPassedToBusStopBuilder
 {
     // data source should have a builder object
-    BUBusStopBuilder *builder = [[BUBusStopBuilder alloc] init];
     [mgr setBuilder:builder];
     [mgr receivedJSON: @"Fake JSON"];
     STAssertEqualObjects(builder.JSON, @"Fake JSON", @"Downloaded JSON is sent to the builder");
     [mgr setBuilder:nil];
 }
 
+- (void)testDelegateNotifiedOfErrorWhenBuilderFails
+{
+    builder.arrayToReturn = nil;
+    builder.errorToSet = underlyingError;
+    [mgr setBuilder:builder];
+    [mgr receivedJSON:@"Fake JSON"];
+    STAssertNotNil([[[ds fetchError] userInfo] objectForKey:NSUnderlyingErrorKey], @"The delegate should have found out about the error");
+    
+}
 - (void)testInstantiateBusStop
 {
     BUBusStopModel *busstop = [[BUBusStopModel alloc] initWithDictionary:dictForBusStop1];

@@ -11,6 +11,12 @@
 #import "BUConnectionManagerDelegate.h"
 #import "BUConnectionManager.h"
 
+extern NSString *BusStopConnectionManagerError;
+
+enum {
+    BusStopConnectionManagerErrorFetchCode
+};
+
 @interface BUBusStopConnectionManager : BUConnectionManager
 
 - (id)initWithURL:(NSURL *)url;
