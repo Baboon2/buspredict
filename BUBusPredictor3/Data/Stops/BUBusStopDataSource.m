@@ -13,7 +13,7 @@
 - (id)initWithUrlString:(NSString *)theUrlString key:(NSString *)theKey
 {
     if (self = [super initWithUrlString:theUrlString key:theKey]) {
-        self.connectionManager = [[BUBusStopConnectionManager alloc] initWithURL:[NSURL URLWithString:theUrlString]];
+        self.connectionManager = [[BUBusStopConnectionManager alloc] initWithURL:[self url]];
         [self.connectionManager setDelegate:self];
     }
     return self;

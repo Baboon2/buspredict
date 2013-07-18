@@ -10,7 +10,6 @@
 
 
 @implementation BUDataSource
-@synthesize urlString = _urlString;
 @synthesize url = _url;
 @synthesize key = _key;
 @synthesize connectionManager = _connectionManager;
@@ -19,8 +18,7 @@
 - (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey
 {
     if ((self = [super init])) {
-        _urlString = [theUrlString copy];
-        _url = [NSURL URLWithString:_urlString];
+        _url = [NSURL URLWithString:theUrlString];
         _key = theKey;
     }
     return self;
@@ -28,7 +26,7 @@
 
 - (void)fetchingFailedWithError:(NSError *)error
 {
-    // TODO
+     self.fetchError = error;
 }
 
 @end

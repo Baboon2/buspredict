@@ -83,6 +83,16 @@
     STAssertFalse(underlyingError == [mgr.delegate fetchError], @"Error should be at the correct level of abstraction");
 }
 
+- (void)testErrorReturnedToDelegateDocumentsUnderlayingError
+{
+    BUBusStopDataSource *ds = [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"busstop"];
+    mgr.delegate = ds;
+    NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
+    [mgr fetchFailedWithError:underlyingError];
+    NSError *quiz = [[[mgr.delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey];
+    STAssertEqualObjects([[[mgr.delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey], underlyingError, @"The underlying error should be available to client code");
+}
+
 - (void)testInstantiateBusStop
 {
     BUBusStopModel *busstop = [[BUBusStopModel alloc] initWithDictionary:dictForBusStop1];

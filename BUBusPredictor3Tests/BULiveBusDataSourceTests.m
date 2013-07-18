@@ -55,7 +55,7 @@
 - (void)testGetURLString
 {
     NSString *expected = [self liveBusURL];
-    NSString *result = [ds urlString];
+    NSString *result = [[ds url] absoluteString];
     STAssertEqualObjects(expected, result, @"should be able to get url string");
 }
 

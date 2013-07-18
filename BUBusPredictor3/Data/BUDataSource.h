@@ -14,7 +14,6 @@
 
 @interface BUDataSource : NSObject <BUConnectionManagerDelegate>
 
-@property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, copy) NSURL *url;
 @property (nonatomic, copy) NSString *key;
 @property (nonatomic, strong) BUConnectionManager *connectionManager;
