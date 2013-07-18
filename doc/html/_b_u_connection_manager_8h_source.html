@@ -121,28 +121,32 @@ $(document).ready(function(){initNavTree('_b_u_connection_manager_8h_source.html
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="_b_u_connection_manager_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa6e50c71d5188ec35718e72e9c92b8d9">   15</a></span>&#160;    <a class="code" href="_b_u_connection_manager_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa6e50c71d5188ec35718e72e9c92b8d9">ConnectionManagerErrorFetch</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html">   19</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_u_connection_manager.html">BUConnectionManager</a> : NSObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_b_u_model_builder.html">BUModelBuilder</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#a17d277a7e3caad97e3520e69906855b8">   21</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, weak) NSURL *<a class="code" href="interface_b_u_connection_manager.html#a17d277a7e3caad97e3520e69906855b8">url</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html">   21</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_u_connection_manager.html">BUConnectionManager</a> : NSObject</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#a3c7223cbf1520c1061d6f1453c606aa7">   23</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSURLConnection *<a class="code" href="interface_b_u_connection_manager.html#a3c7223cbf1520c1061d6f1453c606aa7">connection</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#ac85c9f559983be4154675da9796809c2">   24</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSURLRequest *<a class="code" href="interface_b_u_connection_manager.html#ac85c9f559983be4154675da9796809c2">request</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#aa65085d8d4b9e39df2df5c46e850102a">   26</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) id&lt;BUConnectionManagerDelegate&gt; <a class="code" href="interface_b_u_connection_manager.html#aa65085d8d4b9e39df2df5c46e850102a">delegate</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#ae66cb49103adad2efc397f5cc97c7a30">   27</a></span>&#160;<span class="keyword">@property</span> (strong) NSError *<a class="code" href="interface_b_u_connection_manager.html#ae66cb49103adad2efc397f5cc97c7a30">fetchError</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (id)initWithURL:(NSURL *)url;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (void)fetchFailedWithError:(NSError *)error;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#a17d277a7e3caad97e3520e69906855b8">   23</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, weak) NSURL *<a class="code" href="interface_b_u_connection_manager.html#a17d277a7e3caad97e3520e69906855b8">url</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#a3c7223cbf1520c1061d6f1453c606aa7">   25</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSURLConnection *<a class="code" href="interface_b_u_connection_manager.html#a3c7223cbf1520c1061d6f1453c606aa7">connection</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#ac85c9f559983be4154675da9796809c2">   26</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSURLRequest *<a class="code" href="interface_b_u_connection_manager.html#ac85c9f559983be4154675da9796809c2">request</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#aa65085d8d4b9e39df2df5c46e850102a">   28</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) id&lt;BUConnectionManagerDelegate&gt; <a class="code" href="interface_b_u_connection_manager.html#aa65085d8d4b9e39df2df5c46e850102a">delegate</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#ae66cb49103adad2efc397f5cc97c7a30">   29</a></span>&#160;<span class="keyword">@property</span> (strong) NSError *<a class="code" href="interface_b_u_connection_manager.html#ae66cb49103adad2efc397f5cc97c7a30">fetchError</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="interface_b_u_connection_manager.html#aa834633a9859444fd9d4a2975a1e64ed">   30</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_u_model_builder.html">BUModelBuilder</a> *<a class="code" href="interface_b_u_connection_manager.html#aa834633a9859444fd9d4a2975a1e64ed">builder</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (id)initWithURL:(NSURL *)url;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;- (void)fetchFailedWithError:(NSError *)error;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (void)receivedJSON:(NSString *)objectNotation;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ba93cc7298cb8d4898e1bbe0fb1259c1.html">BUBusPredictor3</a></li><li class="navelem"><a class="el" href="_b_u_connection_manager_8h.html">BUConnectionManager.h</a></li>
-    <li class="footer">Generated on Wed Jul 17 2013 15:03:14 for BusPredictor by
+    <li class="footer">Generated on Thu Jul 18 2013 14:48:19 for BusPredictor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

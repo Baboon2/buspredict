@@ -26,6 +26,9 @@ var hierarchy =
         [ "BULiveBusConnectionManager", "interface_b_u_live_bus_connection_manager.html", null ]
       ] ],
       [ "BUDataSource", "interface_b_u_data_source.html", null ],
+      [ "BUModelBuilder", "interface_b_u_model_builder.html", [
+        [ "BUBusStopBuilder", "interface_b_u_bus_stop_builder.html", null ]
+      ] ],
       [ "BUModuleData", "interface_b_u_module_data.html", [
         [ "BusPredictorData", "interface_bus_predictor_data.html", null ]
       ] ],

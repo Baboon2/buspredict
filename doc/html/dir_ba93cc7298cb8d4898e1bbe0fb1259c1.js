@@ -13,6 +13,10 @@ var dir_ba93cc7298cb8d4898e1bbe0fb1259c1 =
     [ "BUBusPredictorMasterViewController.m", "_b_u_bus_predictor_master_view_controller_8m.html", [
       [ "BUBusPredictorMasterViewController()", "category_b_u_bus_predictor_master_view_controller_07_08.html", "category_b_u_bus_predictor_master_view_controller_07_08" ]
     ] ],
+    [ "BUBusStopBuilder.h", "_b_u_bus_stop_builder_8h.html", [
+      [ "BUBusStopBuilder", "interface_b_u_bus_stop_builder.html", null ]
+    ] ],
+    [ "BUBusStopBuilder.m", "_b_u_bus_stop_builder_8m.html", null ],
     [ "BUConnectionManager.h", "_b_u_connection_manager_8h.html", "_b_u_connection_manager_8h" ],
     [ "BUConnectionManager.m", "_b_u_connection_manager_8m.html", "_b_u_connection_manager_8m" ],
     [ "BUDetailViewController.h", "_b_u_detail_view_controller_8h.html", [
@@ -21,5 +25,9 @@ var dir_ba93cc7298cb8d4898e1bbe0fb1259c1 =
     [ "BUDetailViewController.m", "_b_u_detail_view_controller_8m.html", [
       [ "BUDetailViewController()", "category_b_u_detail_view_controller_07_08.html", "category_b_u_detail_view_controller_07_08" ]
     ] ],
+    [ "BUModelBuilder.h", "_b_u_model_builder_8h.html", [
+      [ "BUModelBuilder", "interface_b_u_model_builder.html", "interface_b_u_model_builder" ]
+    ] ],
+    [ "BUModelBuilder.m", "_b_u_model_builder_8m.html", null ],
     [ "main.m", "main_8m.html", "main_8m" ]
 ];

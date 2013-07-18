@@ -15,6 +15,8 @@ enum {
     ConnectionManagerErrorFetch
 };
 
+@class BUModelBuilder;
+
 
 @interface BUConnectionManager : NSObject
 
@@ -25,8 +27,10 @@ enum {
 
 @property (weak, nonatomic) id<BUConnectionManagerDelegate> delegate;
 @property (strong) NSError *fetchError;
+@property (nonatomic, strong) BUModelBuilder *builder;
 
 - (id)initWithURL:(NSURL *)url;
 - (void)fetchFailedWithError:(NSError *)error;
+- (void)receivedJSON:(NSString *)objectNotation;
 
 @end

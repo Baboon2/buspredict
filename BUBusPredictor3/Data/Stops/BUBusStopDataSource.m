@@ -7,6 +7,7 @@
 //
 
 #import "BUBusStopDataSource.h"
+#import "BUBusStopBuilder.h"
 
 @implementation BUBusStopDataSource
 

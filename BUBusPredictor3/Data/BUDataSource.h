@@ -11,6 +11,7 @@
 
 
 @class BUConnectionManager;
+@class BUModelBuilder;
 
 @interface BUDataSource : NSObject <BUConnectionManagerDelegate>
 

@@ -13,6 +13,7 @@
 
 @interface BUBusStopConnectionManager : BUConnectionManager
 
+- (id)initWithURL:(NSURL *)url;
 - (NSArray *)fetchBusStops;
 
 @end

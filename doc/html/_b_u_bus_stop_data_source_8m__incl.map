@@ -1,6 +1,8 @@
 <map id="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/Data/Stops/BUBusStopDataSource.m" name="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/Data/Stops/BUBusStopDataSource.m">
-<area shape="rect" href="$_b_u_bus_stop_data_source_8h.html" title="BUBusStopDataSource.h" alt="" coords="108,135,305,161"/>
-<area shape="rect" href="$_b_u_data_source_8h.html" title="BUDataSource.h" alt="" coords="5,289,144,316"/>
-<area shape="rect" href="$_b_u_bus_stop_connection_manager_8h.html" title="BUBusStopConnectionManager.h" alt="" coords="169,212,431,239"/>
-<area shape="rect" href="$_b_u_connection_manager_8h.html" title="BUConnectionManager.h" alt="" coords="219,289,421,316"/>
+<area shape="rect" href="$_b_u_bus_stop_data_source_8h.html" title="BUBusStopDataSource.h" alt="" coords="277,135,475,161"/>
+<area shape="rect" href="$_b_u_bus_stop_builder_8h.html" title="BUBusStopBuilder.h" alt="" coords="88,135,251,161"/>
+<area shape="rect" href="$_b_u_data_source_8h.html" title="BUDataSource.h" alt="" coords="507,289,645,316"/>
+<area shape="rect" href="$_b_u_bus_stop_connection_manager_8h.html" title="BUBusStopConnectionManager.h" alt="" coords="245,212,507,239"/>
+<area shape="rect" href="$_b_u_connection_manager_8h.html" title="BUConnectionManager.h" alt="" coords="229,289,432,316"/>
+<area shape="rect" href="$_b_u_model_builder_8h.html" title="BUModelBuilder.h" alt="" coords="5,289,155,316"/>
 </map>

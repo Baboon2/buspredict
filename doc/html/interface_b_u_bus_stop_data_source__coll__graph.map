@@ -1,4 +1,5 @@
 <map id="BUBusStopDataSource" name="BUBusStopDataSource">
-<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ urlString\l+ url\l+ key\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l}" alt="" coords="35,380,245,532"/>
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l}" alt="" coords="45,141,235,312"/>
+<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l}" alt="" coords="53,565,264,701"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="64,311,253,497"/>
+<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="115,141,312,243"/>
 </map>

@@ -12,5 +12,4 @@
 
 @interface BULiveBusDataSource : BUDataSource
 
-
 @end

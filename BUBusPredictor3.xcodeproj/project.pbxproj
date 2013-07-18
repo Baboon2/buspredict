@@ -16,6 +16,9 @@
 		7AA628C71794995700E74CA2 /* BUBusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C51794995700E74CA2 /* BUBusModel.m */; };
 		7AA628CC1794998100E74CA2 /* BUBusStopDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */; };
 		7AA628CD1794998100E74CA2 /* BUBusStopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628CB1794998100E74CA2 /* BUBusStopModel.m */; };
+		7AB2AF3C1798599100DEA17F /* BUBusStopBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2AF3B1798599100DEA17F /* BUBusStopBuilder.m */; };
+		7AB2AF3F179859AB00DEA17F /* BUModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2AF3E179859AB00DEA17F /* BUModelBuilder.m */; };
+		7AB2AF421798712300DEA17F /* BULiveBusBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2AF411798712300DEA17F /* BULiveBusBuilder.m */; };
 		7AC99F4C1795D847003AA552 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */; };
 		7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
 		7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
@@ -76,6 +79,12 @@
 		7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopDataSource.m; path = Data/Stops/BUBusStopDataSource.m; sourceTree = "<group>"; };
 		7AA628CA1794998100E74CA2 /* BUBusStopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusStopModel.h; path = Data/Stops/BUBusStopModel.h; sourceTree = "<group>"; };
 		7AA628CB1794998100E74CA2 /* BUBusStopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopModel.m; path = Data/Stops/BUBusStopModel.m; sourceTree = "<group>"; };
+		7AB2AF3A1798599100DEA17F /* BUBusStopBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopBuilder.h; sourceTree = "<group>"; };
+		7AB2AF3B1798599100DEA17F /* BUBusStopBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopBuilder.m; sourceTree = "<group>"; };
+		7AB2AF3D179859AB00DEA17F /* BUModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUModelBuilder.h; sourceTree = "<group>"; };
+		7AB2AF3E179859AB00DEA17F /* BUModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUModelBuilder.m; sourceTree = "<group>"; };
+		7AB2AF401798712300DEA17F /* BULiveBusBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BULiveBusBuilder.h; sourceTree = "<group>"; };
+		7AB2AF411798712300DEA17F /* BULiveBusBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusBuilder.m; sourceTree = "<group>"; };
 		7AC99F4B1795D847003AA552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUBusPredictor3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD6ACAA1787300500375DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -199,6 +208,8 @@
 				7AD6ACF5178757D700375DB3 /* BUModuleData.m */,
 				7AF6B2F317908D0900050A80 /* BUConnectionManager.h */,
 				7AF6B2F417908D0900050A80 /* BUConnectionManager.m */,
+				7AB2AF3D179859AB00DEA17F /* BUModelBuilder.h */,
+				7AB2AF3E179859AB00DEA17F /* BUModelBuilder.m */,
 				DDBB684A178E01E5008336EF /* Live Bus */,
 				DDBB684B178E01F4008336EF /* Bus Stop */,
 				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
@@ -278,6 +289,8 @@
 				7AA628C51794995700E74CA2 /* BUBusModel.m */,
 				7AA628BC1794992B00E74CA2 /* BULiveBusConnectionManager.h */,
 				7AA628BD1794992B00E74CA2 /* BULiveBusConnectionManager.m */,
+				7AB2AF401798712300DEA17F /* BULiveBusBuilder.h */,
+				7AB2AF411798712300DEA17F /* BULiveBusBuilder.m */,
 			);
 			name = "Live Bus";
 			sourceTree = "<group>";
@@ -291,6 +304,8 @@
 				7AA628CB1794998100E74CA2 /* BUBusStopModel.m */,
 				7AA628BE1794992B00E74CA2 /* BUBusStopConnectionManager.h */,
 				7AA628BF1794992B00E74CA2 /* BUBusStopConnectionManager.m */,
+				7AB2AF3A1798599100DEA17F /* BUBusStopBuilder.h */,
+				7AB2AF3B1798599100DEA17F /* BUBusStopBuilder.m */,
 			);
 			name = "Bus Stop";
 			sourceTree = "<group>";
@@ -422,6 +437,9 @@
 				7AA628C71794995700E74CA2 /* BUBusModel.m in Sources */,
 				7AA628CC1794998100E74CA2 /* BUBusStopDataSource.m in Sources */,
 				7AA628CD1794998100E74CA2 /* BUBusStopModel.m in Sources */,
+				7AB2AF3C1798599100DEA17F /* BUBusStopBuilder.m in Sources */,
+				7AB2AF3F179859AB00DEA17F /* BUModelBuilder.m in Sources */,
+				7AB2AF421798712300DEA17F /* BULiveBusBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

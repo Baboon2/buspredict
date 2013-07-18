@@ -7,6 +7,7 @@
 //
 
 #import "BUConnectionManager.h"
+#import "BUModelBuilder.h"
 
 NSString *ConnectionManagerError = @"ConnectionManagerError";
 
@@ -16,6 +17,7 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 @synthesize url;
 @synthesize fetchError;
 @synthesize connection;
+@synthesize builder;
 
 - (id)initWithURL:(NSURL *)theUrl
 {
@@ -30,5 +32,13 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
         NSDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey: NSUnderlyingErrorKey];
         NSError *reportableError = [NSError errorWithDomain:ConnectionManagerError  code:ConnectionManagerErrorFetch userInfo:errorInfo];
         [self.delegate fetchingFailedWithError: reportableError];
+}
+
+// override in subclass
+- (void)receivedJSON:(NSString *)objectNotation
+{
+    if (self.builder) {
+        [self.builder setJSON:objectNotation];
+    }
 }
 @end

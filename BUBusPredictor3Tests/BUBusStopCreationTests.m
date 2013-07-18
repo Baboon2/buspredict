@@ -12,6 +12,7 @@
 #import "BUBusStopConnectionManager.h"
 #import "BUConnectionManagerDelegate.h"
 #import "BUBusStopDataSource.h"
+#import "BUBusStopBuilder.h"
 
 
 @interface BUBusStopCreationTests : SenTestCase {
@@ -50,7 +51,6 @@
 
 - (void)testConformingObjectCannotBeDelegate
 {
-
     id <BUConnectionManagerDelegate> delegate = [OCMockObject mockForProtocol:@protocol(BUConnectionManagerDelegate)];
     STAssertNoThrow(mgr.delegate = delegate,
                     @"object conforming to protocol should be used");
@@ -73,9 +73,6 @@
 
 - (void)testErrorReturnedToDelegateIsNotErrorNotifiedByConnectionManager
 {
-//    id mockDelegate = [OCMockObject mockForProtocol:@protocol(BUConnectionManagerDelegate)];
-//    [[mockDelegate stub] fetchError];
-//    mgr.delegate = mockDelegate;
     BUBusStopDataSource *ds = [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"busstop"];
     mgr.delegate = ds;
     NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
@@ -89,8 +86,17 @@
     mgr.delegate = ds;
     NSError *underlyingError = [NSError errorWithDomain:@"Test domain" code:0 userInfo:nil];
     [mgr fetchFailedWithError:underlyingError];
-    NSError *quiz = [[[mgr.delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey];
     STAssertEqualObjects([[[mgr.delegate fetchError] userInfo] objectForKey:NSUnderlyingErrorKey], underlyingError, @"The underlying error should be available to client code");
+}
+
+- (void)testBusStopJSONIsPassedToBusStopBuilder
+{
+    // data source should have a builder object
+    BUBusStopBuilder *builder = [[BUBusStopBuilder alloc] init];
+    [mgr setBuilder:builder];
+    [mgr receivedJSON: @"Fake JSON"];
+    STAssertEqualObjects(builder.JSON, @"Fake JSON", @"Downloaded JSON is sent to the builder");
+    [mgr setBuilder:nil];
 }
 
 - (void)testInstantiateBusStop

@@ -7,10 +7,19 @@
 //
 
 #import "BUBusStopConnectionManager.h"
+#import "BUBusStopBuilder.h"
 
 @implementation BUBusStopConnectionManager
 
 @synthesize delegate;
+
+-(id)initWithURL:(NSURL *)url
+{
+    if (self = [super initWithURL:url]) {
+        self.builder = [[BUBusStopBuilder alloc] init];
+    }
+    return self;
+}
 
 - (void)setDelegate:(id<BUConnectionManagerDelegate>)newDelegate
 {
@@ -23,6 +32,16 @@
 
 - (NSArray *)fetchBusStops
 {
-    return [NSArray array];
+    NSArray *results = nil;
+    if ([self.builder JSON]) {
+        results = [self.builder createItemsFromJSON:[self.builder JSON] error:NULL];
+    }
+    return results;
+}
+
+- (void)receivedJSON:(NSString *)objectNotation
+{
+    [super receivedJSON:objectNotation];
+    
 }
 @end
