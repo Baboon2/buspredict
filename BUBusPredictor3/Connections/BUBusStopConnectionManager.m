@@ -13,23 +13,12 @@ NSString *BusStopConnectionManagerError = @"BusStopConnectionManagerError";
 
 @implementation BUBusStopConnectionManager
 
-@synthesize delegate;
-
 -(id)initWithURL:(NSURL *)url
 {
     if (self = [super initWithURL:url]) {
         self.builder = [[BUBusStopBuilder alloc] init];
     }
     return self;
-}
-
-- (void)setDelegate:(id<BUConnectionManagerDelegate>)newDelegate
-{
-    if (newDelegate &&
-        ![newDelegate conformsToProtocol:@protocol(BUConnectionManagerDelegate)]) {
-        [[NSException exceptionWithName:NSInvalidArgumentException reason:@"Delegate object does not conform to protocol" userInfo:nil] raise];
-    }
-    delegate = newDelegate;
 }
 
 - (NSArray *)fetchBusStops
@@ -49,10 +38,11 @@ NSString *BusStopConnectionManagerError = @"BusStopConnectionManagerError";
     if ([items count] == 0) {
         NSDictionary *errorInfo = nil;
         if (error) {
+            self.fetchError = error;
             errorInfo = [NSDictionary dictionaryWithObject: error forKey:NSUnderlyingErrorKey];
         }
         NSError *reportableError = [NSError errorWithDomain: BusStopConnectionManagerError code: BusStopConnectionManagerErrorFetchCode userInfo: errorInfo];
-        [delegate fetchingFailedWithError: reportableError];
+        [self.delegate fetchingFailedWithError: reportableError];
     }
 
 }

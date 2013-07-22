@@ -17,7 +17,10 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 @synthesize url;
 @synthesize fetchError;
 @synthesize connection;
+@synthesize request = _request;
 @synthesize builder;
+@synthesize delegate = _delegate;
+
 
 - (id)initWithURL:(NSURL *)theUrl
 {
@@ -27,11 +30,21 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
     return self;
 }
 
+- (void)setDelegate:(id<BUConnectionManagerDelegate>)newDelegate
+{
+    if (newDelegate &&
+        ![newDelegate conformsToProtocol:@protocol(BUConnectionManagerDelegate)]) {
+        [[NSException exceptionWithName:NSInvalidArgumentException reason:@"Delegate object does not conform to protocol" userInfo:nil] raise];
+    }
+    _delegate = newDelegate;
+}
+
 - (void)fetchFailedWithError:(NSError *)error
 {
-        NSDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey: NSUnderlyingErrorKey];
-        NSError *reportableError = [NSError errorWithDomain:ConnectionManagerError  code:ConnectionManagerErrorFetch userInfo:errorInfo];
-        [self.delegate fetchingFailedWithError: reportableError];
+    self.fetchError = error;
+    NSDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey: NSUnderlyingErrorKey];
+    NSError *reportableError = [NSError errorWithDomain:ConnectionManagerError  code:ConnectionManagerErrorFetch userInfo:errorInfo];
+    [self.delegate fetchingFailedWithError: reportableError];
 }
 
 // override in subclass

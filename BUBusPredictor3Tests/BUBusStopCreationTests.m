@@ -36,6 +36,7 @@
 {
     ds= [[BUBusStopDataSource alloc] initWithUrlString:@"" key:@"bussstop"];
     mgr = [[BUBusStopConnectionManager alloc] init];
+    [mgr setDelegate:ds];
      builder = [[BUBusStopBuilder alloc] init];
 
     underlyingError = nil;
