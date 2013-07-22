@@ -7,7 +7,7 @@
 //
 
 #import "BUDataSource.h"
-
+#import "BUConnectionManager.h"
 
 @implementation BUDataSource
 @synthesize url = _url;
@@ -29,4 +29,14 @@
      self.fetchError = error;
 }
 
+
+- (void)didReceiveItems: (NSArray *)items
+{
+    
+}
+
+- (NSArray *)fetchedItems
+{
+    return [self.connectionManager items];
+}
 @end

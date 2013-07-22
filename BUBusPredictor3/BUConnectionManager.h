@@ -20,6 +20,7 @@ enum {
 
 @interface BUConnectionManager : NSObject
 
+@property (nonatomic, strong) NSArray *items;
 @property (nonatomic, readonly, weak) NSURL *url;
 
 @property (nonatomic, strong) NSURLConnection *connection;

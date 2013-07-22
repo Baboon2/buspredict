@@ -14,6 +14,7 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 
 @implementation BUConnectionManager
 
+@synthesize items;
 @synthesize url;
 @synthesize fetchError;
 @synthesize connection;
@@ -50,8 +51,17 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 // override in subclass
 - (void)receivedJSON:(NSString *)objectNotation
 {
+    NSError *error = nil;
+    self.items = nil;
     if (self.builder) {
         [self.builder setJSON:objectNotation];
+        self.items = [self.builder createItemsFromJSON:objectNotation error: &error];
+    }
+    if (!self.items) {
+        [self fetchFailedWithError: error];
+    } else {
+        [self.delegate didReceiveItems:items];
     }
 }
+
 @end

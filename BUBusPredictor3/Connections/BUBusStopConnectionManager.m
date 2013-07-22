@@ -30,6 +30,7 @@ NSString *BusStopConnectionManagerError = @"BusStopConnectionManagerError";
     return results;
 }
 
+/*
 - (void)receivedJSON:(NSString *)objectNotation
 {
     [super receivedJSON:objectNotation];
@@ -46,4 +47,5 @@ NSString *BusStopConnectionManagerError = @"BusStopConnectionManagerError";
     }
 
 }
+ */
 @end

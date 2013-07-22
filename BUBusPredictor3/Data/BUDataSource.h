@@ -11,7 +11,6 @@
 
 
 @class BUConnectionManager;
-@class BUModelBuilder;
 
 @interface BUDataSource : NSObject <BUConnectionManagerDelegate>
 
@@ -22,5 +21,7 @@
 
 - (id)initWithUrlString:(NSString*)theUrlString key:(NSString *)theKey;
 - (void)fetchingFailedWithError:(NSError *)error;
+- (void)didReceiveItems: (NSArray *)items;
+- (NSArray *)fetchedItems;
 
 @end

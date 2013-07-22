@@ -13,5 +13,7 @@
 @required
 - (void)fetchingFailedWithError:(NSError *)error;
 - (NSError *)fetchError;
+- (void)didReceiveItems: (NSArray *)items;
+- (NSArray *)fetchedItems;
 
 @end
