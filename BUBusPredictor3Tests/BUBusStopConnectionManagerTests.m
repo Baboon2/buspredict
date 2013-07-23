@@ -41,17 +41,24 @@
 
 - (void)testCreationOfConnection
 {
-    [commMgr fetchBusStopsWithErrorHandler:nil successHandler:nil];
+    [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
     STAssertNotNil([commMgr connection], @"There should be a URL connection now");
     [commMgr cancelURLConnection];
 }
 
 - (void)testStartingNewRequestThrowsOutOldConnection
 {
-    NSArray *stops = [commMgr fetchBusStopsWithErrorHandler:nil successHandler:nil];
+    NSArray *stops = [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
     NSURLConnection *firstConnection = [commMgr connection];
-    stops = [commMgr fetchBusStopsWithErrorHandler:nil successHandler:nil];
+    stops = [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
     STAssertFalse([[commMgr connection] isEqual:firstConnection], @"The connection mgr needs to replace its url connection for each request");
     [commMgr cancelURLConnection];
+}
+
+- (void)testReceivingResponseDiscardsExistingData
+{
+    commMgr.receivedData = (NSMutableData *)[@"Hello" dataUsingEncoding: NSUTF8StringEncoding];
+    [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
+    // TODO
 }
 @end

@@ -12,7 +12,12 @@
 NSString *ConnectionManagerError = @"ConnectionManagerError";
 
 
-@implementation BUConnectionManager
+@implementation BUConnectionManager {
+    
+    @private
+    void (^errorHandler)(NSError *);
+    void (^successHandler)(NSString *);
+}
 
 @synthesize items = _items;
 @synthesize url = _url;
@@ -64,6 +69,47 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
     } else {
         [self.delegate didReceiveItems:self.items];
     }
+}
+
+#pragma mark - NSURLConnectionDelegate methods
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    [self fetchFailedWithError:error];
+}
+- (NSArray *)fetchJSONWithErrorHandler:(void (^)(NSError *))errorBlock successHandler:(void (^)(NSString *))successBlock
+{
+    NSArray *results = nil;
+    self.request = [NSURLRequest requestWithURL:self.url];
+    [self.connection cancel];
+    self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
+    if (self.connection) {
+        self.receivedData = [NSMutableData data];
+    } else {
+        // inform connection failed
+    }
+    
+    if ([self.builder JSON] && [[self.builder JSON] length] > 0) {
+        results = [self.builder createItemsFromJSON:[self.builder JSON] error:NULL];
+    }
+    return results;
+
+}
+
+- (void)cancelURLConnection
+{
+    [self.connection cancel];
+    self.connection = nil;
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    [receivedData setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+      [receivedData appendData:data];
 }
 
 @end

@@ -20,8 +20,5 @@ enum {
 @interface BUBusStopConnectionManager : BUConnectionManager
 
 - (id)initWithURL:(NSURL *)url;
-- (NSArray *)fetchBusStopsWithErrorHandler:(void (^)(NSError *))errorBlock
-                            successHandler:(void (^)(NSString *))successBlock;
-- (void)cancelURLConnection;
 
 @end
