@@ -88,8 +88,8 @@
 - (void)testAskingForBusStopMeansRequestingData
 {
     id mockConnectionMgr = [OCMockObject mockForClass:[BUBusStopConnectionManager class]];
-    [[mockConnectionMgr stub] fetchBusStops];
-    NSArray __unused *results = [mockConnectionMgr fetchBusStops];
+    [[mockConnectionMgr stub] fetchBusStopsWithErrorHandler:nil successHandler:nil];
+    NSArray __unused *results = [mockConnectionMgr fetchBusStopsWithErrorHandler:nil successHandler:nil];
     [mockConnectionMgr verify];
 }
 
@@ -142,4 +142,12 @@
     [mgr receivedJSON:@"Fake JSON"];
     STAssertEqualObjects([mgr.delegate fetchedItems], stops, @"The manager should have sent its items to the delegate");
 }
+
+- (void)testEmptyArrayOfItemsPassedToDelegate
+{
+    builder.arrayToReturn = [NSArray array];
+    [mgr receivedJSON:@"Fake JSON"];
+    STAssertEqualObjects([mgr.delegate fetchedItems], [NSArray array], @"Returning an empty array is not an error");
+}
+
 @end

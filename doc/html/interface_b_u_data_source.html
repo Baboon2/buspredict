@@ -117,14 +117,14 @@ Inheritance diagram for BUDataSource:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_data_source__inherit__graph.png" border="0" usemap="#_b_u_data_source_inherit__map" alt="Inheritance graph"/></div>
 <map name="_b_u_data_source_inherit__map" id="_b_u_data_source_inherit__map">
-<area shape="rect" href="interface_b_u_bus_stop_data_source.html" title="{BUBusStopDataSource\n||}" alt="" coords="5,343,189,425"/><area shape="rect" href="interface_b_u_live_bus_data_source.html" title="{BULiveBusDataSource\n||}" alt="" coords="213,343,395,425"/></map>
+<area shape="rect" href="interface_b_u_bus_stop_data_source.html" title="{BUBusStopDataSource\n||}" alt="" coords="5,377,189,460"/><area shape="rect" href="interface_b_u_live_bus_data_source.html" title="{BULiveBusDataSource\n||}" alt="" coords="213,377,395,460"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for BUDataSource:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_data_source__coll__graph.png" border="0" usemap="#_b_u_data_source_coll__map" alt="Collaboration graph"/></div>
 <map name="_b_u_data_source_coll__map" id="_b_u_data_source_coll__map">
-<area shape="rect" href="interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="64,311,253,497"/><area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="115,141,312,243"/></map>
+<area shape="rect" href="interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="65,344,255,549"/><area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="116,141,313,277"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -133,6 +133,10 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a00f56dd92239a464515e4bab0de4d7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6fe2c3b8623f34e6a932549668b32a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_data_source.html#a6b6fe2c3b8623f34e6a932549668b32a">fetchingFailedWithError:</a></td></tr>
 <tr class="separator:a6b6fe2c3b8623f34e6a932549668b32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7894f2000c1eb990620d7c2067276f1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_data_source.html#ab7894f2000c1eb990620d7c2067276f1">didReceiveItems:</a></td></tr>
+<tr class="separator:ab7894f2000c1eb990620d7c2067276f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2755c43ba3c5ff9bf66a11c9eef29bf1"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_data_source.html#a2755c43ba3c5ff9bf66a11c9eef29bf1">fetchedItems</a></td></tr>
+<tr class="separator:a2755c43ba3c5ff9bf66a11c9eef29bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -146,6 +150,37 @@ Properties</h2></td></tr>
 <tr class="separator:a11699fd9e75ca435543d1eb26c398840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="ab7894f2000c1eb990620d7c2067276f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) didReceiveItems: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>items</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2755c43ba3c5ff9bf66a11c9eef29bf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray *) fetchedItems </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6b6fe2c3b8623f34e6a932549668b32a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +314,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_b_u_data_source.html">BUDataSource</a></li>
-    <li class="footer">Generated on Thu Jul 18 2013 14:48:20 for BusPredictor by
+    <li class="footer">Generated on Mon Jul 22 2013 15:40:31 for BusPredictor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

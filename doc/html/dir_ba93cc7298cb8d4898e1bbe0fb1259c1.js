@@ -25,6 +25,10 @@ var dir_ba93cc7298cb8d4898e1bbe0fb1259c1 =
     [ "BUDetailViewController.m", "_b_u_detail_view_controller_8m.html", [
       [ "BUDetailViewController()", "category_b_u_detail_view_controller_07_08.html", "category_b_u_detail_view_controller_07_08" ]
     ] ],
+    [ "BULiveBusBuilder.h", "_b_u_live_bus_builder_8h.html", [
+      [ "BULiveBusBuilder", "interface_b_u_live_bus_builder.html", null ]
+    ] ],
+    [ "BULiveBusBuilder.m", "_b_u_live_bus_builder_8m.html", null ],
     [ "BUModelBuilder.h", "_b_u_model_builder_8h.html", [
       [ "BUModelBuilder", "interface_b_u_model_builder.html", "interface_b_u_model_builder" ]
     ] ],

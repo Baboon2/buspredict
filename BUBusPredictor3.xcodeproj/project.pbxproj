@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */; };
 		7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */; };
+		7A9CC6E1179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CC6E0179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m */; };
 		7AA628BB17947CA100E74CA2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA628BA17947CA100E74CA2 /* libOCMock.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		7AA628C01794992B00E74CA2 /* BULiveBusConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628BD1794992B00E74CA2 /* BULiveBusConnectionManager.m */; };
 		7AA628C11794992B00E74CA2 /* BUBusStopConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628BF1794992B00E74CA2 /* BUBusStopConnectionManager.m */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusDataSourceTests.m; sourceTree = "<group>"; };
 		7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopCreationTests.m; sourceTree = "<group>"; };
+		7A9CC6E0179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopConnectionManagerTests.m; path = BUBusPredictor3Tests/BUBusStopConnectionManagerTests.m; sourceTree = SOURCE_ROOT; };
 		7AA628B417946ECA00E74CA2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		7AA628B517946ECA00E74CA2 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
 		7AA628B617946ECA00E74CA2 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */,
 				7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */,
 				DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */,
+				7A9CC6E0179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m */,
 				7AD6ACDB1787300500375DB3 /* Supporting Files */,
 			);
 			path = BUBusPredictor3Tests;
@@ -452,6 +455,7 @@
 				7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */,
 				DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */,
 				7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */,
+				7A9CC6E1179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

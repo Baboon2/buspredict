@@ -33,6 +33,9 @@ var searchData=
   ['budetailviewcontroller_2eh',['BUDetailViewController.h',['../_b_u_detail_view_controller_8h.html',1,'']]],
   ['budetailviewcontroller_2em',['BUDetailViewController.m',['../_b_u_detail_view_controller_8m.html',1,'']]],
   ['builder',['builder',['../interface_b_u_connection_manager.html#aa834633a9859444fd9d4a2975a1e64ed',1,'BUConnectionManager']]],
+  ['bulivebusbuilder',['BULiveBusBuilder',['../interface_b_u_live_bus_builder.html',1,'']]],
+  ['bulivebusbuilder_2eh',['BULiveBusBuilder.h',['../_b_u_live_bus_builder_8h.html',1,'']]],
+  ['bulivebusbuilder_2em',['BULiveBusBuilder.m',['../_b_u_live_bus_builder_8m.html',1,'']]],
   ['bulivebusconnectionmanager',['BULiveBusConnectionManager',['../interface_b_u_live_bus_connection_manager.html',1,'']]],
   ['bulivebusconnectionmanager_2eh',['BULiveBusConnectionManager.h',['../_b_u_live_bus_connection_manager_8h.html',1,'']]],
   ['bulivebusconnectionmanager_2em',['BULiveBusConnectionManager.m',['../_b_u_live_bus_connection_manager_8m.html',1,'']]],
@@ -48,5 +51,7 @@ var searchData=
   ['busmodel',['busModel',['../interface_bus_predictor_data.html#aeb1cd0b0d18e77bebe035580bb412009',1,'BusPredictorData']]],
   ['buspredictordata',['BusPredictorData',['../interface_bus_predictor_data.html',1,'']]],
   ['buspredictordata_2eh',['BusPredictorData.h',['../_bus_predictor_data_8h.html',1,'']]],
-  ['buspredictordata_2em',['BusPredictorData.m',['../_bus_predictor_data_8m.html',1,'']]]
+  ['buspredictordata_2em',['BusPredictorData.m',['../_bus_predictor_data_8m.html',1,'']]],
+  ['busstopconnectionmanagererror',['BusStopConnectionManagerError',['../_b_u_bus_stop_connection_manager_8h.html#ad0870588d01702b64128216836fd0894',1,'BusStopConnectionManagerError():&#160;BUBusStopConnectionManager.m'],['../_b_u_bus_stop_connection_manager_8m.html#ad0870588d01702b64128216836fd0894',1,'BusStopConnectionManagerError():&#160;BUBusStopConnectionManager.m']]],
+  ['busstopconnectionmanagererrorfetchcode',['BusStopConnectionManagerErrorFetchCode',['../_b_u_bus_stop_connection_manager_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a18dea0cb23fefc8574fbfd3fcb5120f9',1,'BUBusStopConnectionManager.h']]]
 ];

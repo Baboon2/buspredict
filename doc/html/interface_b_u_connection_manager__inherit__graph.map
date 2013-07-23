@@ -1,4 +1,4 @@
 <map id="BUConnectionManager" name="BUConnectionManager">
-<area shape="rect" href="$interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ initWithURL:\l+ fetchBusStops\l}" alt="" coords="5,392,253,493"/>
-<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="277,401,520,484"/>
+<area shape="rect" href="$interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ initWithURL:\l+ fetchBusStops\l}" alt="" coords="5,411,253,512"/>
+<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="277,420,520,503"/>
 </map>

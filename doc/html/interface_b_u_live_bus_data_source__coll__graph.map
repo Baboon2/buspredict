@@ -1,5 +1,5 @@
 <map id="BULiveBusDataSource" name="BULiveBusDataSource">
-<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l}" alt="" coords="53,565,264,701"/>
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="64,311,253,497"/>
-<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="115,141,312,243"/>
+<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l+ didReceiveItems:\l+ fetchedItems\l}" alt="" coords="55,616,265,787"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="65,344,255,549"/>
+<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="116,141,313,277"/>
 </map>

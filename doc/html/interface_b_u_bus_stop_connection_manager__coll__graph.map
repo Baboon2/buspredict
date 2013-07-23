@@ -1,4 +1,4 @@
 <map id="BUBusStopConnectionManager" name="BUBusStopConnectionManager">
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="35,311,224,497"/>
-<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="145,141,343,243"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="35,344,224,549"/>
+<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="145,141,343,277"/>
 </map>

@@ -14,8 +14,8 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 
 @implementation BUConnectionManager
 
-@synthesize items;
-@synthesize url;
+@synthesize items = _items;
+@synthesize url = _url;
 @synthesize fetchError;
 @synthesize connection;
 @synthesize request = _request;
@@ -26,7 +26,9 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 - (id)initWithURL:(NSURL *)theUrl
 {
     if (self = [super init]) {
+        _url = theUrl;
         _request = [[NSURLRequest alloc] initWithURL:theUrl cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5];
+        _items = nil;
     }
     return self;
 }
@@ -60,7 +62,7 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
     if (!self.items) {
         [self fetchFailedWithError: error];
     } else {
-        [self.delegate didReceiveItems:items];
+        [self.delegate didReceiveItems:self.items];
     }
 }
 

@@ -117,14 +117,14 @@ Inheritance diagram for BUConnectionManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_connection_manager__inherit__graph.png" border="0" usemap="#_b_u_connection_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_b_u_connection_manager_inherit__map" id="_b_u_connection_manager_inherit__map">
-<area shape="rect" href="interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ initWithURL:\l+ fetchBusStops\l}" alt="" coords="5,392,253,493"/><area shape="rect" href="interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="277,401,520,484"/></map>
+<area shape="rect" href="interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ initWithURL:\l+ fetchBusStops\l}" alt="" coords="5,411,253,512"/><area shape="rect" href="interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="277,420,520,503"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for BUConnectionManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_connection_manager__coll__graph.png" border="0" usemap="#_b_u_connection_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_b_u_connection_manager_coll__map" id="_b_u_connection_manager_coll__map">
-<area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="116,141,313,243"/></map>
+<area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="116,141,313,277"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -138,6 +138,8 @@ Instance Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:addfc043bbadbb32cded6f0d8acb97557"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#addfc043bbadbb32cded6f0d8acb97557">items</a></td></tr>
+<tr class="separator:addfc043bbadbb32cded6f0d8acb97557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d277a7e3caad97e3520e69906855b8"><td class="memItemLeft" align="right" valign="top">NSURL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#a17d277a7e3caad97e3520e69906855b8">url</a></td></tr>
 <tr class="separator:a17d277a7e3caad97e3520e69906855b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7223cbf1520c1061d6f1453c606aa7"><td class="memItemLeft" align="right" valign="top">NSURLConnection *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#a3c7223cbf1520c1061d6f1453c606aa7">connection</a></td></tr>
@@ -199,6 +201,15 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_b_u_connection_manager_aec84c25895dd6b4249f4ffb70ced7d16_cgraph.png" border="0" usemap="#interface_b_u_connection_manager_aec84c25895dd6b4249f4ffb70ced7d16_cgraph" alt=""/></div>
+<map name="interface_b_u_connection_manager_aec84c25895dd6b4249f4ffb70ced7d16_cgraph" id="interface_b_u_connection_manager_aec84c25895dd6b4249f4ffb70ced7d16_cgraph">
+<area shape="rect" href="interface_b_u_connection_manager.html#a597d4223ff92d24bbbfc06379ae4e6ef" title="&#45;[BUConnectionManager\l fetchFailedWithError:]" alt="" coords="253,5,453,51"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -283,6 +294,26 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="addfc043bbadbb32cded6f0d8acb97557"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray*) items</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac85c9f559983be4154675da9796809c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +364,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_b_u_connection_manager.html">BUConnectionManager</a></li>
-    <li class="footer">Generated on Thu Jul 18 2013 14:48:19 for BusPredictor by
+    <li class="footer">Generated on Mon Jul 22 2013 15:40:31 for BusPredictor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

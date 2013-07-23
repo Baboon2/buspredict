@@ -1,3 +1,3 @@
 <map id="BULiveBusConnectionManager" name="BULiveBusConnectionManager">
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ builder\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="32,139,221,344"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ builder\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="32,140,221,361"/>
 </map>

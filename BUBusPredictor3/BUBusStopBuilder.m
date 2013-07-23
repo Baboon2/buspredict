@@ -10,10 +10,25 @@
 
 @implementation BUBusStopBuilder
 
+
+//===========================================================
+// - (id)init
+//
+//===========================================================
+- (id)init
+{
+    if ((self = [super init])) {
+    }
+    return self;
+}
+
+
 - (NSArray *)createItemsFromJSON:(NSString *)stringJSON error:(NSError **)error
 {
     self.JSON = stringJSON;
-    *error = [NSError errorWithDomain:@"" code:714 userInfo:nil];
+    if (error) {
+        *error = [NSError errorWithDomain:@"" code:714 userInfo:nil];
+    }
     return self.arrayToReturn;
 }
 

@@ -21,31 +21,24 @@ NSString *BusStopConnectionManagerError = @"BusStopConnectionManagerError";
     return self;
 }
 
-- (NSArray *)fetchBusStops
+- (NSArray *)fetchBusStopsWithErrorHandler:(void (^)(NSError *))errorBlock successHandler:(void (^)(NSString *))successBlock
 {
     NSArray *results = nil;
-    if ([self.builder JSON]) {
+    self.request = [NSURLRequest requestWithURL:self.url];
+    [self.connection cancel];
+    self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
+    
+    
+    if ([self.builder JSON] && [[self.builder JSON] length] > 0) {
         results = [self.builder createItemsFromJSON:[self.builder JSON] error:NULL];
     }
     return results;
+
 }
 
-/*
-- (void)receivedJSON:(NSString *)objectNotation
+- (void)cancelURLConnection
 {
-    [super receivedJSON:objectNotation];
-    NSError *error = nil;
-    NSArray *items = [self.builder createItemsFromJSON:objectNotation error: &error];
-    if ([items count] == 0) {
-        NSDictionary *errorInfo = nil;
-        if (error) {
-            self.fetchError = error;
-            errorInfo = [NSDictionary dictionaryWithObject: error forKey:NSUnderlyingErrorKey];
-        }
-        NSError *reportableError = [NSError errorWithDomain: BusStopConnectionManagerError code: BusStopConnectionManagerErrorFetchCode userInfo: errorInfo];
-        [self.delegate fetchingFailedWithError: reportableError];
-    }
-
+    [self.connection cancel];
+    self.connection = nil;
 }
- */
 @end

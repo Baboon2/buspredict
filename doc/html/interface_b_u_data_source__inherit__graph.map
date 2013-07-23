@@ -1,4 +1,4 @@
 <map id="BUDataSource" name="BUDataSource">
-<area shape="rect" href="$interface_b_u_bus_stop_data_source.html" title="{BUBusStopDataSource\n||}" alt="" coords="5,343,189,425"/>
-<area shape="rect" href="$interface_b_u_live_bus_data_source.html" title="{BULiveBusDataSource\n||}" alt="" coords="213,343,395,425"/>
+<area shape="rect" href="$interface_b_u_bus_stop_data_source.html" title="{BUBusStopDataSource\n||}" alt="" coords="5,377,189,460"/>
+<area shape="rect" href="$interface_b_u_live_bus_data_source.html" title="{BULiveBusDataSource\n||}" alt="" coords="213,377,395,460"/>
 </map>

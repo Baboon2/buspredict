@@ -1,3 +1,3 @@
 <map id="BULiveBusDataSource" name="BULiveBusDataSource">
-<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ connectionManager\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l}" alt="" coords="48,140,259,292"/>
+<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ connectionManager\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l+ didReceiveItems:\l+ fetchedItems\l}" alt="" coords="48,140,259,327"/>
 </map>
