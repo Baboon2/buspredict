@@ -1,3 +1,3 @@
 <map id="BUBusStopConnectionManager" name="BUBusStopConnectionManager">
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ builder\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="35,140,224,361"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ builder\l+ receivedData\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l+ connection:didFailWithError:\l+ fetchJSONWithErrorHandler\l:successHandler:\l+ cancelURLConnection\l}" alt="" coords="24,139,264,448"/>
 </map>

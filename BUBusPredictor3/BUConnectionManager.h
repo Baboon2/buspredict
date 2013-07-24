@@ -36,6 +36,9 @@ enum {
 - (void)receivedJSON:(NSString *)objectNotation;
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;
+- (void)connection: (NSURLConnection *)connection didReceiveResponse: (NSURLResponse *)response;
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
+
 - (NSArray *)fetchJSONWithErrorHandler:(void (^)(NSError *))errorBlock
                             successHandler:(void (^)(NSString *))successBlock;
 

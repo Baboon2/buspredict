@@ -5,12 +5,12 @@
 <area shape="rect" href="$interface_j_s_o_n_model.html" title="JSONModel" alt="" coords="377,157,479,184"/>
 <area shape="rect" href="$interface_b_u_bus_model.html" title="BUBusModel" alt="" coords="640,157,749,184"/>
 <area shape="rect" href="$interface_b_u_bus_stop_model.html" title="BUBusStopModel" alt="" coords="623,107,767,133"/>
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="BUConnectionManager" alt="" coords="333,259,523,285"/>
-<area shape="rect" href="$interface_b_u_model_builder.html" title="BUModelBuilder" alt="" coords="360,309,496,336"/>
-<area shape="rect" href="$interface_b_u_module_data.html" title="BUModuleData" alt="" coords="364,385,492,412"/>
-<area shape="rect" href="$interface_b_u_bus_stop_connection_manager.html" title="BUBusStopConnectionManager" alt="" coords="571,208,819,235"/>
-<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="BULiveBusConnectionManager" alt="" coords="573,259,816,285"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="BUConnectionManager" alt="" coords="333,360,523,387"/>
+<area shape="rect" href="$interface_b_u_model_builder.html" title="BUModelBuilder" alt="" coords="360,259,496,285"/>
+<area shape="rect" href="$interface_b_u_module_data.html" title="BUModuleData" alt="" coords="364,208,492,235"/>
+<area shape="rect" href="$interface_b_u_bus_stop_connection_manager.html" title="BUBusStopConnectionManager" alt="" coords="571,360,819,387"/>
+<area shape="rect" href="$interface_b_u_live_bus_connection_manager.html" title="BULiveBusConnectionManager" alt="" coords="573,411,816,437"/>
 <area shape="rect" href="$interface_b_u_bus_stop_builder.html" title="BUBusStopBuilder" alt="" coords="620,309,769,336"/>
-<area shape="rect" href="$interface_b_u_live_bus_builder.html" title="BULiveBusBuilder" alt="" coords="621,360,768,387"/>
-<area shape="rect" href="$interface_bus_predictor_data.html" title="BusPredictorData" alt="" coords="623,411,767,437"/>
+<area shape="rect" href="$interface_b_u_live_bus_builder.html" title="BULiveBusBuilder" alt="" coords="621,259,768,285"/>
+<area shape="rect" href="$interface_bus_predictor_data.html" title="BusPredictorData" alt="" coords="623,208,767,235"/>
 </map>

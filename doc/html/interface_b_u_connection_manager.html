@@ -117,14 +117,14 @@ Inheritance diagram for BUConnectionManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_connection_manager__inherit__graph.png" border="0" usemap="#_b_u_connection_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_b_u_connection_manager_inherit__map" id="_b_u_connection_manager_inherit__map">
-<area shape="rect" href="interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ initWithURL:\l+ fetchBusStops\l}" alt="" coords="5,411,253,512"/><area shape="rect" href="interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="277,420,520,503"/></map>
+<area shape="rect" href="interface_b_u_bus_stop_connection_manager.html" title="{BUBusStopConnectionManager\n||+ initWithURL:\l}" alt="" coords="5,497,253,580"/><area shape="rect" href="interface_b_u_live_bus_connection_manager.html" title="{BULiveBusConnectionManager\n||+ fetchBuses\l}" alt="" coords="277,497,520,580"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for BUConnectionManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_connection_manager__coll__graph.png" border="0" usemap="#_b_u_connection_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_b_u_connection_manager_coll__map" id="_b_u_connection_manager_coll__map">
-<area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="116,141,313,277"/></map>
+<area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="45,141,243,277"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -135,6 +135,12 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a597d4223ff92d24bbbfc06379ae4e6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec84c25895dd6b4249f4ffb70ced7d16"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#aec84c25895dd6b4249f4ffb70ced7d16">receivedJSON:</a></td></tr>
 <tr class="separator:aec84c25895dd6b4249f4ffb70ced7d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7ecaf6500473b13d5863dbd73a2877"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#abb7ecaf6500473b13d5863dbd73a2877">connection:didFailWithError:</a></td></tr>
+<tr class="separator:abb7ecaf6500473b13d5863dbd73a2877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea09491f48e641f8c4fbf50c68563183"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#aea09491f48e641f8c4fbf50c68563183">fetchJSONWithErrorHandler:successHandler:</a></td></tr>
+<tr class="separator:aea09491f48e641f8c4fbf50c68563183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2795aebc101d0e693f4897431e5fa304"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#a2795aebc101d0e693f4897431e5fa304">cancelURLConnection</a></td></tr>
+<tr class="separator:a2795aebc101d0e693f4897431e5fa304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -152,8 +158,60 @@ Properties</h2></td></tr>
 <tr class="separator:ae66cb49103adad2efc397f5cc97c7a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa834633a9859444fd9d4a2975a1e64ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_b_u_model_builder.html">BUModelBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#aa834633a9859444fd9d4a2975a1e64ed">builder</a></td></tr>
 <tr class="separator:aa834633a9859444fd9d4a2975a1e64ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2204c1d10fde059404ec64844de4467a"><td class="memItemLeft" align="right" valign="top">NSMutableData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#a2204c1d10fde059404ec64844de4467a">receivedData</a></td></tr>
+<tr class="separator:a2204c1d10fde059404ec64844de4467a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a2795aebc101d0e693f4897431e5fa304"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) cancelURLConnection </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb7ecaf6500473b13d5863dbd73a2877"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) connection: </td>
+          <td></td>
+          <td class="paramtype">(NSURLConnection *)&#160;</td>
+          <td class="paramname"><em>connection</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didFailWithError:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_b_u_connection_manager_abb7ecaf6500473b13d5863dbd73a2877_cgraph.png" border="0" usemap="#interface_b_u_connection_manager_abb7ecaf6500473b13d5863dbd73a2877_cgraph" alt=""/></div>
+<map name="interface_b_u_connection_manager_abb7ecaf6500473b13d5863dbd73a2877_cgraph" id="interface_b_u_connection_manager_abb7ecaf6500473b13d5863dbd73a2877_cgraph">
+<area shape="rect" href="interface_b_u_connection_manager.html#a597d4223ff92d24bbbfc06379ae4e6ef" title="&#45;[BUConnectionManager\l fetchFailedWithError:]" alt="" coords="288,5,488,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a597d4223ff92d24bbbfc06379ae4e6ef"></a>
 <div class="memitem">
 <div class="memproto">
@@ -164,6 +222,32 @@ Properties</h2></td></tr>
           <td class="paramtype">(NSError *)&#160;</td>
           <td class="paramname"><em>error</em></td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea09491f48e641f8c4fbf50c68563183"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray *) fetchJSONWithErrorHandler: </td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>errorBlock</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">successHandler:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>successBlock</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -314,6 +398,26 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a2204c1d10fde059404ec64844de4467a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableData*) receivedData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">weak</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac85c9f559983be4154675da9796809c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -364,7 +468,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_b_u_connection_manager.html">BUConnectionManager</a></li>
-    <li class="footer">Generated on Mon Jul 22 2013 15:40:31 for BusPredictor by
+    <li class="footer">Generated on Wed Jul 24 2013 15:13:45 for BusPredictor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

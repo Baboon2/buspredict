@@ -77,6 +77,7 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 {
     [self fetchFailedWithError:error];
 }
+
 - (NSArray *)fetchJSONWithErrorHandler:(void (^)(NSError *))errorBlock successHandler:(void (^)(NSString *))successBlock
 {
     NSArray *results = nil;

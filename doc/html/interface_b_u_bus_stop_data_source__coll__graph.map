@@ -1,5 +1,5 @@
 <map id="BUBusStopDataSource" name="BUBusStopDataSource">
-<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l+ didReceiveItems:\l+ fetchedItems\l}" alt="" coords="55,616,265,787"/>
-<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l}" alt="" coords="65,344,255,549"/>
-<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="116,141,313,277"/>
+<area shape="rect" href="$interface_b_u_data_source.html" title="{BUDataSource\n|+ url\l+ key\l+ fetchError\l|+ initWithUrlString:key:\l+ fetchingFailedWithError:\l+ didReceiveItems:\l+ fetchedItems\l}" alt="" coords="100,704,311,875"/>
+<area shape="rect" href="$interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ receivedData\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l+ connection:didFailWithError:\l+ fetchJSONWithErrorHandler\l:successHandler:\l+ cancelURLConnection\l}" alt="" coords="85,345,325,636"/>
+<area shape="rect" href="$interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="128,141,325,277"/>
 </map>

@@ -35,6 +35,9 @@ var hierarchy =
       ] ],
       [ "JSONModel", "interface_j_s_o_n_model.html", null ]
     ] ],
+    [ "<NSURLConnectionDelegate>", null, [
+      [ "BUConnectionManager", "interface_b_u_connection_manager.html", null ]
+    ] ],
     [ "<UIApplicationDelegate>", null, [
       [ "BUAppDelegate", "interface_b_u_app_delegate.html", null ]
     ] ],

@@ -8,6 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "BUBusStopConnectionManager.h"
+#import "BUBusStopDataSource.h"
 
 @interface BUBusStopConnectionManagerTests : SenTestCase
 
@@ -16,12 +17,14 @@
 @implementation BUBusStopConnectionManagerTests {
     @private
     BUBusStopConnectionManager *commMgr;
+    BUBusStopDataSource *ds;
 }
 
 -(void)setUp
 {
     commMgr = [[BUBusStopConnectionManager alloc] initWithURL:[NSURL URLWithString:[self urlForBusStops]]];
-
+    ds = [[BUBusStopDataSource alloc] initWithUrlString:nil key:@"busstop"];
+    [commMgr setDelegate:ds];
 }
 
 - (void)tearDown
@@ -59,6 +62,14 @@
 {
     commMgr.receivedData = (NSMutableData *)[@"Hello" dataUsingEncoding: NSUTF8StringEncoding];
     [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
-    // TODO
+    [commMgr connection: nil didReceiveResponse: nil];
+    STAssertEquals([commMgr.receivedData length], (NSUInteger)0, @"Data should have been discarded");
+}
+
+- (void)testConnectionFailingPassesErrorToDelegate {
+    [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
+    NSError *error = [NSError errorWithDomain:@"Fake Domain" code:12345 userInfo:nil];
+    [commMgr connection:nil didFailWithError:error];
+    STAssertEquals(commMgr.delegate , <#a2#>, <#description, ...#>)
 }
 @end
