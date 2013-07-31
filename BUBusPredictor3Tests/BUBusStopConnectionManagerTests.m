@@ -5,6 +5,7 @@
 //  Created by Ray Swartz on 7/22/13.
 //  Copyright (c) 2013 Boston University. All rights reserved.
 //
+// Handles details of the connection.
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "BUBusStopConnectionManager.h"
@@ -60,16 +61,16 @@
 
 - (void)testReceivingResponseDiscardsExistingData
 {
-    commMgr.receivedData = (NSMutableData *)[@"Hello" dataUsingEncoding: NSUTF8StringEncoding];
+    commMgr->receivedData = (NSMutableData *)[@"Hello" dataUsingEncoding: NSUTF8StringEncoding];
     [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
     [commMgr connection: nil didReceiveResponse: nil];
-    STAssertEquals([commMgr.receivedData length], (NSUInteger)0, @"Data should have been discarded");
+    STAssertEquals([commMgr->receivedData length], (NSUInteger)0, @"Data should have been discarded");
 }
 
 - (void)testConnectionFailingPassesErrorToDelegate {
     [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
-    NSError *error = [NSError errorWithDomain:@"Fake Domain" code:12345 userInfo:nil];
+    NSError *error = [NSError errorWithDomain:@"Fake Domain" code:ConnectionManagerErrorFetch userInfo:nil];
     [commMgr connection:nil didFailWithError:error];
-    STAssertEquals(commMgr.delegate , <#a2#>, <#description, ...#>)
+    STAssertEqualObjects([commMgr.delegate fetchError] , error, @"delegate should be informed of connection error");
 }
 @end

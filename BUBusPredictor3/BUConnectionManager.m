@@ -12,12 +12,7 @@
 NSString *ConnectionManagerError = @"ConnectionManagerError";
 
 
-@implementation BUConnectionManager {
-    
-    @private
-    void (^errorHandler)(NSError *);
-    void (^successHandler)(NSString *);
-}
+@implementation BUConnectionManager
 
 @synthesize items = _items;
 @synthesize url = _url;
@@ -85,7 +80,7 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
     [self.connection cancel];
     self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
     if (self.connection) {
-        self.receivedData = [NSMutableData data];
+        receivedData = [NSMutableData data];
     } else {
         // inform connection failed
     }

@@ -18,7 +18,13 @@ enum {
 @class BUModelBuilder;
 
 
-@interface BUConnectionManager : NSObject <NSURLConnectionDelegate>
+@interface BUConnectionManager : NSObject <NSURLConnectionDelegate> {
+    @public
+    NSMutableData *receivedData;
+    @private
+    void (^errorHandler)(NSError *);
+    void (^successHandler)(NSString *);
+}
 
 @property (nonatomic, strong) NSArray *items;
 @property (nonatomic, readonly, weak) NSURL *url;
@@ -29,7 +35,6 @@ enum {
 @property (weak, nonatomic) id<BUConnectionManagerDelegate> delegate; // this might be the data source
 @property (strong) NSError *fetchError;
 @property (nonatomic, strong) BUModelBuilder *builder;
-@property (nonatomic, weak) NSMutableData *receivedData;
 
 - (id)initWithURL:(NSURL *)url;
 - (void)fetchFailedWithError:(NSError *)error;
