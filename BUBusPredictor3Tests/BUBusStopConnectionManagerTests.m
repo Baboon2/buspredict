@@ -69,8 +69,8 @@
 
 - (void)testConnectionFailingPassesErrorToDelegate {
     [commMgr fetchJSONWithErrorHandler:nil successHandler:nil];
-    NSError *error = [NSError errorWithDomain:@"Fake Domain" code:ConnectionManagerErrorFetch userInfo:nil];
+    NSError *error = [NSError errorWithDomain:ConnectionManagerError code:ConnectionManagerErrorFetch userInfo:nil];
     [commMgr connection:nil didFailWithError:error];
-    STAssertEqualObjects([commMgr.delegate fetchError] , error, @"delegate should be informed of connection error");
+    STAssertEquals([[commMgr.delegate fetchError] code], [error code], @"delegate should be informed of connection error");
 }
 @end
