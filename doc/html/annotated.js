@@ -18,5 +18,7 @@ var annotated =
     [ "BUModelBuilder", "interface_b_u_model_builder.html", "interface_b_u_model_builder" ],
     [ "BUModuleData", "interface_b_u_module_data.html", "interface_b_u_module_data" ],
     [ "BusPredictorData", "interface_bus_predictor_data.html", "interface_bus_predictor_data" ],
+    [ "BUTableViewController", "interface_b_u_table_view_controller.html", null ],
+    [ "BUTableViewController()", "category_b_u_table_view_controller_07_08.html", null ],
     [ "JSONModel", "interface_j_s_o_n_model.html", "interface_j_s_o_n_model" ]
 ];

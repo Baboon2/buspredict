@@ -12,7 +12,7 @@
 
 - (NSArray *)fetchBuses
 {
-    return [NSArray array];
+    return [super fetchResults];
 }
 
 @end

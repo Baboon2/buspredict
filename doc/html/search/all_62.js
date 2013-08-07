@@ -53,5 +53,9 @@ var searchData=
   ['buspredictordata_2eh',['BusPredictorData.h',['../_bus_predictor_data_8h.html',1,'']]],
   ['buspredictordata_2em',['BusPredictorData.m',['../_bus_predictor_data_8m.html',1,'']]],
   ['busstopconnectionmanagererror',['BusStopConnectionManagerError',['../_b_u_bus_stop_connection_manager_8h.html#ad0870588d01702b64128216836fd0894',1,'BusStopConnectionManagerError():&#160;BUBusStopConnectionManager.m'],['../_b_u_bus_stop_connection_manager_8m.html#ad0870588d01702b64128216836fd0894',1,'BusStopConnectionManagerError():&#160;BUBusStopConnectionManager.m']]],
-  ['busstopconnectionmanagererrorfetchcode',['BusStopConnectionManagerErrorFetchCode',['../_b_u_bus_stop_connection_manager_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a18dea0cb23fefc8574fbfd3fcb5120f9',1,'BUBusStopConnectionManager.h']]]
+  ['busstopconnectionmanagererrorfetchcode',['BusStopConnectionManagerErrorFetchCode',['../_b_u_bus_stop_connection_manager_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a18dea0cb23fefc8574fbfd3fcb5120f9',1,'BUBusStopConnectionManager.h']]],
+  ['butableviewcontroller',['BUTableViewController',['../interface_b_u_table_view_controller.html',1,'']]],
+  ['butableviewcontroller_28_29',['BUTableViewController()',['../category_b_u_table_view_controller_07_08.html',1,'']]],
+  ['butableviewcontroller_2eh',['BUTableViewController.h',['../_b_u_table_view_controller_8h.html',1,'']]],
+  ['butableviewcontroller_2em',['BUTableViewController.m',['../_b_u_table_view_controller_8m.html',1,'']]]
 ];

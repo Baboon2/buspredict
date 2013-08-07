@@ -17,5 +17,7 @@ var searchData=
   ['bulivebusdatasource',['BULiveBusDataSource',['../interface_b_u_live_bus_data_source.html',1,'']]],
   ['bumodelbuilder',['BUModelBuilder',['../interface_b_u_model_builder.html',1,'']]],
   ['bumoduledata',['BUModuleData',['../interface_b_u_module_data.html',1,'']]],
-  ['buspredictordata',['BusPredictorData',['../interface_bus_predictor_data.html',1,'']]]
+  ['buspredictordata',['BusPredictorData',['../interface_bus_predictor_data.html',1,'']]],
+  ['butableviewcontroller',['BUTableViewController',['../interface_b_u_table_view_controller.html',1,'']]],
+  ['butableviewcontroller_28_29',['BUTableViewController()',['../category_b_u_table_view_controller_07_08.html',1,'']]]
 ];

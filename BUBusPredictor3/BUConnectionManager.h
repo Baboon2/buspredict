@@ -49,6 +49,8 @@ enum {
 
 - (void)cancelURLConnection;
 
+- (NSArray *)fetchResults;
+
 @end
 
 NSMutableData *receivedData;

@@ -86,9 +86,9 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
     }
     
     if ([self.builder JSON] && [[self.builder JSON] length] > 0) {
-        results = [self.builder createItemsFromJSON:[self.builder JSON] error:NULL];
+        self.items = [self.builder createItemsFromJSON:[self.builder JSON] error:NULL];
     }
-    return results;
+    return self.items;
 
 }
 
@@ -106,6 +106,11 @@ NSString *ConnectionManagerError = @"ConnectionManagerError";
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
       [receivedData appendData:data];
+}
+
+- (NSArray *)fetchResults
+{
+    return self.items;
 }
 
 @end

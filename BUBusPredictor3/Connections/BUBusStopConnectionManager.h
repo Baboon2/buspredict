@@ -14,7 +14,7 @@
 extern NSString *BusStopConnectionManagerError;
 
 enum {
-    BusStopConnectionManagerErrorFetchCode
+    BusStopConnectionManagerErrorFetchCode = 801
 };
 
 @interface BUBusStopConnectionManager : BUConnectionManager

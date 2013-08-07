@@ -1,11 +1,12 @@
 <map id="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/BUBusPredictorMasterViewController.m" name="/Users/rswartz/Documents/d/proto/xc4/BUBusPredictor3/BUBusPredictor3/BUBusPredictorMasterViewController.m">
-<area shape="rect" href="$_b_u_bus_predictor_master_view_controller_8h.html" title="BUBusPredictorMasterView\lController.h" alt="" coords="232,133,443,179"/>
-<area shape="rect" href="$_b_u_detail_view_controller_8h.html" title="BUDetailViewController.h" alt="" coords="5,143,208,169"/>
-<area shape="rect" href="$_bus_predictor_data_8h.html" title="BusPredictorData.h" alt="" coords="467,143,624,169"/>
-<area shape="rect" href="$_b_u_module_data_8h.html" title="BUModuleData.h" alt="" coords="867,228,1008,255"/>
-<area shape="rect" href="$_b_u_live_bus_data_source_8h.html" title="BULiveBusDataSource.h" alt="" coords="648,228,843,255"/>
-<area shape="rect" href="$_b_u_bus_model_8h.html" title="BUBusModel.h" alt="" coords="320,228,443,255"/>
-<area shape="rect" href="$_b_u_bus_stop_model_8h.html" title="BUBusStopModel.h" alt="" coords="467,228,624,255"/>
-<area shape="rect" href="$_b_u_data_source_8h.html" title="BUDataSource.h" alt="" coords="761,305,900,332"/>
-<area shape="rect" href="$_j_s_o_n_model_8h.html" title="JSONModel.h" alt="" coords="488,305,603,332"/>
+<area shape="rect" href="$_b_u_bus_predictor_master_view_controller_8h.html" title="BUBusPredictorMasterView\lController.h" alt="" coords="5,133,216,179"/>
+<area shape="rect" href="$_b_u_detail_view_controller_8h.html" title="BUDetailViewController.h" alt="" coords="240,143,443,169"/>
+<area shape="rect" href="$_bus_predictor_data_8h.html" title="BusPredictorData.h" alt="" coords="521,143,679,169"/>
+<area shape="rect" href="$_b_u_table_view_controller_8h.html" title="BUTableViewController.h" alt="" coords="77,228,277,255"/>
+<area shape="rect" href="$_b_u_module_data_8h.html" title="BUModuleData.h" alt="" coords="949,228,1091,255"/>
+<area shape="rect" href="$_b_u_live_bus_data_source_8h.html" title="BULiveBusDataSource.h" alt="" coords="731,228,925,255"/>
+<area shape="rect" href="$_b_u_bus_model_8h.html" title="BUBusModel.h" alt="" coords="403,228,525,255"/>
+<area shape="rect" href="$_b_u_bus_stop_model_8h.html" title="BUBusStopModel.h" alt="" coords="549,228,707,255"/>
+<area shape="rect" href="$_b_u_data_source_8h.html" title="BUDataSource.h" alt="" coords="844,305,983,332"/>
+<area shape="rect" href="$_j_s_o_n_model_8h.html" title="JSONModel.h" alt="" coords="571,305,685,332"/>
 </map>

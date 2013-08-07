@@ -1,688 +1,2077 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */; };
-		7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */; };
-		7A9CC6E1179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CC6E0179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m */; };
-		7AA628BB17947CA100E74CA2 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA628BA17947CA100E74CA2 /* libOCMock.a */; settings = {ATTRIBUTES = (Required, ); }; };
-		7AA628C01794992B00E74CA2 /* BULiveBusConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628BD1794992B00E74CA2 /* BULiveBusConnectionManager.m */; };
-		7AA628C11794992B00E74CA2 /* BUBusStopConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628BF1794992B00E74CA2 /* BUBusStopConnectionManager.m */; };
-		7AA628C61794995700E74CA2 /* BULiveBusDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C31794995700E74CA2 /* BULiveBusDataSource.m */; };
-		7AA628C71794995700E74CA2 /* BUBusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C51794995700E74CA2 /* BUBusModel.m */; };
-		7AA628CC1794998100E74CA2 /* BUBusStopDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */; };
-		7AA628CD1794998100E74CA2 /* BUBusStopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA628CB1794998100E74CA2 /* BUBusStopModel.m */; };
-		7AB2AF3C1798599100DEA17F /* BUBusStopBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2AF3B1798599100DEA17F /* BUBusStopBuilder.m */; };
-		7AB2AF3F179859AB00DEA17F /* BUModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2AF3E179859AB00DEA17F /* BUModelBuilder.m */; };
-		7AB2AF421798712300DEA17F /* BULiveBusBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2AF411798712300DEA17F /* BULiveBusBuilder.m */; };
-		7AC99F4C1795D847003AA552 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */; };
-		7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
-		7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
-		7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */; };
-		7AD6ACB51787300500375DB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACB31787300500375DB3 /* InfoPlist.strings */; };
-		7AD6ACB71787300500375DB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACB61787300500375DB3 /* main.m */; };
-		7AD6ACBB1787300500375DB3 /* BUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACBA1787300500375DB3 /* BUAppDelegate.m */; };
-		7AD6ACBD1787300500375DB3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACBC1787300500375DB3 /* Default.png */; };
-		7AD6ACBF1787300500375DB3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACBE1787300500375DB3 /* Default@2x.png */; };
-		7AD6ACC11787300500375DB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC01787300500375DB3 /* Default-568h@2x.png */; };
-		7AD6ACC41787300500375DB3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */; };
-		7AD6ACCA1787300500375DB3 /* BUBusPredictorMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */; };
-		7AD6ACCD1787300500375DB3 /* BUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */; };
-		7AD6ACD51787300500375DB3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACD41787300500375DB3 /* SenTestingKit.framework */; };
-		7AD6ACD61787300500375DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAA1787300500375DB3 /* UIKit.framework */; };
-		7AD6ACD71787300500375DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACAC1787300500375DB3 /* Foundation.framework */; };
-		7AD6ACDF1787300500375DB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6ACDD1787300500375DB3 /* InfoPlist.strings */; };
-		7AD6ACE21787300500375DB3 /* BUBusPredictor3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */; };
-		7AD6ACEC1787304600375DB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD6ACEB1787304600375DB3 /* MapKit.framework */; };
-		7AD6ACEF1787351600375DB3 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACEE1787351600375DB3 /* JSONModel.m */; };
-		7AD6ACF3178757A500375DB3 /* BusPredictorData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACF2178757A500375DB3 /* BusPredictorData.m */; };
-		7AD6ACF6178757D700375DB3 /* BUModuleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACF5178757D700375DB3 /* BUModuleData.m */; };
-		7AD6ACFC17876B6600375DB3 /* BUBusPredictorDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */; };
-		7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6AD01178771D500375DB3 /* BUDataSource.m */; };
-		7AF6B2F517908D0900050A80 /* BUConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6B2F417908D0900050A80 /* BUConnectionManager.m */; };
-		DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7AD6ACD81787300500375DB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7AD6AC9F1787300500375DB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AD6ACA61787300500375DB3;
-			remoteInfo = BUBusPredictor3;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusDataSourceTests.m; sourceTree = "<group>"; };
-		7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopCreationTests.m; sourceTree = "<group>"; };
-		7A9CC6E0179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopConnectionManagerTests.m; path = BUBusPredictor3Tests/BUBusStopConnectionManagerTests.m; sourceTree = SOURCE_ROOT; };
-		7AA628B417946ECA00E74CA2 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		7AA628B517946ECA00E74CA2 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
-		7AA628B617946ECA00E74CA2 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
-		7AA628B717946ECA00E74CA2 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
-		7AA628B817946ECA00E74CA2 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
-		7AA628B917946ECA00E74CA2 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
-		7AA628BA17947CA100E74CA2 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
-		7AA628BC1794992B00E74CA2 /* BULiveBusConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BULiveBusConnectionManager.h; path = Connections/BULiveBusConnectionManager.h; sourceTree = "<group>"; };
-		7AA628BD1794992B00E74CA2 /* BULiveBusConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BULiveBusConnectionManager.m; path = Connections/BULiveBusConnectionManager.m; sourceTree = "<group>"; };
-		7AA628BE1794992B00E74CA2 /* BUBusStopConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusStopConnectionManager.h; path = Connections/BUBusStopConnectionManager.h; sourceTree = "<group>"; };
-		7AA628BF1794992B00E74CA2 /* BUBusStopConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopConnectionManager.m; path = Connections/BUBusStopConnectionManager.m; sourceTree = "<group>"; };
-		7AA628C21794995700E74CA2 /* BULiveBusDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BULiveBusDataSource.h; path = Data/Bus/BULiveBusDataSource.h; sourceTree = "<group>"; };
-		7AA628C31794995700E74CA2 /* BULiveBusDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BULiveBusDataSource.m; path = Data/Bus/BULiveBusDataSource.m; sourceTree = "<group>"; };
-		7AA628C41794995700E74CA2 /* BUBusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusModel.h; path = Data/Bus/BUBusModel.h; sourceTree = "<group>"; };
-		7AA628C51794995700E74CA2 /* BUBusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusModel.m; path = Data/Bus/BUBusModel.m; sourceTree = "<group>"; };
-		7AA628C81794998100E74CA2 /* BUBusStopDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusStopDataSource.h; path = Data/Stops/BUBusStopDataSource.h; sourceTree = "<group>"; };
-		7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopDataSource.m; path = Data/Stops/BUBusStopDataSource.m; sourceTree = "<group>"; };
-		7AA628CA1794998100E74CA2 /* BUBusStopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBusStopModel.h; path = Data/Stops/BUBusStopModel.h; sourceTree = "<group>"; };
-		7AA628CB1794998100E74CA2 /* BUBusStopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBusStopModel.m; path = Data/Stops/BUBusStopModel.m; sourceTree = "<group>"; };
-		7AB2AF3A1798599100DEA17F /* BUBusStopBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBusStopBuilder.h; sourceTree = "<group>"; };
-		7AB2AF3B1798599100DEA17F /* BUBusStopBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopBuilder.m; sourceTree = "<group>"; };
-		7AB2AF3D179859AB00DEA17F /* BUModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUModelBuilder.h; sourceTree = "<group>"; };
-		7AB2AF3E179859AB00DEA17F /* BUModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUModelBuilder.m; sourceTree = "<group>"; };
-		7AB2AF401798712300DEA17F /* BULiveBusBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BULiveBusBuilder.h; sourceTree = "<group>"; };
-		7AB2AF411798712300DEA17F /* BULiveBusBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULiveBusBuilder.m; sourceTree = "<group>"; };
-		7AC99F4B1795D847003AA552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUBusPredictor3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD6ACAA1787300500375DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7AD6ACAC1787300500375DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7AD6ACB21787300500375DB3 /* BUBusPredictor3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BUBusPredictor3-Info.plist"; sourceTree = "<group>"; };
-		7AD6ACB41787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7AD6ACB61787300500375DB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7AD6ACB81787300500375DB3 /* BUBusPredictor3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BUBusPredictor3-Prefix.pch"; sourceTree = "<group>"; };
-		7AD6ACB91787300500375DB3 /* BUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUAppDelegate.h; sourceTree = "<group>"; };
-		7AD6ACBA1787300500375DB3 /* BUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUAppDelegate.m; sourceTree = "<group>"; };
-		7AD6ACBC1787300500375DB3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7AD6ACBE1787300500375DB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		7AD6ACC01787300500375DB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7AD6ACC31787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		7AD6ACC81787300500375DB3 /* BUBusPredictorMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUBusPredictorMasterViewController.h; sourceTree = "<group>"; };
-		7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictorMasterViewController.m; sourceTree = "<group>"; };
-		7AD6ACCB1787300500375DB3 /* BUDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUDetailViewController.h; sourceTree = "<group>"; };
-		7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUDetailViewController.m; sourceTree = "<group>"; };
-		7AD6ACD31787300500375DB3 /* BUBusPredictor3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUBusPredictor3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD6ACD41787300500375DB3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7AD6ACDC1787300500375DB3 /* BUBusPredictor3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BUBusPredictor3Tests-Info.plist"; sourceTree = "<group>"; };
-		7AD6ACDE1787300500375DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictor3Tests.m; sourceTree = "<group>"; };
-		7AD6ACEB1787304600375DB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		7AD6ACED1787351600375DB3 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = BUBusPredictor3/JSON/JSONModel.h; sourceTree = "<group>"; };
-		7AD6ACEE1787351600375DB3 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = BUBusPredictor3/JSON/JSONModel.m; sourceTree = "<group>"; };
-		7AD6ACF1178757A500375DB3 /* BusPredictorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusPredictorData.h; path = Data/BusPredictorData.h; sourceTree = "<group>"; };
-		7AD6ACF2178757A500375DB3 /* BusPredictorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusPredictorData.m; path = Data/BusPredictorData.m; sourceTree = "<group>"; };
-		7AD6ACF4178757D700375DB3 /* BUModuleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUModuleData.h; path = Data/BUModuleData.h; sourceTree = "<group>"; };
-		7AD6ACF5178757D700375DB3 /* BUModuleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUModuleData.m; path = Data/BUModuleData.m; sourceTree = "<group>"; };
-		7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusPredictorDataTests.m; sourceTree = "<group>"; };
-		7AD6AD00178771D500375DB3 /* BUDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDataSource.h; path = Data/BUDataSource.h; sourceTree = "<group>"; };
-		7AD6AD01178771D500375DB3 /* BUDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDataSource.m; path = Data/BUDataSource.m; sourceTree = "<group>"; };
-		7AF6B2F21790754300050A80 /* BUConnectionManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUConnectionManagerDelegate.h; path = ../BUConnectionManagerDelegate.h; sourceTree = "<group>"; };
-		7AF6B2F317908D0900050A80 /* BUConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUConnectionManager.h; sourceTree = "<group>"; };
-		7AF6B2F417908D0900050A80 /* BUConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUConnectionManager.m; sourceTree = "<group>"; };
-		DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBusStopDataSourceTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		7AD6ACA41787300500375DB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AD6ACEC1787304600375DB3 /* MapKit.framework in Frameworks */,
-				7AD6ACAB1787300500375DB3 /* UIKit.framework in Frameworks */,
-				7AD6ACAD1787300500375DB3 /* Foundation.framework in Frameworks */,
-				7AD6ACAF1787300500375DB3 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD6ACCF1787300500375DB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AA628BB17947CA100E74CA2 /* libOCMock.a in Frameworks */,
-				7AD6ACD51787300500375DB3 /* SenTestingKit.framework in Frameworks */,
-				7AD6ACD61787300500375DB3 /* UIKit.framework in Frameworks */,
-				7AD6ACD71787300500375DB3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		7AA628B317946ECA00E74CA2 /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				7AA628B417946ECA00E74CA2 /* NSNotificationCenter+OCMAdditions.h */,
-				7AA628B517946ECA00E74CA2 /* OCMArg.h */,
-				7AA628B617946ECA00E74CA2 /* OCMConstraint.h */,
-				7AA628B717946ECA00E74CA2 /* OCMock.h */,
-				7AA628B817946ECA00E74CA2 /* OCMockObject.h */,
-				7AA628B917946ECA00E74CA2 /* OCMockRecorder.h */,
-			);
-			path = OCMock;
-			sourceTree = "<group>";
-		};
-		7AD6AC9E1787300500375DB3 = {
-			isa = PBXGroup;
-			children = (
-				7AA628BA17947CA100E74CA2 /* libOCMock.a */,
-				7AD6ACF0178735B300375DB3 /* JSON */,
-				7AD6ACB01787300500375DB3 /* BUBusPredictor3 */,
-				7AD6ACDA1787300500375DB3 /* BUBusPredictor3Tests */,
-				7AA628B317946ECA00E74CA2 /* OCMock */,
-				7AD6ACA91787300500375DB3 /* Frameworks */,
-				7AD6ACA81787300500375DB3 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7AD6ACA81787300500375DB3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */,
-				7AD6ACD31787300500375DB3 /* BUBusPredictor3Tests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7AD6ACA91787300500375DB3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACAA1787300500375DB3 /* UIKit.framework */,
-				7AD6ACAC1787300500375DB3 /* Foundation.framework */,
-				7AD6ACAE1787300500375DB3 /* CoreGraphics.framework */,
-				7AD6ACEB1787304600375DB3 /* MapKit.framework */,
-				7AD6ACD41787300500375DB3 /* SenTestingKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7AD6ACB01787300500375DB3 /* BUBusPredictor3 */ = {
-			isa = PBXGroup;
-			children = (
-				7AF6B2F21790754300050A80 /* BUConnectionManagerDelegate.h */,
-				7AD6AD00178771D500375DB3 /* BUDataSource.h */,
-				7AD6AD01178771D500375DB3 /* BUDataSource.m */,
-				7AD6ACF4178757D700375DB3 /* BUModuleData.h */,
-				7AD6ACF5178757D700375DB3 /* BUModuleData.m */,
-				7AF6B2F317908D0900050A80 /* BUConnectionManager.h */,
-				7AF6B2F417908D0900050A80 /* BUConnectionManager.m */,
-				7AB2AF3D179859AB00DEA17F /* BUModelBuilder.h */,
-				7AB2AF3E179859AB00DEA17F /* BUModelBuilder.m */,
-				DDBB684A178E01E5008336EF /* Live Bus */,
-				DDBB684B178E01F4008336EF /* Bus Stop */,
-				7AD6ACF1178757A500375DB3 /* BusPredictorData.h */,
-				7AD6ACF2178757A500375DB3 /* BusPredictorData.m */,
-				7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */,
-				7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */,
-				7AD6ACB91787300500375DB3 /* BUAppDelegate.h */,
-				7AD6ACBA1787300500375DB3 /* BUAppDelegate.m */,
-				DDBB6849178E01C6008336EF /* Views */,
-				7AD6ACB11787300500375DB3 /* Supporting Files */,
-			);
-			path = BUBusPredictor3;
-			sourceTree = "<group>";
-		};
-		7AD6ACB11787300500375DB3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACB21787300500375DB3 /* BUBusPredictor3-Info.plist */,
-				7AD6ACB31787300500375DB3 /* InfoPlist.strings */,
-				7AD6ACB61787300500375DB3 /* main.m */,
-				7AD6ACB81787300500375DB3 /* BUBusPredictor3-Prefix.pch */,
-				7AD6ACBC1787300500375DB3 /* Default.png */,
-				7AD6ACBE1787300500375DB3 /* Default@2x.png */,
-				7AD6ACC01787300500375DB3 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7AD6ACDA1787300500375DB3 /* BUBusPredictor3Tests */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACE11787300500375DB3 /* BUBusPredictor3Tests.m */,
-				7AD6ACFB17876B6600375DB3 /* BUBusPredictorDataTests.m */,
-				7A6C1AB3178C959700AB1DF6 /* BULiveBusDataSourceTests.m */,
-				7A70B230178F040D00DD8886 /* BUBusStopCreationTests.m */,
-				DDBB6826178DD38E008336EF /* BUBusStopDataSourceTests.m */,
-				7A9CC6E0179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m */,
-				7AD6ACDB1787300500375DB3 /* Supporting Files */,
-			);
-			path = BUBusPredictor3Tests;
-			sourceTree = "<group>";
-		};
-		7AD6ACDB1787300500375DB3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACDC1787300500375DB3 /* BUBusPredictor3Tests-Info.plist */,
-				7AD6ACDD1787300500375DB3 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7AD6ACF0178735B300375DB3 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACED1787351600375DB3 /* JSONModel.h */,
-				7AD6ACEE1787351600375DB3 /* JSONModel.m */,
-			);
-			name = JSON;
-			sourceTree = "<group>";
-		};
-		DDBB6849178E01C6008336EF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7AD6ACC81787300500375DB3 /* BUBusPredictorMasterViewController.h */,
-				7AD6ACC91787300500375DB3 /* BUBusPredictorMasterViewController.m */,
-				7AD6ACCB1787300500375DB3 /* BUDetailViewController.h */,
-				7AD6ACCC1787300500375DB3 /* BUDetailViewController.m */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		DDBB684A178E01E5008336EF /* Live Bus */ = {
-			isa = PBXGroup;
-			children = (
-				7AA628C21794995700E74CA2 /* BULiveBusDataSource.h */,
-				7AA628C31794995700E74CA2 /* BULiveBusDataSource.m */,
-				7AA628C41794995700E74CA2 /* BUBusModel.h */,
-				7AA628C51794995700E74CA2 /* BUBusModel.m */,
-				7AA628BC1794992B00E74CA2 /* BULiveBusConnectionManager.h */,
-				7AA628BD1794992B00E74CA2 /* BULiveBusConnectionManager.m */,
-				7AB2AF401798712300DEA17F /* BULiveBusBuilder.h */,
-				7AB2AF411798712300DEA17F /* BULiveBusBuilder.m */,
-			);
-			name = "Live Bus";
-			sourceTree = "<group>";
-		};
-		DDBB684B178E01F4008336EF /* Bus Stop */ = {
-			isa = PBXGroup;
-			children = (
-				7AA628C81794998100E74CA2 /* BUBusStopDataSource.h */,
-				7AA628C91794998100E74CA2 /* BUBusStopDataSource.m */,
-				7AA628CA1794998100E74CA2 /* BUBusStopModel.h */,
-				7AA628CB1794998100E74CA2 /* BUBusStopModel.m */,
-				7AA628BE1794992B00E74CA2 /* BUBusStopConnectionManager.h */,
-				7AA628BF1794992B00E74CA2 /* BUBusStopConnectionManager.m */,
-				7AB2AF3A1798599100DEA17F /* BUBusStopBuilder.h */,
-				7AB2AF3B1798599100DEA17F /* BUBusStopBuilder.m */,
-			);
-			name = "Bus Stop";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		7AD6ACA61787300500375DB3 /* BUBusPredictor3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AD6ACE51787300500375DB3 /* Build configuration list for PBXNativeTarget "BUBusPredictor3" */;
-			buildPhases = (
-				7AD6ACA31787300500375DB3 /* Sources */,
-				7AD6ACA41787300500375DB3 /* Frameworks */,
-				7AD6ACA51787300500375DB3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BUBusPredictor3;
-			productName = BUBusPredictor3;
-			productReference = 7AD6ACA71787300500375DB3 /* BUBusPredictor3.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7AD6ACD21787300500375DB3 /* BUBusPredictor3Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AD6ACE81787300500375DB3 /* Build configuration list for PBXNativeTarget "BUBusPredictor3Tests" */;
-			buildPhases = (
-				7AD6ACCE1787300500375DB3 /* Sources */,
-				7AD6ACCF1787300500375DB3 /* Frameworks */,
-				7AD6ACD01787300500375DB3 /* Resources */,
-				7AD6ACD11787300500375DB3 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7AD6ACD91787300500375DB3 /* PBXTargetDependency */,
-			);
-			name = BUBusPredictor3Tests;
-			productName = BUBusPredictor3Tests;
-			productReference = 7AD6ACD31787300500375DB3 /* BUBusPredictor3Tests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		7AD6AC9F1787300500375DB3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = BU;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Boston University";
-			};
-			buildConfigurationList = 7AD6ACA21787300500375DB3 /* Build configuration list for PBXProject "BUBusPredictor3" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7AD6AC9E1787300500375DB3;
-			productRefGroup = 7AD6ACA81787300500375DB3 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7AD6ACA61787300500375DB3 /* BUBusPredictor3 */,
-				7AD6ACD21787300500375DB3 /* BUBusPredictor3Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		7AD6ACA51787300500375DB3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AD6ACB51787300500375DB3 /* InfoPlist.strings in Resources */,
-				7AD6ACBD1787300500375DB3 /* Default.png in Resources */,
-				7AD6ACBF1787300500375DB3 /* Default@2x.png in Resources */,
-				7AD6ACC11787300500375DB3 /* Default-568h@2x.png in Resources */,
-				7AD6ACC41787300500375DB3 /* MainStoryboard_iPhone.storyboard in Resources */,
-				7AC99F4C1795D847003AA552 /* MainStoryboard_iPad.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD6ACD01787300500375DB3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AD6ACDF1787300500375DB3 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7AD6ACD11787300500375DB3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7AD6ACA31787300500375DB3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AD6ACB71787300500375DB3 /* main.m in Sources */,
-				7AD6ACBB1787300500375DB3 /* BUAppDelegate.m in Sources */,
-				7AD6ACCA1787300500375DB3 /* BUBusPredictorMasterViewController.m in Sources */,
-				7AD6ACCD1787300500375DB3 /* BUDetailViewController.m in Sources */,
-				7AD6ACEF1787351600375DB3 /* JSONModel.m in Sources */,
-				7AD6ACF3178757A500375DB3 /* BusPredictorData.m in Sources */,
-				7AD6ACF6178757D700375DB3 /* BUModuleData.m in Sources */,
-				7AD6AD02178771D600375DB3 /* BUDataSource.m in Sources */,
-				7AF6B2F517908D0900050A80 /* BUConnectionManager.m in Sources */,
-				7AA628C01794992B00E74CA2 /* BULiveBusConnectionManager.m in Sources */,
-				7AA628C11794992B00E74CA2 /* BUBusStopConnectionManager.m in Sources */,
-				7AA628C61794995700E74CA2 /* BULiveBusDataSource.m in Sources */,
-				7AA628C71794995700E74CA2 /* BUBusModel.m in Sources */,
-				7AA628CC1794998100E74CA2 /* BUBusStopDataSource.m in Sources */,
-				7AA628CD1794998100E74CA2 /* BUBusStopModel.m in Sources */,
-				7AB2AF3C1798599100DEA17F /* BUBusStopBuilder.m in Sources */,
-				7AB2AF3F179859AB00DEA17F /* BUModelBuilder.m in Sources */,
-				7AB2AF421798712300DEA17F /* BULiveBusBuilder.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD6ACCE1787300500375DB3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AD6ACE21787300500375DB3 /* BUBusPredictor3Tests.m in Sources */,
-				7AD6ACFC17876B6600375DB3 /* BUBusPredictorDataTests.m in Sources */,
-				7A6C1AB4178C959700AB1DF6 /* BULiveBusDataSourceTests.m in Sources */,
-				DDBB6827178DD38E008336EF /* BUBusStopDataSourceTests.m in Sources */,
-				7A70B231178F040D00DD8886 /* BUBusStopCreationTests.m in Sources */,
-				7A9CC6E1179DC6520051D0A6 /* BUBusStopConnectionManagerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7AD6ACD91787300500375DB3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AD6ACA61787300500375DB3 /* BUBusPredictor3 */;
-			targetProxy = 7AD6ACD81787300500375DB3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7AC99F4A1795D847003AA552 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AC99F4B1795D847003AA552 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		7AD6ACB31787300500375DB3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AD6ACB41787300500375DB3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7AD6ACC21787300500375DB3 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AD6ACC31787300500375DB3 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		7AD6ACDD1787300500375DB3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AD6ACDE1787300500375DB3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		7AD6ACE31787300500375DB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7AD6ACE41787300500375DB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7AD6ACE61787300500375DB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRANK_LIBRARY_SEARCH_PATHS)",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"$(FRANK_LDFLAGS)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		7AD6ACE71787300500375DB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "BUBusPredictor3/BUBusPredictor3-Info.plist";
-				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7AD6ACE91787300500375DB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BUBusPredictor3.app/BUBusPredictor3";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)";
-				INFOPLIST_FILE = "BUBusPredictor3Tests/BUBusPredictor3Tests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"\"$(SRCROOT)/libOCMock.a\"",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		7AD6ACEA1787300500375DB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BUBusPredictor3.app/BUBusPredictor3";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BUBusPredictor3/BUBusPredictor3-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)";
-				INFOPLIST_FILE = "BUBusPredictor3Tests/BUBusPredictor3Tests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"\"$(SRCROOT)/libOCMock.a\"",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		7AD6ACA21787300500375DB3 /* Build configuration list for PBXProject "BUBusPredictor3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AD6ACE31787300500375DB3 /* Debug */,
-				7AD6ACE41787300500375DB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AD6ACE51787300500375DB3 /* Build configuration list for PBXNativeTarget "BUBusPredictor3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AD6ACE61787300500375DB3 /* Debug */,
-				7AD6ACE71787300500375DB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AD6ACE81787300500375DB3 /* Build configuration list for PBXNativeTarget "BUBusPredictor3Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AD6ACE91787300500375DB3 /* Debug */,
-				7AD6ACEA1787300500375DB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 7AD6AC9F1787300500375DB3 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>7A28F66317B28E6800D8900C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUTableViewControllerTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A28F66417B28E6800D8900C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUTableViewControllerTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A28F66517B28E6800D8900C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A28F66417B28E6800D8900C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A28F66617B28F3D00D8900C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A28F66717B28F3D00D8900C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A28F66817B28F3D00D8900C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>BUTableViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A28F66917B28F3D00D8900C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A28F66717B28F3D00D8900C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A28F66A17B28F3D00D8900C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A28F66817B28F3D00D8900C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A6C1AB3178C959700AB1DF6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BULiveBusDataSourceTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A6C1AB4178C959700AB1DF6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A6C1AB3178C959700AB1DF6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A70B230178F040D00DD8886</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUBusStopCreationTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A70B231178F040D00DD8886</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A70B230178F040D00DD8886</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A9CC6E0179DC6520051D0A6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUBusStopConnectionManagerTests.m</string>
+			<key>path</key>
+			<string>BUBusPredictor3Tests/BUBusStopConnectionManagerTests.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>7A9CC6E1179DC6520051D0A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7A9CC6E0179DC6520051D0A6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AA628B317946ECA00E74CA2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AA628B417946ECA00E74CA2</string>
+				<string>7AA628B517946ECA00E74CA2</string>
+				<string>7AA628B617946ECA00E74CA2</string>
+				<string>7AA628B717946ECA00E74CA2</string>
+				<string>7AA628B817946ECA00E74CA2</string>
+				<string>7AA628B917946ECA00E74CA2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>OCMock</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628B417946ECA00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSNotificationCenter+OCMAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628B517946ECA00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OCMArg.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628B617946ECA00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OCMConstraint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628B717946ECA00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OCMock.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628B817946ECA00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OCMockObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628B917946ECA00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OCMockRecorder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628BA17947CA100E74CA2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libOCMock.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628BB17947CA100E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628BA17947CA100E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Required</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7AA628BC1794992B00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BULiveBusConnectionManager.h</string>
+			<key>path</key>
+			<string>Connections/BULiveBusConnectionManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628BD1794992B00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BULiveBusConnectionManager.m</string>
+			<key>path</key>
+			<string>Connections/BULiveBusConnectionManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628BE1794992B00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUBusStopConnectionManager.h</string>
+			<key>path</key>
+			<string>Connections/BUBusStopConnectionManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628BF1794992B00E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUBusStopConnectionManager.m</string>
+			<key>path</key>
+			<string>Connections/BUBusStopConnectionManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628C01794992B00E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628BD1794992B00E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AA628C11794992B00E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628BF1794992B00E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AA628C21794995700E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BULiveBusDataSource.h</string>
+			<key>path</key>
+			<string>Data/Bus/BULiveBusDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628C31794995700E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BULiveBusDataSource.m</string>
+			<key>path</key>
+			<string>Data/Bus/BULiveBusDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628C41794995700E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUBusModel.h</string>
+			<key>path</key>
+			<string>Data/Bus/BUBusModel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628C51794995700E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUBusModel.m</string>
+			<key>path</key>
+			<string>Data/Bus/BUBusModel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628C61794995700E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628C31794995700E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AA628C71794995700E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628C51794995700E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AA628C81794998100E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUBusStopDataSource.h</string>
+			<key>path</key>
+			<string>Data/Stops/BUBusStopDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628C91794998100E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUBusStopDataSource.m</string>
+			<key>path</key>
+			<string>Data/Stops/BUBusStopDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628CA1794998100E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUBusStopModel.h</string>
+			<key>path</key>
+			<string>Data/Stops/BUBusStopModel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628CB1794998100E74CA2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUBusStopModel.m</string>
+			<key>path</key>
+			<string>Data/Stops/BUBusStopModel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AA628CC1794998100E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628C91794998100E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AA628CD1794998100E74CA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AA628CB1794998100E74CA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AB2AF3A1798599100DEA17F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUBusStopBuilder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AB2AF3B1798599100DEA17F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUBusStopBuilder.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AB2AF3C1798599100DEA17F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AB2AF3B1798599100DEA17F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AB2AF3D179859AB00DEA17F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUModelBuilder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AB2AF3E179859AB00DEA17F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUModelBuilder.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AB2AF3F179859AB00DEA17F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AB2AF3E179859AB00DEA17F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AB2AF401798712300DEA17F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BULiveBusBuilder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AB2AF411798712300DEA17F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BULiveBusBuilder.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AB2AF421798712300DEA17F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AB2AF411798712300DEA17F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AC99F4A1795D847003AA552</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AC99F4B1795D847003AA552</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AC99F4B1795D847003AA552</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AC99F4C1795D847003AA552</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AC99F4A1795D847003AA552</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6AC9E1787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AA628BA17947CA100E74CA2</string>
+				<string>7AD6ACF0178735B300375DB3</string>
+				<string>7AD6ACB01787300500375DB3</string>
+				<string>7AD6ACDA1787300500375DB3</string>
+				<string>7AA628B317946ECA00E74CA2</string>
+				<string>7AD6ACA91787300500375DB3</string>
+				<string>7AD6ACA81787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6AC9F1787300500375DB3</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>BU</string>
+				<key>LastUpgradeCheck</key>
+				<string>0460</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Boston University</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>7AD6ACA21787300500375DB3</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7AD6AC9E1787300500375DB3</string>
+			<key>productRefGroup</key>
+			<string>7AD6ACA81787300500375DB3</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>7AD6ACA61787300500375DB3</string>
+				<string>7AD6ACD21787300500375DB3</string>
+			</array>
+		</dict>
+		<key>7AD6ACA21787300500375DB3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7AD6ACE31787300500375DB3</string>
+				<string>7AD6ACE41787300500375DB3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7AD6ACA31787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7AD6ACB71787300500375DB3</string>
+				<string>7AD6ACBB1787300500375DB3</string>
+				<string>7AD6ACCA1787300500375DB3</string>
+				<string>7AD6ACCD1787300500375DB3</string>
+				<string>7AD6ACEF1787351600375DB3</string>
+				<string>7AD6ACF3178757A500375DB3</string>
+				<string>7AD6ACF6178757D700375DB3</string>
+				<string>7AD6AD02178771D600375DB3</string>
+				<string>7AF6B2F517908D0900050A80</string>
+				<string>7AA628C01794992B00E74CA2</string>
+				<string>7AA628C11794992B00E74CA2</string>
+				<string>7AA628C61794995700E74CA2</string>
+				<string>7AA628C71794995700E74CA2</string>
+				<string>7AA628CC1794998100E74CA2</string>
+				<string>7AA628CD1794998100E74CA2</string>
+				<string>7AB2AF3C1798599100DEA17F</string>
+				<string>7AB2AF3F179859AB00DEA17F</string>
+				<string>7AB2AF421798712300DEA17F</string>
+				<string>7A28F66917B28F3D00D8900C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AD6ACA41787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7AD6ACEC1787304600375DB3</string>
+				<string>7AD6ACAB1787300500375DB3</string>
+				<string>7AD6ACAD1787300500375DB3</string>
+				<string>7AD6ACAF1787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AD6ACA51787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7AD6ACB51787300500375DB3</string>
+				<string>7AD6ACBD1787300500375DB3</string>
+				<string>7AD6ACBF1787300500375DB3</string>
+				<string>7AD6ACC11787300500375DB3</string>
+				<string>7AD6ACC41787300500375DB3</string>
+				<string>7AC99F4C1795D847003AA552</string>
+				<string>7A28F66A17B28F3D00D8900C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AD6ACA61787300500375DB3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7AD6ACE51787300500375DB3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7AD6ACA31787300500375DB3</string>
+				<string>7AD6ACA41787300500375DB3</string>
+				<string>7AD6ACA51787300500375DB3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BUBusPredictor3</string>
+			<key>productName</key>
+			<string>BUBusPredictor3</string>
+			<key>productReference</key>
+			<string>7AD6ACA71787300500375DB3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>7AD6ACA71787300500375DB3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BUBusPredictor3.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7AD6ACA81787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACA71787300500375DB3</string>
+				<string>7AD6ACD31787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACA91787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACAA1787300500375DB3</string>
+				<string>7AD6ACAC1787300500375DB3</string>
+				<string>7AD6ACAE1787300500375DB3</string>
+				<string>7AD6ACEB1787304600375DB3</string>
+				<string>7AD6ACD41787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACAA1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7AD6ACAB1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACAA1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACAC1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7AD6ACAD1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACAC1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACAE1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7AD6ACAF1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACAE1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACB01787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7A28F66617B28F3D00D8900C</string>
+				<string>7A28F66717B28F3D00D8900C</string>
+				<string>7A28F66817B28F3D00D8900C</string>
+				<string>7AF6B2F21790754300050A80</string>
+				<string>7AD6AD00178771D500375DB3</string>
+				<string>7AD6AD01178771D500375DB3</string>
+				<string>7AD6ACF4178757D700375DB3</string>
+				<string>7AD6ACF5178757D700375DB3</string>
+				<string>7AF6B2F317908D0900050A80</string>
+				<string>7AF6B2F417908D0900050A80</string>
+				<string>7AB2AF3D179859AB00DEA17F</string>
+				<string>7AB2AF3E179859AB00DEA17F</string>
+				<string>DDBB684A178E01E5008336EF</string>
+				<string>DDBB684B178E01F4008336EF</string>
+				<string>7AD6ACF1178757A500375DB3</string>
+				<string>7AD6ACF2178757A500375DB3</string>
+				<string>7AC99F4A1795D847003AA552</string>
+				<string>7AD6ACC21787300500375DB3</string>
+				<string>7AD6ACB91787300500375DB3</string>
+				<string>7AD6ACBA1787300500375DB3</string>
+				<string>DDBB6849178E01C6008336EF</string>
+				<string>7AD6ACB11787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BUBusPredictor3</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB11787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACB21787300500375DB3</string>
+				<string>7AD6ACB31787300500375DB3</string>
+				<string>7AD6ACB61787300500375DB3</string>
+				<string>7AD6ACB81787300500375DB3</string>
+				<string>7AD6ACBC1787300500375DB3</string>
+				<string>7AD6ACBE1787300500375DB3</string>
+				<string>7AD6ACC01787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB21787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BUBusPredictor3-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB31787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACB41787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB41787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB51787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACB31787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACB61787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB71787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACB61787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACB81787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUBusPredictor3-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACB91787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACBA1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACBB1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACBA1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACBC1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACBD1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACBC1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACBE1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACBF1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACBE1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACC01787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACC11787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACC01787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACC21787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACC31787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACC31787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACC41787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACC21787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACC81787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUBusPredictorMasterViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACC91787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUBusPredictorMasterViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACCA1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACC91787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACCB1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUDetailViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACCC1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUDetailViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACCD1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACCC1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACCE1787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7AD6ACE21787300500375DB3</string>
+				<string>7AD6ACFC17876B6600375DB3</string>
+				<string>7A6C1AB4178C959700AB1DF6</string>
+				<string>DDBB6827178DD38E008336EF</string>
+				<string>7A70B231178F040D00DD8886</string>
+				<string>7A9CC6E1179DC6520051D0A6</string>
+				<string>7A28F66517B28E6800D8900C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AD6ACCF1787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7AA628BB17947CA100E74CA2</string>
+				<string>7AD6ACD51787300500375DB3</string>
+				<string>7AD6ACD61787300500375DB3</string>
+				<string>7AD6ACD71787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AD6ACD01787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7AD6ACDF1787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AD6ACD11787300500375DB3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>7AD6ACD21787300500375DB3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7AD6ACE81787300500375DB3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7AD6ACCE1787300500375DB3</string>
+				<string>7AD6ACCF1787300500375DB3</string>
+				<string>7AD6ACD01787300500375DB3</string>
+				<string>7AD6ACD11787300500375DB3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>7AD6ACD91787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BUBusPredictor3Tests</string>
+			<key>productName</key>
+			<string>BUBusPredictor3Tests</string>
+			<key>productReference</key>
+			<string>7AD6ACD31787300500375DB3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>7AD6ACD31787300500375DB3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BUBusPredictor3Tests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7AD6ACD41787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7AD6ACD51787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACD41787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACD61787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACAA1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACD71787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACAC1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACD81787300500375DB3</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>7AD6AC9F1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7AD6ACA61787300500375DB3</string>
+			<key>remoteInfo</key>
+			<string>BUBusPredictor3</string>
+		</dict>
+		<key>7AD6ACD91787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>7AD6ACA61787300500375DB3</string>
+			<key>targetProxy</key>
+			<string>7AD6ACD81787300500375DB3</string>
+		</dict>
+		<key>7AD6ACDA1787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7A28F66317B28E6800D8900C</string>
+				<string>7A28F66417B28E6800D8900C</string>
+				<string>7AD6ACE11787300500375DB3</string>
+				<string>7AD6ACFB17876B6600375DB3</string>
+				<string>7A6C1AB3178C959700AB1DF6</string>
+				<string>7A70B230178F040D00DD8886</string>
+				<string>DDBB6826178DD38E008336EF</string>
+				<string>7A9CC6E0179DC6520051D0A6</string>
+				<string>7AD6ACDB1787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BUBusPredictor3Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACDB1787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACDC1787300500375DB3</string>
+				<string>7AD6ACDD1787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACDC1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BUBusPredictor3Tests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACDD1787300500375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACDE1787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACDE1787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACDF1787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACDD1787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACE11787300500375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUBusPredictor3Tests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACE21787300500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACE11787300500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACE31787300500375DB3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7AD6ACE41787300500375DB3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7AD6ACE51787300500375DB3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7AD6ACE61787300500375DB3</string>
+				<string>7AD6ACE71787300500375DB3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7AD6ACE61787300500375DB3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BUBusPredictor3/BUBusPredictor3-Prefix.pch</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string></string>
+				<key>INFOPLIST_FILE</key>
+				<string>BUBusPredictor3/BUBusPredictor3-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(FRANK_LIBRARY_SEARCH_PATHS)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(FRANK_LDFLAGS)</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7AD6ACE71787300500375DB3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BUBusPredictor3/BUBusPredictor3-Prefix.pch</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string></string>
+				<key>INFOPLIST_FILE</key>
+				<string>BUBusPredictor3/BUBusPredictor3-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7AD6ACE81787300500375DB3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7AD6ACE91787300500375DB3</string>
+				<string>7AD6ACEA1787300500375DB3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7AD6ACE91787300500375DB3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BUBusPredictor3.app/BUBusPredictor3</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BUBusPredictor3/BUBusPredictor3-Prefix.pch</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>$(SRCROOT)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BUBusPredictor3Tests/BUBusPredictor3Tests-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)"</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-force_load</string>
+					<string>"$(SRCROOT)/libOCMock.a"</string>
+					<string>-ObjC</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string></string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7AD6ACEA1787300500375DB3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BUBusPredictor3.app/BUBusPredictor3</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BUBusPredictor3/BUBusPredictor3-Prefix.pch</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>$(SRCROOT)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BUBusPredictor3Tests/BUBusPredictor3Tests-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SRCROOT)"</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-force_load</string>
+					<string>"$(SRCROOT)/libOCMock.a"</string>
+					<string>-ObjC</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string></string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7AD6ACEB1787304600375DB3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MapKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MapKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7AD6ACEC1787304600375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACEB1787304600375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACED1787351600375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSONModel.h</string>
+			<key>path</key>
+			<string>BUBusPredictor3/JSON/JSONModel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACEE1787351600375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSONModel.m</string>
+			<key>path</key>
+			<string>BUBusPredictor3/JSON/JSONModel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACEF1787351600375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACEE1787351600375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACF0178735B300375DB3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACED1787351600375DB3</string>
+				<string>7AD6ACEE1787351600375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JSON</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACF1178757A500375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BusPredictorData.h</string>
+			<key>path</key>
+			<string>Data/BusPredictorData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACF2178757A500375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BusPredictorData.m</string>
+			<key>path</key>
+			<string>Data/BusPredictorData.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACF3178757A500375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACF2178757A500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACF4178757D700375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUModuleData.h</string>
+			<key>path</key>
+			<string>Data/BUModuleData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACF5178757D700375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUModuleData.m</string>
+			<key>path</key>
+			<string>Data/BUModuleData.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACF6178757D700375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACF5178757D700375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6ACFB17876B6600375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUBusPredictorDataTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6ACFC17876B6600375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6ACFB17876B6600375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AD6AD00178771D500375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUDataSource.h</string>
+			<key>path</key>
+			<string>Data/BUDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6AD01178771D500375DB3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BUDataSource.m</string>
+			<key>path</key>
+			<string>Data/BUDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AD6AD02178771D600375DB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AD6AD01178771D500375DB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7AF6B2F21790754300050A80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BUConnectionManagerDelegate.h</string>
+			<key>path</key>
+			<string>../BUConnectionManagerDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AF6B2F317908D0900050A80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BUConnectionManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AF6B2F417908D0900050A80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUConnectionManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AF6B2F517908D0900050A80</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AF6B2F417908D0900050A80</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DDBB6826178DD38E008336EF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BUBusStopDataSourceTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DDBB6827178DD38E008336EF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DDBB6826178DD38E008336EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DDBB6849178E01C6008336EF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AD6ACC81787300500375DB3</string>
+				<string>7AD6ACC91787300500375DB3</string>
+				<string>7AD6ACCB1787300500375DB3</string>
+				<string>7AD6ACCC1787300500375DB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DDBB684A178E01E5008336EF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AA628C21794995700E74CA2</string>
+				<string>7AA628C31794995700E74CA2</string>
+				<string>7AA628C41794995700E74CA2</string>
+				<string>7AA628C51794995700E74CA2</string>
+				<string>7AA628BC1794992B00E74CA2</string>
+				<string>7AA628BD1794992B00E74CA2</string>
+				<string>7AB2AF401798712300DEA17F</string>
+				<string>7AB2AF411798712300DEA17F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Live Bus</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DDBB684B178E01F4008336EF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7AA628C81794998100E74CA2</string>
+				<string>7AA628C91794998100E74CA2</string>
+				<string>7AA628CA1794998100E74CA2</string>
+				<string>7AA628CB1794998100E74CA2</string>
+				<string>7AA628BE1794992B00E74CA2</string>
+				<string>7AA628BF1794992B00E74CA2</string>
+				<string>7AB2AF3A1798599100DEA17F</string>
+				<string>7AB2AF3B1798599100DEA17F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Bus Stop</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>7AD6AC9F1787300500375DB3</string>
+</dict>
+</plist>

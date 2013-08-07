@@ -31,5 +31,7 @@ var searchData=
   ['bumoduledata_2eh',['BUModuleData.h',['../_b_u_module_data_8h.html',1,'']]],
   ['bumoduledata_2em',['BUModuleData.m',['../_b_u_module_data_8m.html',1,'']]],
   ['buspredictordata_2eh',['BusPredictorData.h',['../_bus_predictor_data_8h.html',1,'']]],
-  ['buspredictordata_2em',['BusPredictorData.m',['../_bus_predictor_data_8m.html',1,'']]]
+  ['buspredictordata_2em',['BusPredictorData.m',['../_bus_predictor_data_8m.html',1,'']]],
+  ['butableviewcontroller_2eh',['BUTableViewController.h',['../_b_u_table_view_controller_8h.html',1,'']]],
+  ['butableviewcontroller_2em',['BUTableViewController.m',['../_b_u_table_view_controller_8m.html',1,'']]]
 ];

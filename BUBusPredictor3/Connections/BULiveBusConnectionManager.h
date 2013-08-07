@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "BUConnectionManager.h"
 
+extern NSString *LiveBusConnectionManagerError;
+
+enum {
+    LiveBusConnectionManagerErrorFetchCode = 901
+};
+
 @interface BULiveBusConnectionManager : BUConnectionManager
 
 - (NSArray *)fetchBuses;

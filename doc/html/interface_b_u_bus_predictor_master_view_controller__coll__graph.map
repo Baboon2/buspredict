@@ -1,8 +1,9 @@
 <map id="BUBusPredictorMasterViewController" name="BUBusPredictorMasterViewController">
-<area shape="rect" href="$interface_b_u_detail_view_controller.html" title="{BUDetailViewController\n|+ detailItem\l+ detailDescriptionLabel\l|}" alt="" coords="211,632,411,733"/>
-<area shape="rect" href="$interface_bus_predictor_data.html" title="{BusPredictorData\n|+ moduleName\l|}" alt="" coords="456,641,600,724"/>
-<area shape="rect" href="$interface_b_u_module_data.html" title="{BUModuleData\n|+ dataSources\l|+ addSource:\l+ dataSourceForKey:\l+ countOfDataSources\l}" alt="" coords="387,252,573,369"/>
-<area shape="rect" href="$interface_j_s_o_n_model.html" title="{JSONModel\n||+ initWithDictionary:\l}" alt="" coords="559,143,727,225"/>
-<area shape="rect" href="$interface_b_u_bus_model.html" title="{BUBusModel\n|+ identifier\l+ timestamp\l+ heading\l+ lat\l+ lng\l+ speed\l|}" alt="" coords="517,395,632,565"/>
-<area shape="rect" href="$interface_b_u_bus_stop_model.html" title="{BUBusStopModel\n|+ stop_id\l+ stop_name\l+ stop_desc\l+ stop_lat\l+ stop_lon\l+ direction_id\l|}" alt="" coords="656,395,800,565"/>
+<area shape="rect" href="$interface_b_u_table_view_controller.html" title="{BUTableViewController\n||}" alt="" coords="48,641,235,724"/>
+<area shape="rect" href="$interface_b_u_detail_view_controller.html" title="{BUDetailViewController\n|+ detailItem\l+ detailDescriptionLabel\l|}" alt="" coords="349,632,549,733"/>
+<area shape="rect" href="$interface_bus_predictor_data.html" title="{BusPredictorData\n|+ moduleName\l|}" alt="" coords="619,641,763,724"/>
+<area shape="rect" href="$interface_b_u_module_data.html" title="{BUModuleData\n|+ dataSources\l|+ addSource:\l+ dataSourceForKey:\l+ countOfDataSources\l}" alt="" coords="584,252,771,369"/>
+<area shape="rect" href="$interface_j_s_o_n_model.html" title="{JSONModel\n||+ initWithDictionary:\l}" alt="" coords="756,143,924,225"/>
+<area shape="rect" href="$interface_b_u_bus_model.html" title="{BUBusModel\n|+ identifier\l+ timestamp\l+ heading\l+ lat\l+ lng\l+ speed\l|}" alt="" coords="715,395,829,565"/>
+<area shape="rect" href="$interface_b_u_bus_stop_model.html" title="{BUBusStopModel\n|+ stop_id\l+ stop_name\l+ stop_desc\l+ stop_lat\l+ stop_lon\l+ direction_id\l|}" alt="" coords="853,395,997,565"/>
 </map>

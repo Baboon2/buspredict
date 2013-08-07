@@ -33,5 +33,11 @@ var dir_ba93cc7298cb8d4898e1bbe0fb1259c1 =
       [ "BUModelBuilder", "interface_b_u_model_builder.html", "interface_b_u_model_builder" ]
     ] ],
     [ "BUModelBuilder.m", "_b_u_model_builder_8m.html", null ],
+    [ "BUTableViewController.h", "_b_u_table_view_controller_8h.html", [
+      [ "BUTableViewController", "interface_b_u_table_view_controller.html", null ]
+    ] ],
+    [ "BUTableViewController.m", "_b_u_table_view_controller_8m.html", [
+      [ "BUTableViewController()", "category_b_u_table_view_controller_07_08.html", null ]
+    ] ],
     [ "main.m", "main_8m.html", "main_8m" ]
 ];

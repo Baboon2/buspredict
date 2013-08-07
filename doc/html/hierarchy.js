@@ -8,6 +8,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "BUDetailViewController()", "category_b_u_detail_view_controller_07_08.html", null ],
+    [ "BUTableViewController()", "category_b_u_table_view_controller_07_08.html", null ],
     [ "<NSCoding>", null, [
       [ "JSONModel", "interface_j_s_o_n_model.html", [
         [ "BUBusModel", "interface_b_u_bus_model.html", null ],
@@ -48,7 +49,9 @@ var hierarchy =
       [ "BUDetailViewController", "interface_b_u_detail_view_controller.html", null ]
     ] ],
     [ "UITableViewController", null, [
-      [ "BUBusPredictorMasterViewController", "interface_b_u_bus_predictor_master_view_controller.html", null ]
+      [ "BUTableViewController", "interface_b_u_table_view_controller.html", [
+        [ "BUBusPredictorMasterViewController", "interface_b_u_bus_predictor_master_view_controller.html", null ]
+      ] ]
     ] ],
     [ "UIViewController", null, [
       [ "BUDetailViewController", "interface_b_u_detail_view_controller.html", null ]

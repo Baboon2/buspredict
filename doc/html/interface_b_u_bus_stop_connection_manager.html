@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BusPredictor
-   &#160;<span id="projectnumber">1.0d1</span>
+   &#160;<span id="projectnumber">1.0d2</span>
    </div>
    <div id="projectbrief">Variant of BU Bus having our own predictions</div>
   </td>
@@ -116,14 +116,14 @@ Inheritance diagram for BUBusStopConnectionManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_bus_stop_connection_manager__inherit__graph.png" border="0" usemap="#_b_u_bus_stop_connection_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_b_u_bus_stop_connection_manager_inherit__map" id="_b_u_bus_stop_connection_manager_inherit__map">
-<area shape="rect" href="interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ builder\l+ receivedData\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l+ connection:didFailWithError:\l+ fetchJSONWithErrorHandler\l:successHandler:\l+ cancelURLConnection\l}" alt="" coords="24,139,264,448"/></map>
+<area shape="rect" href="interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ receivedData\l+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ builder\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l+ connection:didFailWithError:\l+ connection:didReceiveResponse:\l+ connection:didReceiveData:\l+ fetchJSONWithErrorHandler\l:successHandler:\l+ cancelURLConnection\l}" alt="" coords="7,139,281,483"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for BUBusStopConnectionManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_b_u_bus_stop_connection_manager__coll__graph.png" border="0" usemap="#_b_u_bus_stop_connection_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_b_u_bus_stop_connection_manager_coll__map" id="_b_u_bus_stop_connection_manager_coll__map">
-<area shape="rect" href="interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l+ receivedData\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l+ connection:didFailWithError:\l+ fetchJSONWithErrorHandler\l:successHandler:\l+ cancelURLConnection\l}" alt="" coords="24,345,264,636"/><area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="45,141,243,277"/></map>
+<area shape="rect" href="interface_b_u_connection_manager.html" title="{BUConnectionManager\n|+ receivedData\l+ items\l+ url\l+ connection\l+ request\l+ delegate\l+ fetchError\l|+ initWithURL:\l+ fetchFailedWithError:\l+ receivedJSON:\l+ connection:didFailWithError:\l+ connection:didReceiveResponse:\l+ connection:didReceiveData:\l+ fetchJSONWithErrorHandler\l:successHandler:\l+ cancelURLConnection\l}" alt="" coords="7,345,281,671"/><area shape="rect" href="interface_b_u_model_builder.html" title="{BUModelBuilder\n|+ JSON\l+ arrayToReturn\l+ errorToSet\l|+ createItemsFromJSON\l:error:\l}" alt="" coords="45,141,243,277"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -137,6 +137,10 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aec84c25895dd6b4249f4ffb70ced7d16 inherit pub_methods_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb7ecaf6500473b13d5863dbd73a2877 inherit pub_methods_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#abb7ecaf6500473b13d5863dbd73a2877">connection:didFailWithError:</a></td></tr>
 <tr class="separator:abb7ecaf6500473b13d5863dbd73a2877 inherit pub_methods_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28eed1e1af3a44355b365dd5f7d869ca inherit pub_methods_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#a28eed1e1af3a44355b365dd5f7d869ca">connection:didReceiveResponse:</a></td></tr>
+<tr class="separator:a28eed1e1af3a44355b365dd5f7d869ca inherit pub_methods_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5a02ab4a29ed265edef1890fc2e354 inherit pub_methods_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#a0d5a02ab4a29ed265edef1890fc2e354">connection:didReceiveData:</a></td></tr>
+<tr class="separator:a0d5a02ab4a29ed265edef1890fc2e354 inherit pub_methods_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea09491f48e641f8c4fbf50c68563183 inherit pub_methods_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#aea09491f48e641f8c4fbf50c68563183">fetchJSONWithErrorHandler:successHandler:</a></td></tr>
 <tr class="separator:aea09491f48e641f8c4fbf50c68563183 inherit pub_methods_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2795aebc101d0e693f4897431e5fa304 inherit pub_methods_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_u_connection_manager.html#a2795aebc101d0e693f4897431e5fa304">cancelURLConnection</a></td></tr>
@@ -144,6 +148,9 @@ Instance Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_interface_b_u_connection_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_interface_b_u_connection_manager')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="interface_b_u_connection_manager.html">BUConnectionManager</a></td></tr>
+<tr class="memitem:a2204c1d10fde059404ec64844de4467a inherit pub_attribs_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">NSMutableData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#a2204c1d10fde059404ec64844de4467a">receivedData</a></td></tr>
+<tr class="separator:a2204c1d10fde059404ec64844de4467a inherit pub_attribs_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_b_u_connection_manager"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_b_u_connection_manager')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_b_u_connection_manager.html">BUConnectionManager</a></td></tr>
 <tr class="memitem:addfc043bbadbb32cded6f0d8acb97557 inherit properties_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#addfc043bbadbb32cded6f0d8acb97557">items</a></td></tr>
 <tr class="separator:addfc043bbadbb32cded6f0d8acb97557 inherit properties_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,8 +166,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae66cb49103adad2efc397f5cc97c7a30 inherit properties_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa834633a9859444fd9d4a2975a1e64ed inherit properties_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_b_u_model_builder.html">BUModelBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#aa834633a9859444fd9d4a2975a1e64ed">builder</a></td></tr>
 <tr class="separator:aa834633a9859444fd9d4a2975a1e64ed inherit properties_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2204c1d10fde059404ec64844de4467a inherit properties_interface_b_u_connection_manager"><td class="memItemLeft" align="right" valign="top">NSMutableData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_u_connection_manager.html#a2204c1d10fde059404ec64844de4467a">receivedData</a></td></tr>
-<tr class="separator:a2204c1d10fde059404ec64844de4467a inherit properties_interface_b_u_connection_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a7b3d0ef9cf352a6f986229260e3d7560"></a>
@@ -191,7 +196,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_b_u_bus_stop_connection_manager.html">BUBusStopConnectionManager</a></li>
-    <li class="footer">Generated on Wed Jul 24 2013 15:13:45 for BusPredictor by
+    <li class="footer">Generated on Wed Aug 7 2013 11:29:59 for BusPredictor by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

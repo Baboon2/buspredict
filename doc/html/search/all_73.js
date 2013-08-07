@@ -6,6 +6,5 @@ var searchData=
   ['stop_5flat',['stop_lat',['../interface_b_u_bus_stop_model.html#a9ed4684a46281d876d5672715a8b8b24',1,'BUBusStopModel']]],
   ['stop_5flon',['stop_lon',['../interface_b_u_bus_stop_model.html#a57bc77e06d25e7a139c95973bdc66d80',1,'BUBusStopModel']]],
   ['stop_5fname',['stop_name',['../interface_b_u_bus_stop_model.html#a3ee50d613acffbd4ecb1e72dfaa33405',1,'BUBusStopModel']]],
-  ['stopmodel',['stopModel',['../interface_bus_predictor_data.html#a8508f269a00414f2a426e0e104cb6958',1,'BusPredictorData']]],
-  ['successhandler',['successHandler',['../_b_u_connection_manager_8m.html#a752d0815d17ea44304fa5c422cae35e2',1,'BUConnectionManager.m']]]
+  ['stopmodel',['stopModel',['../interface_bus_predictor_data.html#a8508f269a00414f2a426e0e104cb6958',1,'BusPredictorData']]]
 ];
